@@ -11,7 +11,7 @@ export default function Home() {
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
         .home-container {
-          width: 100vw;
+          width: 100;
           height: 100dvh;
           font-family: 'Poppins', sans-serif;
           position: relative;
@@ -34,10 +34,9 @@ export default function Home() {
         }
 
         .text-section {
-        margin-top: 100px;
+          margin-top: 60px;
           position: absolute;
           color: #fff;
-          top: 0;
           width: 100%;
           z-index: 10;
           text-align: center;
@@ -53,7 +52,7 @@ export default function Home() {
         }
 
         .subheading {
-          font-size: 18px;
+          font-size: 16px;
           margin: 0 auto;
           font-weight: 400;
           max-width: 800px;
@@ -82,7 +81,7 @@ export default function Home() {
           <Nav />
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
           <h2 className="subheading">
-            Get the most reliable tech solutions, customized to your requirements built on trust without <br />paying a hefty price tag
+            Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
           </h2>
         </div>
 
