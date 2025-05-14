@@ -4,7 +4,7 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
 import Countiescart from '../components/Countiescart';
-
+import Testimonial from '../components/Testimonials';
 export default function Home() {
   return (
     <>
@@ -97,8 +97,10 @@ export default function Home() {
         </section>
 
       </div>
-        <JoinUsSection />
+       
             <Countiescart />
+            <Testimonial />
+             <JoinUsSection />
         <Footer />
     </>
     
