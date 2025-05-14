@@ -4,7 +4,9 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
-import Countiescart from '../components/Countiescart';
+import { WorldMapDemo } from '@/components/ui/world-map-demo';
+import { CountiesCart } from '@/components/CountiesCart';
+import { HeroDemo1 } from '@/components/ui/demo';
 
 export default function Home() {
   return (
@@ -92,8 +94,8 @@ export default function Home() {
       <div className='common-styles'>
         <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
       </div>
+      <CountiesCart />
       <JoinUsSection />
-       <Countiescart />
       <Footer />
     </>
 
