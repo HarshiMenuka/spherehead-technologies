@@ -41,30 +41,30 @@ export const Carousel = ({ items }: CarouselProps) => {
   };
 
  return (
-    <div className="relative w-full mt-12">
+    <div className="relative w-full mt-8 md:mt-12">
       <div
-        className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] py-10"
+        className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] py-6 md:py-10"
         ref={carouselRef}
         onScroll={checkScrollability}
       >
-        <div className="flex flex-row justify-start gap-6 px-4 mx-auto max-w-7xl">
+        <div className="flex flex-row justify-start gap-4 md:gap-6 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
           {items}
         </div>
       </div>
-      <div className="absolute -bottom-8 right-40 flex justify-end gap-2">
+      <div className="absolute -bottom-8 w-full md:w-auto flex justify-center md:justify-end md:right-12 gap-2">
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-[#333] hover:bg-gray-600 disabled:opacity-50"
+          className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full bg-[#333] hover:bg-gray-600 disabled:opacity-50"
           onClick={scrollLeft}
           disabled={!canScrollLeft}
         >
-          <IconArrowNarrowLeft className="h-6 w-6 text-white" />
+          <IconArrowNarrowLeft className="h-4 w-4 md:h-6 md:w-6 text-white" />
         </button>
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-[#333] hover:bg-gray-600 disabled:opacity-50"
+          className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full bg-[#333] hover:bg-gray-600 disabled:opacity-50"
           onClick={scrollRight}
           disabled={!canScrollRight}
         >
-          <IconArrowNarrowRight className="h-6 w-6 text-white" />
+          <IconArrowNarrowRight className="h-4 w-4 md:h-6 md:w-6 text-white" />
         </button>
       </div>
     </div>
