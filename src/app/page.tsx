@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
+import Countiescart from '../components/Countiescart';
 
 export default function Home() {
   return (
@@ -78,7 +79,7 @@ export default function Home() {
 
       <div className="home-container">
         <div className="spline-wrapper">
-          <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" /> */}
         </div>
         <div className="text-section">
           <Nav />
@@ -92,6 +93,7 @@ export default function Home() {
         <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
       </div>
       <JoinUsSection />
+       <Countiescart />
       <Footer />
     </>
 
