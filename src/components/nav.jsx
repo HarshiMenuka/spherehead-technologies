@@ -272,7 +272,7 @@ function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="nav-link">
+              <Link href="/service" className="nav-link">
                 Services
               </Link>
             </li>
