@@ -3,6 +3,7 @@ import Spline from '@splinetool/react-spline';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
+import Countiescart from '../components/Countiescart';
 
 export default function Home() {
   return (
@@ -75,7 +76,7 @@ export default function Home() {
 
       <div className="home-container">
         <div className="spline-wrapper">
-          <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" /> */}
         </div>
 
         <div className="text-section">
@@ -96,9 +97,9 @@ export default function Home() {
           <h1>test</h1>
         </section>
 
-      
       </div>
         <JoinUsSection />
+            <Countiescart />
         <Footer />
     </>
     
