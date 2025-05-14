@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
 import Countiescart from '../components/Countiescart';
+import Testimoinals from '../components/testimonials';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           font-family: 'Poppins', sans-serif;
           position: relative;
           overflow: hidden;
+          background-color: #161616;
         }
 
         .spline-wrapper {
@@ -97,8 +99,10 @@ export default function Home() {
         </section>
 
       </div>
+      <Testimoinals/>
         <JoinUsSection />
             <Countiescart />
+            
         <Footer />
     </>
     

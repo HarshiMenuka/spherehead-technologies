@@ -31,7 +31,7 @@ const JoinUsSection = () => {
           }
 
           .joinus-description {
-            font-size: 1.25rem;
+            font-size: 16px;
             max-width: 800px;
             margin: 0 auto 2.5rem;
             opacity: 0.9;
