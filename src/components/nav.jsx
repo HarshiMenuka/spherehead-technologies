@@ -128,8 +128,8 @@ function Nav() {
           display: none;
           flex-direction: column;
           justify-content: space-between;
-          width: 30px;
-          height: 21px;
+          width: 40px;
+          height: 31px;
           cursor: pointer;
           z-index: 1001;
         }
@@ -173,6 +173,12 @@ function Nav() {
           z-index: 999;
         }
 
+        .nav-right {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
         @media (max-width: 768px) {
           .nav-links {
             display: none;
@@ -180,10 +186,33 @@ function Nav() {
 
           .hamburger {
             display: flex;
+            width: 40px;
+            height: 31px;
           }
 
           .nav-container {
             justify-content: space-between;
+            padding: 0.8rem 1.2rem;
+          }
+
+          .logo-container {
+            width: 160px;
+          }
+
+          .scrolled .logo-container {
+            width: 140px;
+          }
+
+          .nav-center {
+            display: none;
+          }
+
+          .nav-right {
+            gap: 0;
+          }
+
+          .contact-btn {
+            display: none;
           }
 
           .nav-container.mobile-menu-open {
@@ -211,26 +240,13 @@ function Nav() {
           }
 
           .mobile-menu .contact-btn {
+            display: inline-block;
             margin-top: 1rem;
-          }
-
-          .logo-container {
-            width: 120px;
-          }
-
-          .scrolled .logo-container {
-            width: 100px;
           }
         }
       `}</style>
 
       <nav className={`nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""}`}>
-        <div className={`hamburger ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
         <div className="logo-container">
           <Link href="/" className="logo-link">
             <Image
@@ -278,10 +294,15 @@ function Nav() {
           </ul>
         </div>
 
-        <div>
+        <div className="nav-right">
           <Link href="/" className="contact-btn">
             Contact Us
           </Link>
+          <div className={`hamburger ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
 

@@ -3,8 +3,11 @@ import Spline from '@splinetool/react-spline';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
-import Countiescart from '../components/Countiescart';
-import Testimonial from '../components/Testimonials';
+import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
+import { WorldMapDemo } from '@/components/ui/world-map-demo';
+import { CountiesCart } from '@/components/CountiesCart';
+import { HeroDemo1 } from '@/components/ui/demo';
+
 export default function Home() {
   return (
     <>
@@ -71,13 +74,15 @@ export default function Home() {
           position: relative;
           z-index: 5;
         }
+        .common-styles{
+          background-color: #161616;
+          }
       `}</style>
 
       <div className="home-container">
         <div className="spline-wrapper">
           {/* <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" /> */}
         </div>
-
         <div className="text-section">
           <Nav />
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
@@ -85,24 +90,14 @@ export default function Home() {
             Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
           </h2>
         </div>
-
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-
       </div>
-       
-            <Countiescart />
-            <Testimonial />
-             <JoinUsSection />
-        <Footer />
+      <div className='common-styles'>
+        <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
+      </div>
+      <CountiesCart />
+      <JoinUsSection />
+      <Footer />
     </>
-    
+
   );
 }
