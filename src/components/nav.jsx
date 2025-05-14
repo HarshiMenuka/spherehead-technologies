@@ -7,18 +7,64 @@ import { useEffect, useState } from "react";
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
+    let scrollTimer;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const currentScrollY = window.scrollY;
+      setIsScrolled(currentScrollY > 10);
+      
+      // Always show navbar at the top of the page
+      if (currentScrollY === 0) {
+        setIsVisible(true);
+        setIsScrolling(false);
+        return;
+      }
+      
+      // Hide navbar when scrolling in any direction
+      setIsVisible(false);
+      setIsScrolling(true);
+      
+      // Update last scroll position
+      setLastScrollY(currentScrollY);
+
+      // Clear previous timer
+      clearTimeout(scrollTimer);
+      
+      // Set a new timer
+      scrollTimer = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150);
+    };
+
+    const handleMouseMove = (e) => {
+      // Show navbar when mouse is in top 100px of the page and not actively scrolling
+      // But don't override visibility if we're at the top of the page
+      if (e.clientY <= 100 && !isScrolling && window.scrollY > 0) {
+        setIsVisible(true);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("mousemove", handleMouseMove);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
+      clearTimeout(scrollTimer);
+    };
+  }, [isScrolling]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    // Keep navbar visible when menu is open
+    if (!isMenuOpen) {
+      setIsVisible(true);
+    }
   };
 
   return (
@@ -33,7 +79,7 @@ function Nav() {
 
         .nav-container {
           position: fixed;
-          top: 15;
+          top: 15px;
           left: 50%;
           transform: translateX(-50%);
           width: calc(100% - 20px);
@@ -44,8 +90,17 @@ function Nav() {
           padding: 0.8rem 0.8rem;
           z-index: 1000;
           background: transparent;
-          transition: all 0.6s ease;
+          transition: all 0.3s ease;
           border-radius: 99px;
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .nav-container.hidden {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%) translateY(-100%);
+          transition: all 0.3s ease;
         }
 
         .nav-container.scrolled {
@@ -246,7 +301,7 @@ function Nav() {
         }
       `}</style>
 
-      <nav className={`nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""}`}>
+      <nav className={`nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""} ${!isVisible ? "hidden" : ""}`}>
         <div className="logo-container">
           <Link href="/" className="logo-link">
             <Image
