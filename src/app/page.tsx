@@ -3,6 +3,7 @@ import Spline from '@splinetool/react-spline';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
+import TechStack from "../components/ui/tech-stack";
 
 export default function Home() {
   return (
@@ -86,18 +87,11 @@ export default function Home() {
           </h2>
         </div>
 
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
+        
 
       
       </div>
+        <TechStack />
         <JoinUsSection />
         <Footer />
     </>
