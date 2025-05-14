@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,10 @@ function Nav() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
@@ -118,9 +123,114 @@ function Nav() {
           background: linear-gradient(to right, #88b2d1, #4d8bb8);
           transform: translateY(-2px);
         }
+
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 21px;
+          cursor: pointer;
+          z-index: 1001;
+        }
+
+        .hamburger span {
+          display: block;
+          height: 3px;
+          width: 100%;
+          background-color: white;
+          border-radius: 3px;
+          transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+
+        .mobile-menu {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(39, 39, 42, 0.95);
+          backdrop-filter: blur(15px);
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          transform: translateX(100%);
+          transition: transform 0.3s ease;
+          z-index: 999;
+        }
+
+        @media (max-width: 768px) {
+          .nav-links {
+            display: none;
+          }
+
+          .hamburger {
+            display: flex;
+          }
+
+          .nav-container {
+            justify-content: space-between;
+          }
+
+          .nav-container.mobile-menu-open {
+            background: rgba(39, 39, 42, 0.95);
+            backdrop-filter: blur(15px);
+          }
+
+          .mobile-menu {
+            display: flex;
+          }
+
+          .mobile-menu.open {
+            transform: translateX(0);
+          }
+
+          .mobile-menu .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+          }
+
+          .mobile-menu .nav-link {
+            font-size: 1.2rem;
+          }
+
+          .mobile-menu .contact-btn {
+            margin-top: 1rem;
+          }
+
+          .logo-container {
+            width: 120px;
+          }
+
+          .scrolled .logo-container {
+            width: 100px;
+          }
+        }
       `}</style>
 
-      <nav className={`nav-container ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""}`}>
+        <div className={`hamburger ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <div className="logo-container">
           <Link href="/" className="logo-link">
             <Image
@@ -174,6 +284,44 @@ function Nav() {
           </Link>
         </div>
       </nav>
+
+      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <ul className="nav-links">
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="nav-link" onClick={toggleMenu}>
+              Blogs
+            </Link>
+          </li>
+        </ul>
+        <Link href="/" className="contact-btn" onClick={toggleMenu}>
+          Contact Us
+        </Link>
+      </div>
     </>
   );
 }
