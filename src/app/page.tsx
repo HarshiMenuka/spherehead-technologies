@@ -1,8 +1,7 @@
 "use client"
 import Spline from '@splinetool/react-spline';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import JoinUsSection from '../components/joinus';
+import Nav from '../components/Nav';
+import JoinUsSection from '../components/Joinus';
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import { WorldMapDemo } from '@/components/ui/world-map-demo';
 import { CountiesCart } from '@/components/CountiesCart';
@@ -84,19 +83,15 @@ export default function Home() {
           {/* <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" /> */}
         </div>
         <div className="text-section">
-          <Nav />
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
           <h2 className="subheading">
             Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
           </h2>
         </div>
       </div>
-      <div className='common-styles'>
-        <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
-      </div>
+      <AppleCardsCarouselDemo />
       <CountiesCart />
       <JoinUsSection />
-      <Footer />
     </>
 
   );

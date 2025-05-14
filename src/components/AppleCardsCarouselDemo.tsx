@@ -3,8 +3,10 @@
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { IconDeviceMobile, IconCode, IconWorld, IconServer } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 
 export function AppleCardsCarouselDemo() {
+  const router = useRouter();
   const cards = data.map((card, index) => (
     <Card key={index} card={card} />
   ));
@@ -23,7 +25,7 @@ export function AppleCardsCarouselDemo() {
             </p>
           </div>
           <div className="flex justify-center md:justify-end md:items-end md:h-[72px] w-full md:w-auto">
-            <button className="bg-[#64B5F6] text-white px-4 md:px-6 py-2 rounded-md hover:bg-[#5AA3E8] transition-colors whitespace-nowrap text-sm md:text-base">
+            <button onClick={() => router.push('/service')} className="bg-[#64B5F6] text-white px-4 md:px-6 py-2 rounded-md hover:bg-[#5AA3E8] transition-colors whitespace-nowrap text-sm md:text-base">
               Learn More
             </button>
           </div>
