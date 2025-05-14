@@ -21,13 +21,14 @@ function Nav() {
       <style jsx global>{`
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
         body {
-          padding-top: 80px;
+          margin: 0;
+          padding: 0;
           font-family: 'Poppins', sans-serif;
         }
 
         .nav-container {
           position: fixed;
-          top: 3%;
+          top: 15;
           left: 50%;
           transform: translateX(-50%);
           width: calc(100% - 20px);
@@ -44,7 +45,7 @@ function Nav() {
 
         .nav-container.scrolled {
           background: rgba(39, 39, 42, 0.8);
-          top: 3%;
+          top: 15;
           backdrop-filter: blur(15px);
           padding: 0.8rem 0.8rem;
           width: calc(100% - 20px);
