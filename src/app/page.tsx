@@ -3,6 +3,7 @@ import Spline from '@splinetool/react-spline';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import JoinUsSection from '../components/joinus';
+import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 
 export default function Home() {
   return (
@@ -71,13 +72,15 @@ export default function Home() {
           position: relative;
           z-index: 5;
         }
+        .common-styles{
+          background-color: #161616;
+          }
       `}</style>
 
       <div className="home-container">
         <div className="spline-wrapper">
           <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
         </div>
-
         <div className="text-section">
           <Nav />
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
@@ -85,22 +88,13 @@ export default function Home() {
             Get the most reliable tech solutions, customized to your requirements built on trust without <br />paying a hefty price tag
           </h2>
         </div>
-
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-        <section className="test-section">
-          <h1>test</h1>
-        </section>
-
-      
       </div>
-        <JoinUsSection />
-        <Footer />
+      <div className='common-styles'>
+        <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
+      </div>
+      <JoinUsSection />
+      <Footer />
     </>
-    
+
   );
 }
