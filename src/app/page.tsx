@@ -5,7 +5,7 @@ import JoinUsSection from '../components/joinus';
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import { WorldMapDemo } from '@/components/ui/world-map-demo';
 import { CountiesCart } from '@/components/CountiesCart';
-import { HeroDemo1 } from '@/components/ui/demo';
+import { HomeGallery } from '@/components/HomeGallery';
 import Testimoinals from '../components/Testimonials';
 import './page.css';
 
@@ -24,6 +24,7 @@ export default function Home() {
         </div>
       </div>
       <AppleCardsCarouselDemo />
+      <HomeGallery/>
       <CountiesCart />
       <Testimoinals/>
       <JoinUsSection />
