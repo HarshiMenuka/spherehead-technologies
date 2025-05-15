@@ -1,5 +1,5 @@
 "use client"
-import JoinUsSection from '../components/joinus';
+import JoinUsSection from '../components/Joinus';
 import TechStack from "../components/ui/tech-stack";
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import { CountiesCart } from '@/components/CountiesCart';

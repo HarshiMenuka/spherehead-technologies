@@ -2,14 +2,7 @@ import React from "react";
 
 const techIcons = [
 
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
+
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
@@ -39,10 +32,6 @@ const techIcons = [
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/firebase.svg", alt: "Firebase", shadowColor: "rgba(104, 109, 224, 0.7)" },
   { src: "/images/tech-icons/cobit.svg", alt: "COBIT", shadowColor: "rgba(255, 255, 255, 0.3)" },
   { src: "/images/tech-icons/mongodb.svg", alt: "Mongo DB", shadowColor: "rgba(255, 0, 0, 0.7)" },
@@ -52,10 +41,6 @@ const techIcons = [
   { src: "/images/tech-icons/ai.svg", alt: "Adobe Illustrator", shadowColor: "rgba(104, 109, 224, 0.7)" },
   { src: "/images/tech-icons/shopify.svg", alt: "Shopify", shadowColor: "rgba(255, 255, 255, 0.3)" },
   { src: "/images/tech-icons/googlecloud.svg", alt: "G-Cloud", shadowColor: "rgba(255, 0, 0, 0.7)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
-  { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
   { src: "/images/tech-icons/blankimage.svg", alt: "", shadowColor: "rgba(255, 0, 0, 0)" },
@@ -100,7 +85,7 @@ const TechStack = () => {
     container: {
       textAlign: "center",
       padding: "2rem",
-      backgroundColor: "#161616",
+      backgroundColor: "#111",
       color: "white",
     },
     heading: {
@@ -154,14 +139,14 @@ const TechStack = () => {
         <div className="space-y-4">
 
           {/* Row 1: 10 icons */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
-            {techIcons.slice(0, 19).map((icon, index) => (
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-1 md:gap-4">
+            {techIcons.slice(0, 13).map((icon, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
-                  width: "48px",
-                  height: "48px",
+                  width: "75px",
+                  height: "75px",
                   boxShadow: `0 0 8px rgba(0, 0, 0, 0)`,
                   border: "1px solid rgba(135, 135, 135,0.1)",
                   borderRadius: "0.5rem",
@@ -173,21 +158,21 @@ const TechStack = () => {
                   (e.currentTarget.style.boxShadow = `0 0 8px rgba(0, 0, 0, 0)`)
                 }
               >
-                <img src={icon.src} alt={icon.alt} className="h-8 w-8" />
+                <img src={icon.src} alt={icon.alt} className="h-10 w-10" />
               </div>
             ))}
           </div>
 
 
           {/* Row 1: 10 icons */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
-            {techIcons.slice(19, 37).map((icon, index) => (
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-1 md:gap-4">
+            {techIcons.slice(13, 27).map((icon, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
-                  width: "48px",
-                  height: "48px",
+                  width: "75px",
+                  height: "75px",
                   boxShadow: `0 0 8px rgba(0, 0, 0, 0)`,
                   border: "1px solid rgba(135, 135, 135,0.1)",
                   borderRadius: "0.5rem",
@@ -206,13 +191,13 @@ const TechStack = () => {
 
           {/* Row 2: 9 icons */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
-            {techIcons.slice(37, 54).map((icon, index) => (
+            {techIcons.slice(27, 40).map((icon, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
-                  width: "48px",
-                  height: "48px",
+                  width: "75px",
+                  height: "75px",
                   boxShadow: `0 0 8px rgba(0, 0, 0, 0)`,
                   border: "1px solid rgba(135, 135, 135,0.1)",
                   borderRadius: "0.5rem",
@@ -224,20 +209,20 @@ const TechStack = () => {
                   (e.currentTarget.style.boxShadow = `0 0 8px rgba(0, 0, 0, 0)`)
                 }
               >
-                <img src={icon.src} alt={icon.alt} className="h-8 w-8" />
+                <img src={icon.src} alt={icon.alt} className="h-10 w-10" />
               </div>
             ))}
           </div>
 
           {/* Row 3: 8 icons */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
-            {techIcons.slice(54, 72).map((icon, index) => (
+            {techIcons.slice(40, 54).map((icon, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
-                  width: "48px",
-                  height: "48px",
+                  width: "75px",
+                  height: "75px",
                   boxShadow: `0 0 8px rgba(0, 0, 0, 0)`,
                   border: "1px solid rgba(135, 135, 135,0.1)",
                   borderRadius: "0.5rem",
@@ -249,19 +234,19 @@ const TechStack = () => {
                   (e.currentTarget.style.boxShadow = `0 0 8px rgba(0, 0, 0, 0)`)
                 }
               >
-                <img src={icon.src} alt={icon.alt} className="h-6 w-6" />
+                <img src={icon.src} alt={icon.alt} className="h-10 w-10" />
               </div>
             ))}
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
-            {techIcons.slice(72, 89).map((icon, index) => (
+            {techIcons.slice(54, 67).map((icon, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
-                  width: "48px",
-                  height: "48px",
+                  width: "75px",
+                  height: "75px",
                   boxShadow: `0 0 8px rgba(0, 0, 0, 0)`,
                   border: "1px solid rgba(135, 135, 135,0.1)",
                   borderRadius: "0.5rem",
@@ -273,7 +258,7 @@ const TechStack = () => {
                   (e.currentTarget.style.boxShadow = `0 0 8px rgba(0, 0, 0, 0)`)
                 }
               >
-                <img src={icon.src} alt={icon.alt} className="h-6 w-6" />
+                <img src={icon.src} alt={icon.alt} className="h-10 w-10" />
               </div>
             ))}
           </div>
