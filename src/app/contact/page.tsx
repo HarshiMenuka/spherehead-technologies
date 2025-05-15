@@ -19,6 +19,7 @@ function ContactSection() {
   }, []);
 
   return (
+    <div className="full">
     <>
       <section className="contact-section">
         <div className="contact-container">
@@ -58,6 +59,8 @@ function ContactSection() {
 
       <Joinus />
     </>
+   
+    </div>
   );
 }
 

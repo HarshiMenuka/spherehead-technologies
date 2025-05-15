@@ -3,28 +3,28 @@ import Head from "next/head";
 
 const testimonials = [
   {
-    text: "I've worked with several IT service providers over the years, but  out for their professionalism, and commitment to client satisfaction.",
+    text: "Spherehead is known for their professionalism, and commitment to satisfaction.",
     name: "Dinithi Fernando",
     role: "Business Owner",
     date: "08/07/2024",
     avatar: "/images/user1.jpg",
   },
   {
-    text: "Spherehead delivered our project on time and exceeded our expectations. Their team is knowledgeable and always ready to help.",
+    text: "Spherehead delivered our project on time and Their team is always ready to help.",
     name: "Alex Kim",
     role: "Startup Founder",
     date: "07/15/2024",
     avatar: "/images/user2.jpg",
   },
   {
-    text: "The support and dedication from Spherehead have been outstanding. I highly recommend them for any IT needs.",
+    text: "The support from Spherehead have been outstanding and recommend them for any IT needs.",
     name: "Priya Singh",
     role: "CTO, FinTech",
     date: "06/30/2024",
     avatar: "/images/user3.jpg",
   },
   {
-    text: "Spherehead's creative solutions helped us scale our business. Their team is always responsive and professional.",
+    text: "Spherehead helped us scale our business. Their team is always responsive and professional.",
     name: "Michael Chen",
     role: "Product Manager",
     date: "05/22/2024",
