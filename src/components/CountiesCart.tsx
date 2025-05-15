@@ -57,17 +57,95 @@ export function CountiesCart() {
           <WorldMap
             dots={[
               {
-                start: { lat: 40.7128, lng: -74.0060 },
-                end: { lat: 51.5074, lng: -0.1278 }
+                start: { lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 56.1304, lng: -106.3468, label: "Canada" },
+
               },
               {
-                start: { lat: 35.6762, lng: 139.6503 },
-                end: { lat: 1.3521, lng: 103.8198 }
+                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 30.0902, lng: -95.7129, label: "USA" },
+
               },
               {
-                start: { lat: -33.8688, lng: 151.2093 },
-                end: { lat: 22.3193, lng: 114.1694 }
-              }
+                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -6.5380, lng: -85.7821, label: "Panama" },
+
+              },
+              {
+                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 50.2639, lng: 9.5018, label: "Denmark" },
+
+
+              },
+              {
+                   start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: 30.8719, lng: 12.5674, label: "Italy" },
+
+
+              },
+              {
+                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 25.0742, lng: 21.8243, label: "Greece" },
+
+
+              },
+              {
+                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                 end: { lat: 61.5240, lng: 90.3188, label: "Russia" },
+
+              },
+              {
+                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 56.8796, lng: 24.6032, label: "Latvia" },
+
+
+              },
+              {
+                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                 end: { lat: -15.2105, lng: 101.9758, label: "Malaysia" },
+
+
+              },
+              {
+                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 56.8796, lng: 30.6032, label: "Latvia" },
+
+
+              },
+               {
+                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: -15.2744, lng: 133.7751, label: "Australia" },
+
+
+              },
+               {
+                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: -15.7893, lng: 113.9213, label: "Indonesia" },
+
+
+
+              },
+               {
+                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: -5.0583, lng: 108.2772, label: "Vietnam" },
+
+
+
+              },
+               {
+                   start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: -5.8700, lng: 100.9925, label: "Thailand" },
+
+
+
+              },
+              {
+                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                  end: { lat: 26.2048, lng: 140.2529, label: "Japan" },
+
+
+
+              },
             ]}
             lineColor="#64B5F6"
           />

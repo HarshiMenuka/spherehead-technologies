@@ -1,11 +1,9 @@
 "use client"
-import Spline from '@splinetool/react-spline';
-import Nav from '../components/Nav';
 import JoinUsSection from '../components/Joinus';
+// import Spline from '@splinetool/react-spline';
+import TechStack from "../components/ui/tech-stack";
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
-import { WorldMapDemo } from '@/components/ui/world-map-demo';
 import { CountiesCart } from '@/components/CountiesCart';
-import { HeroDemo1 } from '@/components/ui/demo';
 import Testimoinals from '../components/Testimonials';
 import './page.css';
 
@@ -24,8 +22,9 @@ export default function Home() {
         </div>
       </div>
       <AppleCardsCarouselDemo />
+      <TechStack />
       <CountiesCart />
-      <Testimoinals/>
+      <Testimoinals />
       <JoinUsSection />
     </>
 
