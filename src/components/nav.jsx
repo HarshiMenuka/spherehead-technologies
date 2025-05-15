@@ -164,7 +164,7 @@ function Nav() {
 
         .contact-btn {
           background: linear-gradient(to right, #96bdd9, #629dc7);
-          border-radius: 99px;
+          border-radius: 12px;
           color: black;
           padding: 0.4rem 1rem;
           transition: background 0.3s ease, transform 0.3s ease;

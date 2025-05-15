@@ -131,16 +131,41 @@ export default function Testimonials() {
   };
 
   return (
+   
     <>
+    <div className="w-full bg-[#111] text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <p className="text-[#64B5F6] text-sm mb-2">Counties</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-[60px]">
+                What our Clients <br /> say about us
+              </h2>
+              <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+    
+    
+          
+    
+    
+           
+           
+          </div>
+        </div>
       <div
         className="testimonials-scroll-wrapper"
         ref={scrollRef}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+         onMouseLeave={handleMouseLeave}
       >
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
         </Head>
+
+        
         <div className="testimonials-row">
           {testimonials.map((t, idx) => (
             <div className="testimonial-card" key={idx}>
