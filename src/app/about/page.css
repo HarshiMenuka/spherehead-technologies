@@ -1,0 +1,52 @@
+/* styles/about-hero.css */
+
+
+
+.about-hero-container {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 2rem;
+  padding-top: 10rem;
+}
+
+.about-hero-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-hero-title h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.about-hero-title p {
+  font-size: 1.25rem;
+  color: #d1d5db; /* Tailwind gray-300 equivalent */
+}
+
+.about-hero-placeholder {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder-box {
+  background-color: #4b5563; /* Tailwind gray-700 equivalent */
+  height: 10rem;
+  width: 100%;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+}
+
+.about-hero-description {
+  text-align: justify;
+  color: #d1d5db; /* Tailwind gray-300 equivalent */
+  font-size: 1.120rem;
+  line-height: 1.5;
+  max-width: 947px;
+  margin: 0 auto;
+}
