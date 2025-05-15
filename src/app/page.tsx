@@ -1,5 +1,6 @@
 "use client"
 import JoinUsSection from '../components/Joinus';
+// import Spline from '@splinetool/react-spline';
 import TechStack from "../components/ui/tech-stack";
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import { CountiesCart } from '@/components/CountiesCart';

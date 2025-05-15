@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.contact-section {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+}
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background: none;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 10rem;
+}
+.contact-image-col {
+  flex: 1 1 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact-image {
+  width: 100%;
+  max-width: 580px;
+  min-height: 715px; 
+  border-radius: 18px;
+  object-fit: cover;
+  background: #e5e7eb;
+  box-shadow: 0 2px 16px 0 #0002;
+}
+.contact-content-col {
+  flex: 1.2 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact-content {
+  width: 100%;
+  padding: 0 2.5rem 0 2rem; 
+}
+.contact-label {
+  color: #60a5fa;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.contact-title {
+  font-size: 3rem;
+  font-weight: 400; /* ensure only 400 is set */
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-desc {
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.contact-form {
+  background: #232324;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 2px 16px 0 #0002;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 1.5rem;
+}
+.contact-form-title {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 400; 
+  font-family: 'Poppins', sans-serif;
+}
+.contact-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #b2b2b2;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.contact-input:focus {
+  border-color: #60a5fa;
+}
+.contact-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contact-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.contact-submit {
+  width: 60%;
+  min-width: 160px;
+  max-width: 180px;
+  display: block;
+  margin: 1rem auto 0 auto;
+  background: linear-gradient(to right, #96BDD9, #629DC7);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.contact-submit:hover {
+  background: linear-gradient(to right, #88b2d1, #4d8bb8);
+}
+
+@media (max-width: 1000px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .contact-image-col, .contact-content-col {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-image {
+    max-width: 100%;
+    min-height: 220px;
+    margin-bottom: 1rem;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+  .contact-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-form {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .contact-section {
+    padding: 0 0.5rem;
+  }
+  .contact-submit {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+/* --- JoinUsSection Component Styles --- */
+.joinus-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%,rgba(98, 157, 199, 0.77) 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  max-width: 1200px;
+  width: 100%; 
+  font-family: 'Poppins', sans-serif;
+}
+.joinus-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.joinus-description {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.joinus-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #96BDD9, #629DC7 );
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.joinus-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.joinus-button-arrow {
+  margin-left: 0.75rem;
+}
+@media (max-width: 768px) {
+  .joinus-heading {
+    font-size: 2.5rem;
+  }
+  .joinus-description {
+    font-size: 1.125rem;
+  }
+}
+.joinus-container {
+  background-color: #1e1e1e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
