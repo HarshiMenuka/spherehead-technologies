@@ -14,19 +14,21 @@ const HomeGallery = () => {
   const [showText, setShowText] = useState(false);
 
   useEffect(() => {
-    console.log(window.scrollY)
-    console.log(window.innerHeight)
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      // Show text after scrolling 25% of the viewport height
-      setShowText(scrollPosition ==windowHeight*2);
-      //  windowHeight * 0.55
-      // 1400
+      if (scrollPosition > windowHeight * 2.1) {
+        setShowText(true);
+      } else {
+        setShowText(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -46,26 +48,21 @@ const HomeGallery = () => {
         ))}
       </BentoGrid>
 
-      <div className={`sticky top-0 left-0 z-10 h-screen w-full transition-opacity duration-700 ${showText ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`sticky top-0 left-0 z-10 h-screen w-full ${showText ? 'opacity-100' : 'opacity-0'}`}>
         <ContainerScale className="flex h-full items-center justify-center">
           <div className="max-w-2xl px-4 text-center">
-            <h1 className="text-5xl font-bold tracking-tighter text-white md:text-6xl">
+            <h1 className="pt-18 text-4xl font-bold tracking-tighter text-white md:text-6xl">
               Our Portfolio speaks for itself
             </h1>
             <p className="mx-auto my-6 max-w-xl text-sm text-gray-300 md:text-base">
               We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
             </p>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center gap-4 w-full">
               <Button className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
                 Get Started
               </Button>
-              <Button
-                variant="link"
-                className="bg-transparent px-4 py-2 font-medium text-white hover:text-gray-300"
-              >
-                Learn more
-              </Button>
             </div>
+
           </div>
         </ContainerScale>
       </div>
