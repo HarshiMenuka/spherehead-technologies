@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './button';
 
+
 const Landing = () => {
   const scrollToGallery = () => {
     const gallerySection = document.getElementById('hero-gallery');
