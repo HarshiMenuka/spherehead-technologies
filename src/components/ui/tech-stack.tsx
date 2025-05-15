@@ -1,5 +1,5 @@
 import React from "react";
-
+import SectionHeader from "../sectionheader";
 const techIcons = [
 
 
@@ -125,14 +125,13 @@ const TechStack = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.subHeading}>Tech Stack</h2>
-      <h3 style={styles.heading}>Powering Innovation<br></br>with the Best Tools</h3>
-      <p style={styles.paragraph}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+      <section className="bg-[#111] pt-[72px]">
+              <SectionHeader
+                overline="Tech Stack"
+                title="Powering Innovation with the Best Tools"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              />
+            </section>
 
 
       <div style={styles.iconContainer}>

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import SectionHeader from '../components/sectionheader';
 import Head from "next/head";
 
 const testimonials = [
@@ -133,21 +134,15 @@ export default function Testimonials() {
   return (
    
     <>
-    <div className="w-full bg-[#111] text-white py-[72px]">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <p className="text-[#64B5F6] text-sm mb-2">Testimonial</p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-[60px]">
-                What our Clients <br /> say about us
-              </h2>
-              <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </div>
- 
-          </div>
+    <div className="w-full bg-[#111] text-white">
+           <section className="bg-[#111] pt-[72px]">
+                        <SectionHeader
+                          overline="Testimonials"
+                          title="What our Clients say about us"
+                          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        />
+                      </section>
+          
         </div>
       <div
         className="testimonials-scroll-wrapper"

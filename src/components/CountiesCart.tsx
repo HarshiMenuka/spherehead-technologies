@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { WorldMap } from '@/components/ui/world-map';
+import SectionHeader from './sectionheader';
 
 const stats = [
   {
@@ -27,16 +28,13 @@ export function CountiesCart() {
     <div className="w-full bg-[#111] text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ">
         {/* Header */}
-        <div className="text-center mb-12 py-[72px]">
-          <p className="text-[#64B5F6] text-sm mb-2">Countries</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Our Global Reach
-          </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam
-          </p>
-        </div>
+        <section className="bg-[#111] pt-[72px]">
+                <SectionHeader
+                  overline="Counties"
+                  title="Our Global Reach"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+              </section>
 
         {/* Stats Grid */}
        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-[-50px] mx-12 md:mx-32">
