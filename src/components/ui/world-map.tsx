@@ -49,15 +49,15 @@ export function WorldMap({
   return (
     <div
       ref={ref}
-      className="w-full aspect-[2/1] bg-[#111] rounded-lg relative font-sans overflow-hidden"
+      className="w-full max-w-[1200px] mx-auto aspect-[2/1] bg-[#111] rounded-lg relative font-sans overflow-hidden"
     >
       {/* 🗺️ Map SVG Image */}
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full pointer-events-none select-none z-10 relative"
+        className="h-full w-full object-cover object-center pointer-events-none select-none z-10 relative"
         alt="world map"
-        height={495}
-        width={1056}
+        height="100%"
+        width="100%"
         draggable={false}
       />
 
@@ -66,6 +66,7 @@ export function WorldMap({
         ref={svgRef}
         viewBox="0 0 800 400"
         className="w-full h-full absolute inset-0 pointer-events-none select-none z-20"
+        preserveAspectRatio="xMidYMid meet"
       >
         <defs>
           <linearGradient id="path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
