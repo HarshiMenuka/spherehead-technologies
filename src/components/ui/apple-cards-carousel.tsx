@@ -1,10 +1,6 @@
 "use client";
-import React, { JSX, useEffect, useRef, useState } from "react";
+import React, { JSX } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
-import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
-import { IconDeviceMobile, IconCode, IconWorld, IconServer } from "@tabler/icons-react";
-
 interface CarouselProps {
   items: JSX.Element[];
 }
@@ -40,7 +36,7 @@ export const Carousel = ({ items }: CarouselProps) => {
     }
   };
 
- return (
+  return (
     <div className="relative w-full mt-8 md:mt-12">
       <div
         className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] py-6 md:py-10"
