@@ -295,7 +295,7 @@ function Nav() {
         </div>
 
         <div className="nav-right">
-          <Link href="/" className="contact-btn">
+          <Link href="/contact" className="contact-btn">
             Contact Us
           </Link>
           <div className={`hamburger ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>

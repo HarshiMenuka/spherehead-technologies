@@ -1,7 +1,7 @@
 "use client"
 import Spline from '@splinetool/react-spline';
 import Nav from '../components/Nav';
-import JoinUsSection from '../components/joinus';
+import JoinUsSection from '../components/Joinus';
 import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import { WorldMapDemo } from '@/components/ui/world-map-demo';
 import { CountiesCart } from '@/components/CountiesCart';
