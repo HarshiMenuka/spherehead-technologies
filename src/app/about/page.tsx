@@ -3,6 +3,10 @@ import React from 'react';
 import TeamProfile from '../../components/ui/teamprofile';
 import './page.css';
 
+import SectionHeader from "@/components/sectionheader";
+import AboutHero from "@/components/ui/about-hero";
+import { AboutCount } from "@/components/ui/aboout-counts";
+
 const teamMembers = [
   {
     name: "John Smith",
@@ -41,8 +45,11 @@ export function FoundersMessage() {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#111] py-20">
+      {/* Founder Section */}
       <FoundersMessage />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+
+      {/* Team Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center mt-16">
         {teamMembers.map((member, index) => (
           <TeamProfile
             key={index}
@@ -55,6 +62,37 @@ export default function AboutPage() {
             instagramLink={member.instagramLink}
           />
         ))}
+      </div>
+
+      {/* About Hero Section */}
+      <div className="about-hero-container mt-20">
+        <SectionHeader
+          overline=""
+          title="We Create Solution for Your Business"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+
+        <div className="mt-10">
+          <AboutHero />
+        </div>
+
+        {/* Global Success Section */}
+        <SectionHeader
+          overline=""
+          title="Our Global Success"
+          description=""
+        />
+
+        <div className="mt-10">
+          <AboutCount />
+        </div>
+
+        {/* Meet the Team Header */}
+        <SectionHeader
+          overline=""
+          title="Meet Our Team"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        />
       </div>
     </div>
   );
