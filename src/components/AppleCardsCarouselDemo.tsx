@@ -4,6 +4,8 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { IconDeviceMobile, IconCode, IconWorld, IconServer } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
+import SectionHeader from "../components/sectionheader";
+
 
 export function AppleCardsCarouselDemo() {
   const router = useRouter();

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { BentoCell, BentoGrid, ContainerScale, ContainerScroll } from "./ui/hero-gallery-scroll-animation"
 import { Button } from "./ui/button"
+import SectionHeader from "../components/sectionheader";
+
 
 const IMAGES = [
   "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -51,12 +53,13 @@ const HomeGallery = () => {
       <div className={`sticky top-0 left-0 z-10 h-screen w-full ${showText ? 'opacity-100' : 'opacity-0'}`}>
         <ContainerScale className="flex h-full items-center justify-center">
           <div className="max-w-2xl px-4 text-center">
-            <h1 className="pt-18 text-4xl font-bold tracking-tighter text-white md:text-6xl">
-              Our Portfolio speaks for itself
-            </h1>
-            <p className="mx-auto my-6 max-w-xl text-sm text-gray-300 md:text-base">
-              We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
-            </p>
+             <section className="bg-[#111] pt-[72px]">
+                          <SectionHeader
+                            overline="Tech Stack"
+                            title="Powering Innovation with the Best Tools"
+                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                          />
+                        </section>
             <div className="flex items-center justify-center gap-4 w-full">
               <Button className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
                 Get Started

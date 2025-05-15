@@ -125,7 +125,7 @@ const TechStack = () => {
 
   return (
     <div style={styles.container}>
-      <section className="bg-[#111] pt-[72px]">
+      <section>
               <SectionHeader
                 overline="Tech Stack"
                 title="Powering Innovation with the Best Tools"
