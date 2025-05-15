@@ -143,7 +143,7 @@ const TechStack = () => {
             {techIcons.slice(0, 13).map((icon, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
+                className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
                   width: "75px",
                   height: "75px",
@@ -169,7 +169,7 @@ const TechStack = () => {
             {techIcons.slice(13, 27).map((icon, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
+                className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
                   width: "75px",
                   height: "75px",
@@ -194,7 +194,7 @@ const TechStack = () => {
             {techIcons.slice(27, 40).map((icon, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
+                className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
                   width: "75px",
                   height: "75px",
@@ -219,7 +219,7 @@ const TechStack = () => {
             {techIcons.slice(40, 54).map((icon, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
+                className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
                   width: "75px",
                   height: "75px",
@@ -243,7 +243,7 @@ const TechStack = () => {
             {techIcons.slice(54, 67).map((icon, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center bg-[#1F1F1F] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
+                className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
                 style={{
                   width: "75px",
                   height: "75px",
