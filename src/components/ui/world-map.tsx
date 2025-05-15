@@ -22,7 +22,7 @@ export function WorldMap({
   const map = new DottedMap({ height: 100, grid: "diagonal" });
 
   const { theme } = useTheme();
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.01 });
 
   const svgMap = map.getSVG({
     radius: 0.22,
