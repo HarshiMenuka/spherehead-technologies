@@ -1,15 +1,23 @@
 "use client"
+import React from "react";
+import Whyservices from '../../components/why';
+import SectionHeader from '../../components/sectionheader';
 
 export default function ServicePage() {
-  return (
-    <div className="min-h-screen bg-[#111] text-white py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Our Services</h1>
-        <p className="text-gray-300 text-lg mb-12">
-          Discover how we can help transform your business with our comprehensive range of services.
-        </p>
-        {/* Add more content here */}
-      </div>
-    </div>
+ return (
+    <main>
+      {/* You can add a Services Header or Banner here */}
+      <Whyservices />
+
+
+      <>
+      <SectionHeader
+        overline="Our Services"
+        title="Comprehensive Solutions for Your Business Needs"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      />
+    </>
+      {/* Add other components or sections for your services page here */}
+    </main>
   );
-} 
+}
