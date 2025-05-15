@@ -3,46 +3,46 @@ import Head from "next/head";
 
 const testimonials = [
   {
-    text: "I've worked with several IT service providers over the years, but Spherehead stands out for their professionalism, technical expertise, and commitment to client satisfaction.",
+    text: "I've worked with several IT service providers over the years, but  out for their professionalism, and commitment to client satisfaction.",
     name: "Dinithi Fernando",
     role: "Business Owner",
     date: "08/07/2024",
-    avatar: "/images/avatar1.jpg",
+    avatar: "/images/user1.jpg",
   },
   {
     text: "Spherehead delivered our project on time and exceeded our expectations. Their team is knowledgeable and always ready to help.",
     name: "Alex Kim",
     role: "Startup Founder",
     date: "07/15/2024",
-    avatar: "/images/avatar2.jpg",
+    avatar: "/images/user2.jpg",
   },
   {
     text: "The support and dedication from Spherehead have been outstanding. I highly recommend them for any IT needs.",
     name: "Priya Singh",
     role: "CTO, FinTech",
     date: "06/30/2024",
-    avatar: "/images/avatar3.jpg",
+    avatar: "/images/user3.jpg",
   },
   {
     text: "Spherehead's creative solutions helped us scale our business. Their team is always responsive and professional.",
     name: "Michael Chen",
     role: "Product Manager",
     date: "05/22/2024",
-    avatar: "/images/avatar4.jpg",
+    avatar: "/images/user4.jpg",
   },
   {
     text: "We appreciate Spherehead's attention to detail and commitment to quality. Highly recommended!",
     name: "Sara Lopez",
     role: "Marketing Lead",
     date: "04/10/2024",
-    avatar: "/images/avatar5.jpg",
+    avatar: "/images/user5.jpg",
   },
   {
     text: "Spherehead is a reliable partner for all our IT needs. Their expertise is unmatched.",
     name: "John Smith",
     role: "Operations Director",
     date: "03/18/2024",
-    avatar: "/images/avatar6.jpg",
+    avatar: "/images/user6.jpg",
   },
 ];
 

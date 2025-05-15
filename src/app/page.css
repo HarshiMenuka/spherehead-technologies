@@ -81,8 +81,8 @@
   color: #fff;
   border-radius: 18px;
   border: 1px solid #b2b2b2;
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 450px;
+  max-width: 450px;
   padding: 16px 20px 16px 20px;
 
   display: flex;
@@ -91,22 +91,22 @@
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  height: 260px;
+  height: 240px;
 }
 .quote-icon {
   font-family: 'Playfair Display', serif;
-  font-size: 150px;
+  font-size: 110px;
   color: #fff;
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 18px;
   margin: 0;
   line-height: 1;
   padding: 0;
 }
 .testimonial-text {
-  margin-top: 80px;
-  font-size: 1.05rem;
+  margin-top: 60px;
+  font-size: 1rem;
   margin-bottom: 1.2rem;
   line-height: 1.5;
   color: #fff;
@@ -117,11 +117,12 @@
   gap: 1rem;
 }
 .testimonial-avatar {
-  width: 48px;
-  height: 48px;
+  width: 40;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
+  
 }
 .testimonial-name {
   font-size: 1rem;
