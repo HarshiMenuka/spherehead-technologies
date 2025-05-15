@@ -131,72 +131,85 @@ export default function Testimonials() {
   };
 
   return (
-   
     <>
-    <div className="w-full bg-[#111] text-white py-[72px]">
-          <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <p className="text-[#64B5F6] text-sm mb-2">Testimonial</p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-[60px]">
-                What our Clients <br /> say about us
-              </h2>
-              <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </div>
- 
+      <div className="w-full bg-[#111] text-white py-8 sm:py-12 md:py-16 lg:py-[72px]">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <p className="text-[#64B5F6] text-xs sm:text-sm mb-2">Testimonial</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight sm:leading-[1.2] lg:leading-[60px]">
+              What our Clients <br className="hidden sm:block" /> say about us
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto text-xs sm:text-sm md:text-base px-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
           </div>
         </div>
+      </div>
+
       <div
-        className="testimonials-scroll-wrapper"
+        className="testimonials-scroll-wrapper overflow-hidden"
         ref={scrollRef}
         onMouseEnter={handleMouseEnter}
-         onMouseLeave={handleMouseLeave}
+        onMouseLeave={handleMouseLeave}
       >
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
         </Head>
 
-        
-        <div className="testimonials-row">
+        <div className="testimonials-row flex gap-6 py-8">
           {testimonials.map((t, idx) => (
-            <div className="testimonial-card" key={idx}>
-              <div className="quote-icon">“</div>
-              <div className="testimonial-text">{t.text}</div>
-              <div className="testimonial-footer">
-                <img src={t.avatar} alt={t.name} className="testimonial-avatar" />
+            <div 
+              className="testimonial-card flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] bg-white rounded-xl p-6 shadow-lg" 
+              key={idx}
+            >
+              <div className="quote-icon text-4xl text-[#64B5F6] font-serif mb-4">"</div>
+              <div className="testimonial-text text-sm sm:text-base text-gray-700 mb-6">{t.text}</div>
+              <div className="testimonial-footer flex items-center gap-4">
+                <img 
+                  src={t.avatar} 
+                  alt={t.name} 
+                  className="testimonial-avatar w-12 h-12 rounded-full object-cover"
+                />
                 <div>
-                  <div className="testimonial-name">
-                    <b>{t.name}</b>, <span className="testimonial-role">({t.role})</span>
+                  <div className="testimonial-name text-sm sm:text-base">
+                    <b>{t.name}</b>, <span className="testimonial-role text-gray-600">({t.role})</span>
                   </div>
-                  <div className="testimonial-date">{t.date}</div>
+                  <div className="testimonial-date text-xs text-gray-500">{t.date}</div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
       {/* Second carousel, scrolls to the right */}
       <div
-        className="testimonials-scroll-wrapper"
+        className="testimonials-scroll-wrapper overflow-hidden"
         ref={scrollRefRight}
         onMouseEnter={handleMouseEnterRight}
         onMouseLeave={handleMouseLeaveRight}
       >
-        <div className="testimonials-row">
+        <div className="testimonials-row flex gap-6 py-8">
           {testimonials.map((t, idx) => (
-            <div className="testimonial-card" key={"right-" + idx}>
-              <div className="quote-icon">“</div>
-              <div className="testimonial-text">{t.text}</div>
-              <div className="testimonial-footer">
-                <img src={t.avatar} alt={t.name} className="testimonial-avatar" />
+            <div 
+              className="testimonial-card flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] bg-white rounded-xl p-6 shadow-lg" 
+              key={"right-" + idx}
+            >
+              <div className="quote-icon text-4xl text-[#64B5F6] font-serif mb-4">"</div>
+              <div className="testimonial-text text-sm sm:text-base text-gray-700 mb-6">{t.text}</div>
+              <div className="testimonial-footer flex items-center gap-4">
+                <img 
+                  src={t.avatar} 
+                  alt={t.name} 
+                  className="testimonial-avatar w-12 h-12 rounded-full object-cover"
+                />
                 <div>
-                  <div className="testimonial-name">
-                    <b>{t.name}</b>, <span className="testimonial-role">({t.role})</span>
+                  <div className="testimonial-name text-sm sm:text-base">
+                    <b>{t.name}</b>, <span className="testimonial-role text-gray-600">({t.role})</span>
                   </div>
-                  <div className="testimonial-date">{t.date}</div>
+                  <div className="testimonial-date text-xs text-gray-500">{t.date}</div>
                 </div>
               </div>
             </div>
