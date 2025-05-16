@@ -19,7 +19,7 @@ function Pricing() {
         <div className="text-section">
           <h1 className="heading">Pick your type of Project</h1>
           <h2 className="subheading">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
           </h2>
         </div>
       </div>

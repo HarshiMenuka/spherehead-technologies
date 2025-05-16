@@ -1,11 +1,25 @@
 /* src/app/pricing/page.css */
 .home-container {
   position: relative; /* Set position to relative for absolute positioning of children */
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .spline-wrapper {
   width: 100%; /* Ensure the image takes full width */
   height: auto; /* Maintain aspect ratio */
+  max-height: 80vh; /* Optional: Limit the height to 80% of the viewport height */
+}
+
+.text-section {
+  position: absolute; /* Position it absolutely within the relative container */
+  top: 20%; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  color: white; /* Change text color for visibility */
+  text-align: center; /* Center text */
+  z-index: 10; /* Ensure it appears above the image */
+  padding: 0 20px; /* Add padding for smaller screens */
 }
 .heading {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -161,3 +175,25 @@
     font-size: 0.95rem;
   }
 }
+/* Responsive styles for the hero section */
+@media (max-width: 768px) {
+  .text-section {
+    padding: 0 16px;
+  }
+  
+  .heading {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    min-height: 100dvh;
+    height: auto;
+  }
+
+  .text-section {
+    padding: 48px 16px;
+  }
+}
+/* 161616 */
