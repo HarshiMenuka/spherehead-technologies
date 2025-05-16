@@ -86,11 +86,11 @@ function Nav() {
         <div className="nav-center">
           <ul className="nav-links">
             <li><Link href="/" className="nav-link">Home</Link></li>
-            <li><Link href="/" className="nav-link">About Us</Link></li>
+            <li><Link href="/about" className="nav-link">About Us</Link></li>
             <li><Link href="/service" className="nav-link">Services</Link></li>
-            <li><Link href="/" className="nav-link">Portfolio</Link></li>
-            <li><Link href="/" className="nav-link">Pricing</Link></li>
-            <li><Link href="/" className="nav-link">Blogs</Link></li>
+            <li><Link href="/portfolio" className="nav-link">Portfolio</Link></li>
+            <li><Link href="/pricing" className="nav-link">Pricing</Link></li>
+            <li><Link href="/blogs" className="nav-link">Blogs</Link></li>
           </ul>
         </div>
 
@@ -107,11 +107,11 @@ function Nav() {
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li><Link href="/" className="nav-link" onClick={toggleMenu}>Home</Link></li>
-          <li><Link href="/" className="nav-link" onClick={toggleMenu}>About Us</Link></li>
-          <li><Link href="/" className="nav-link" onClick={toggleMenu}>Services</Link></li>
-          <li><Link href="/" className="nav-link" onClick={toggleMenu}>Portfolio</Link></li>
-          <li><Link href="/" className="nav-link" onClick={toggleMenu}>Pricing</Link></li>
-          <li><Link href="/" className="nav-link" onClick={toggleMenu}>Blogs</Link></li>
+          <li><Link href="/about" className="nav-link" onClick={toggleMenu}>About Us</Link></li>
+          <li><Link href="/service" className="nav-link" onClick={toggleMenu}>Services</Link></li>
+          <li><Link href="/portfolio" className="nav-link" onClick={toggleMenu}>Portfolio</Link></li>
+          <li><Link href="/pricing" className="nav-link" onClick={toggleMenu}>Pricing</Link></li>
+          <li><Link href="/blogs" className="nav-link" onClick={toggleMenu}>Blogs</Link></li>
         </ul>
         <Link href="/contact" className="contact-btn" onClick={toggleMenu}>Contact Us</Link>
       </div>
