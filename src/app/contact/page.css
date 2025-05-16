@@ -2,7 +2,7 @@
 
 
 .full{
-  background-color: #1e1e1e;
+  background-color: #161616;
 }
 .contact-section {
   width: 100%;
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e1e;
+  background-color: #161616;
 }
 .contact-container {
   display: flex;
@@ -225,7 +225,7 @@
   }
 }
 .joinus-container {
-  background-color: #1E1E1E;
+  background-color: #161616;
   width: 100%;
   display: flex;
   justify-content: center;
