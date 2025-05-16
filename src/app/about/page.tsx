@@ -6,6 +6,8 @@ import './page.css';
 import SectionHeader from "@/components/sectionheader";
 import AboutHero from "@/components/ui/about-hero";
 import { AboutCount } from "@/components/ui/aboout-counts";
+import AboutFlip from '@/components/ui/aboutflip';
+import JoinUsSection from '@/components/Joinus';
 
 const teamMembers = [
   {
@@ -96,7 +98,13 @@ export default function AboutPage() {
         {/* Founder Section */}
       <FoundersMessage />
 
-   
+   <AboutFlip 
+  image="/images/user2.jpg"
+  description="Your description text here"
+  width="200px"
+  height="300px"
+/>
+<JoinUsSection />
     </div>
   );
 }
