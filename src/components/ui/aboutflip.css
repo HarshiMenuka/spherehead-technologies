@@ -1,7 +1,7 @@
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
-  margin: 20px;
+  margin: 0;
 }
 
 .flip-card-inner {
@@ -16,7 +16,6 @@
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  
 }
 
 .flip-card-front, .flip-card-back {
@@ -119,7 +118,7 @@
   }
 }
 .joinus-container {
-  background-color: rgb(0, 0, 0);
+  background-color: #161616;
   width: 100%;
   display: flex;
   justify-content: center;

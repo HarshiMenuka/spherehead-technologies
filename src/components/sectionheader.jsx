@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function SectionHeader({ overline, title, description, className = '' }) {
   return (
-    <section className={`relative bg-transparent text-white pb-[72px] ${className}`}>
+    <section className={`relative bg-transparent text-white ${className}`}>
       {/* Decorative side bars */}
       <div className="absolute inset-y-0 left-0 w-1 bg-[#111]" />
       <div className="absolute inset-y-0 right-0 w-1 bg-[#111]" />
