@@ -45,24 +45,7 @@ export function FoundersMessage() {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#111] py-20">
-      {/* Founder Section */}
-      <FoundersMessage />
-
-      {/* Team Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center mt-16">
-        {teamMembers.map((member, index) => (
-          <TeamProfile
-            key={index}
-            name={member.name}
-            position={member.position}
-            qualification={member.qualification}
-            image={member.image}
-            linkedinLink={member.linkedinLink}
-            facebookLink={member.facebookLink}
-            instagramLink={member.instagramLink}
-          />
-        ))}
-      </div>
+    
 
       {/* About Hero Section */}
       <div className="about-hero-container mt-20">
@@ -94,6 +77,26 @@ export default function AboutPage() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
       </div>
+         {/* Team Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center mt-16">
+        {teamMembers.map((member, index) => (
+          <TeamProfile
+            key={index}
+            name={member.name}
+            position={member.position}
+            qualification={member.qualification}
+            image={member.image}
+            linkedinLink={member.linkedinLink}
+            facebookLink={member.facebookLink}
+            instagramLink={member.instagramLink}
+          />
+        ))}
+      </div>
+
+        {/* Founder Section */}
+      <FoundersMessage />
+
+   
     </div>
   );
 }
