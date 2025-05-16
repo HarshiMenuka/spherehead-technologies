@@ -1,20 +1,23 @@
 import React from "react";
-
-
+import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <div className="">
-
-
-      {/* Placeholder Section */}
-      <div className="about-hero-placeholder">
-        <div className="placeholder-box"></div>
+    <div className="w-full">
+      {/* Hero Image Section */}
+      <div className="about-hero-image relative w-full max-w-6xl mx-auto h-[300px] mt-5">
+        <Image
+          src="/about/aboutHero.png"
+          alt="About Spherehead Technologies"
+          fill
+          className="object-cover rounded-lg"
+          priority
+        />
       </div>
 
       {/* Description Section */}
-      <div className="about-hero-description">
-        <p>
+      <div className="about-hero-description max-w-[90rem] mx-auto px-6 py-8">
+        <p className="text-lg text-gray-700 leading-relaxed">
           At Spherehead Technologies, we are more than just a software company
           — we are your digital growth partner. We specialize in crafting
           tailored solutions through Website Design & Development, Mobile

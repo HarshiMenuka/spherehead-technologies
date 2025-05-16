@@ -10,13 +10,13 @@ const JoinUs = lazy(() => import('../../components/Joinus'));
 function Portfolio() {
   return (
     <main className="bg-[#111] min-h-screen">
-      <Suspense fallback={<Loading size="large" />}>
+      {/* <Suspense fallback={<Loading size="large" />}>
         <HomeGallery />
       </Suspense>
       
       <Suspense fallback={<Loading size="large" fullScreen={false} />}>
-        <JoinUs />
-      </Suspense>
+        <JoinUs /> */}
+      {/* </Suspense> */}
     </main>
   );
 }
