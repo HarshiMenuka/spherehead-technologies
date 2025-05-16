@@ -2,6 +2,8 @@
 import React from 'react';
 import TeamProfile from '../../components/ui/teamprofile';
 import './page.css';
+import Image from 'next/image';
+import founderImage from './founder.png';
 
 import SectionHeader from "@/components/sectionheader";
 import AboutHero from "@/components/ui/about-hero";
@@ -77,7 +79,11 @@ export function FoundersMessage() {
         <div className="founder-left">
           <span className="founder-label">Founder</span>
           <h1 className="founder-title">Founder's<br />Message</h1>
-          <div className="founder-image-placeholder" />
+          <Image 
+            src={founderImage}
+            alt="Founder" 
+            className="w-[90%] h-[350px] rounded-[24px] mt-6 object-cover"
+          />
         </div>
         <div className="founder-right">
           <div className="founder-quote-mark">"</div>
