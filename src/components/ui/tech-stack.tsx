@@ -28,7 +28,10 @@ const TechStack = () => {
     },
   } as const;
 
-  // Split icons into rows with proper spacing
+  // Get all non-empty icons for mobile view
+  const allIcons = techIcons.filter(icon => icon.alt !== "");
+
+  // Split icons into rows with proper spacing for desktop
   const rows = [
     techIcons.slice(0, 13),                    // Top empty row
     techIcons.slice(13, 26),                   // First row: 2 empty + 10 icons + 1 empty
@@ -50,10 +53,16 @@ const TechStack = () => {
         commodo consequat.
       </p>
 
-      <div className="space-y-4">
+      {/* Desktop view */}
+      <div className="hidden md:block space-y-4">
         {rows.map((rowIcons, index) => (
           <TechIconsRow key={index} icons={rowIcons} />
         ))}
+      </div>
+
+      {/* Mobile view */}
+      <div className="md:hidden">
+        <TechIconsRow icons={allIcons} />
       </div>
     </div>
   );
