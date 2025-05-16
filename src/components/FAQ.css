@@ -1,0 +1,49 @@
+/* src/components/FAQ.css */
+.faq-container {
+  background-color: #161616; /* Set background color */
+  padding: 20px; /* Optional: Add some padding */
+}
+
+.faq-section {
+  margin: 20px auto; /* Center the section */
+  width: 400px; /* Set your desired fixed width */
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.faq-item {
+  margin-bottom: 10px; /* Space between items */
+  cursor: pointer;
+}
+
+.faq-item h3 {
+  color: #fff; /* Change to your preferred color */
+  display: flex;
+  justify-content: space-between; /* Aligns the arrow to the right */
+}
+
+.arrow {
+  margin-left: 10px; /* Space between question and arrow */
+}
+
+.answer {
+  max-height: 0; /* Start with no height */
+  overflow: hidden; /* Hide overflow */
+  transition: max-height 0.3s ease; /* Transition effect */
+  color: white; /* Change font color to white */
+  padding-top: .5rem;
+}
+
+.answer.active {
+  max-height: 100px; /* Set a max height for the expanded state */
+  transition: max-height 0.3s ease; /* Transition effect */
+}
+
+/* Align SectionHeader to the left */
+.section-header {
+  text-align: left; /* Align text to the left */
+}
+.description{
+    color: #fff;
+}
