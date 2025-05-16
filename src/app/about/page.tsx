@@ -226,7 +226,6 @@ export default function AboutPage() {
 
       {/* Founder Section */}
       <FoundersMessage />
-<ValueDriven />
 
       <AboutFlip
         image="/images/user2.jpg"
