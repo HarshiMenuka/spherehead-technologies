@@ -1,0 +1,289 @@
+
+.team-card {
+  position: relative;
+  width: 260px;
+  height: 320px;
+  background: #232324;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px 0 #0002;
+  transition: box-shadow 0.3s;
+  margin: 0 auto;
+}
+.team-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1);
+}
+.team-card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+}
+.team-card-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0,0,0,0) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  transition: background 0.4s cubic-bezier(.4,2,.6,1);
+  pointer-events: none;
+}
+.team-card-main {
+  width: 100%;
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1);
+  z-index: 2;
+}
+.team-card-name {
+  color: #fff;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  transition: color 0.3s;
+}
+.team-card-position {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #b2b2b2;
+  margin-bottom: 0.7rem;
+  transition: color 0.3s;
+}
+
+/* Hidden by default, shown on hover */
+.team-card-qualification-hover,
+.team-card-socials-hover {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+.team-card-qualification-hover {
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.team-card-socials-hover {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 0.5rem;
+}
+.team-card-socials-hover img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(1.5);
+  transition: filter 0.2s;
+}
+.team-card-socials-hover a:hover img {
+  filter: brightness(2.5) drop-shadow(0 0 4px #629DC7);
+}
+
+/* Hover effect */
+.team-card:hover .team-card-img {
+  transform: scale(1.05);
+}
+.team-card:hover .team-card-main {
+  transform: translateY(-60px);
+}
+.team-card:hover .team-card-qualification-hover,
+.team-card:hover .team-card-socials-hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition-delay: 0.1s;
+}
+
+.founder-section {
+  width: 100vw;
+  min-height: 100vh;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.founder-container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  max-width: 1400px;
+  min-height: 80vh;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.founder-left {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.founder-label {
+  color: #60a5fa;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.founder-title {
+  font-size: 3rem;
+  font-weight: 400; 
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.founder-image-placeholder {
+  width: 90%;
+  height: 350px;
+  background: #ddd;
+  border-radius: 24px;
+  margin-top: 1.5rem;
+}
+
+.founder-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  position: relative;
+}
+
+.founder-quote-mark {
+  color: #fff;
+  font-size: 5.5rem;
+  font-family: 'Playfair Display', serif;
+
+  margin-left: 1.5rem;
+}
+
+.founder-quote-mark-bottom {
+  align-self: flex-end;
+  margin-bottom: 0;
+  margin-right: 1.5rem;
+  font-size: 5.5rem;
+}
+
+.founder-message {
+  color: #fff;
+  font-size: 1.15rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.founder-message p {
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+  .founder-container {
+    flex-direction: column;
+    min-height: unset;
+    width: 98vw;
+    border: none;
+  }
+  .founder-left, .founder-right {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .founder-image-placeholder {
+    width: 100%;
+    height: 220px;
+  }
+  .founder-title {
+    font-size: 2.2rem;
+  }
+  .founder-message {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .founder-title {
+    font-size: 1.5rem;
+  }
+  .founder-image-placeholder {
+    height: 120px;
+  }
+  .founder-message {
+    font-size: 0.95rem;
+  }
+}
+
+/* styles/about-hero.css */
+
+
+
+.about-hero-container {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 2rem;
+  padding-top: 10rem;
+}
+
+.about-hero-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-hero-title h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.about-hero-title p {
+  font-size: 1.25rem;
+  color: #d1d5db; /* Tailwind gray-300 equivalent */
+}
+
+.about-hero-placeholder {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder-box {
+  background-color: #4b5563; /* Tailwind gray-700 equivalent */
+  height: 10rem;
+  width: 100%;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+}
+
+.about-hero-description {
+  text-align: justify;
+  color: #d1d5db; /* Tailwind gray-300 equivalent */
+  font-size: 1.120rem;
+  line-height: 1.5;
+  max-width: 947px;
+  margin: 0 auto;
+}
+
