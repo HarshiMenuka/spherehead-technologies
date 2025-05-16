@@ -236,6 +236,7 @@
 
 
 .about-hero-container {
+  background: #161616;
   color: #fff;
   /* padding-top: 10rem; */
 }
@@ -284,7 +285,7 @@
 
 .value-section-custom {
   width: 100vw;
-  background: #191919;
+  background: #161616;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,5 +443,13 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
   }
+}
+
+body, html {
+  background: #161616;
+}
+
+.min-h-screen {
+  background: #161616 !important;
 }
 

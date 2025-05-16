@@ -14,7 +14,7 @@ import JoinUsSection from '@/components/Joinus';
 const teamMembers = [
   {
     name: "John Smith",
-    position: "Chief Technology Officer",
+    position: "CTO",
     qualification: "MSc in Computer Science",
     university: "University of Colombo",
     image: "/images/user1.jpg",
@@ -226,13 +226,9 @@ export default function AboutPage() {
 
       {/* Founder Section */}
       <FoundersMessage />
+<ValueDriven />
 
-      <AboutFlip
-        image="/images/user2.jpg"
-        description="Your description text here"
-        width="200px"
-        height="300px"
-      />
+  
       <JoinUsSection />
     </div>
   );
