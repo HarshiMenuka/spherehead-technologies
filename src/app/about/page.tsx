@@ -27,17 +27,89 @@ export function FoundersMessage() {
       <div className="founder-container">
         <div className="founder-left">
           <span className="founder-label">Founder</span>
-          <h1 className="founder-title">Founder’s<br />Message</h1>
+          <h1 className="founder-title">Founder's<br />Message</h1>
           <div className="founder-image-placeholder" />
         </div>
         <div className="founder-right">
-          <div className="founder-quote-mark">“</div>
+          <div className="founder-quote-mark">"</div>
           <div className="founder-message">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div className="founder-quote-mark founder-quote-mark-bottom">”</div>
+          <div className="founder-quote-mark founder-quote-mark-bottom">"</div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ValueDriven() {
+  return (
+    <section className="value-section-custom">
+      <div className="value-content-custom">
+        
+        <div className="value-text-custom">
+          <span className="value-overline">Why</span>
+          <h1 className="value-title">We are value driven</h1>
+          <p className="value-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+          <div className="value-points-list">
+            <div className="value-point">
+              <img src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
+              <div>
+                <div className="value-point-title">Personalized Service</div>
+                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+              </div>
+            </div>
+            <div className="value-point">
+              <img src="/images/compass.svg" alt="Innovative Solutions" className="value-point-icon" />
+              <div>
+                <div className="value-point-title">Innovative Solutions</div>
+                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+              </div>
+            </div>
+            <div className="value-point">
+              <img src="/images/compass.svg" alt="Proven Track Record" className="value-point-icon" />
+              <div>
+                <div className="value-point-title">Proven Track Record</div>
+                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="value-flipcards-grid">
+          <div className="value-top">
+          <AboutFlip 
+            image="/images/user2.jpg"
+            description="Your description text here"
+            width="200px"
+            height="300px"
+          />
+          <AboutFlip 
+            image="/images/user3.jpg"
+            description="Your description text here"
+            width="320px"
+            height="320px"
+          />
+          </div>
+          <div className="value-bottom">
+            <AboutFlip 
+            image="/images/user1.jpg"
+            description="Your description text here"
+            width="200px"
+            height="300px"
+          />
+          <AboutFlip 
+            image="/images/user4.jpg"
+            description="Your description text here"
+            width="320px"
+            height="320px"
+          />
+          
+          </div>
         </div>
       </div>
     </section>
@@ -97,13 +169,8 @@ export default function AboutPage() {
 
         {/* Founder Section */}
       <FoundersMessage />
+<ValueDriven />
 
-   <AboutFlip 
-  image="/images/user2.jpg"
-  description="Your description text here"
-  width="200px"
-  height="300px"
-/>
 <JoinUsSection />
     </div>
   );
