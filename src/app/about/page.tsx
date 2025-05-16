@@ -8,6 +8,8 @@ import founderImage from './founder.png';
 import SectionHeader from "@/components/sectionheader";
 import AboutHero from "@/components/ui/about-hero";
 import { AboutCount } from "@/components/ui/aboout-counts";
+import AboutFlip from '@/components/ui/aboutflip';
+import JoinUsSection from '@/components/Joinus';
 
 const teamMembers = [
   {
@@ -79,9 +81,9 @@ export function FoundersMessage() {
         <div className="founder-left">
           <span className="founder-label">Founder</span>
           <h1 className="founder-title">Founder's<br />Message</h1>
-          <Image 
+          <Image
             src={founderImage}
-            alt="Founder" 
+            alt="Founder"
             className="w-[90%] h-[350px] rounded-[24px] mt-6 object-cover"
           />
         </div>
@@ -152,6 +154,14 @@ export default function AboutPage() {
 
       {/* Founder Section */}
       <FoundersMessage />
+
+      <AboutFlip
+        image="/images/user2.jpg"
+        description="Your description text here"
+        width="200px"
+        height="300px"
+      />
+      <JoinUsSection />
     </div>
   );
 }
