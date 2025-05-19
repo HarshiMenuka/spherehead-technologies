@@ -17,7 +17,7 @@ const AboutHero = () => {
 
       {/* Description Section */}
       <div className="about-hero-description max-w-[90rem] mx-auto px-6 py-8">
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <p className="text-lg  leading-relaxed text-white">
           At Spherehead Technologies, we are more than just a software company
           — we are your digital growth partner. We specialize in crafting
           tailored solutions through Website Design & Development, Mobile
