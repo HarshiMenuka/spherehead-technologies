@@ -9,7 +9,7 @@ const JoinUsSection = () => {
           <p className="joinus-description">
             Apply and join a team committed to making a difference with technology
           </p>
-          <a href="/join-us" className="joinus-button">
+          <a href="/contact" className="joinus-button">
             Join Us
             <span className="joinus-button-arrow">→</span>
           </a>

@@ -1,8 +1,8 @@
 :root {
   --cards: 6;
-  --cardHeight: 75vh;
+  --cardHeight: 45vh;
   --cardTopPadding: 1.5em;
-  --cardMargin: 4vw;
+  --cardMargin: 1.2em;
 }
 
 .cardsContainer {
@@ -12,9 +12,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(var(--cards), var(--cardHeight));
   gap: var(--cardMargin);
-  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  padding-bottom: var(--cardMargin);
   margin-bottom: var(--cardMargin);
-  margin-top: 2rem;
+  margin-top: var(--cardMargin);
 }
 
 .card {
@@ -48,8 +48,8 @@
 
 .cardBody {
   box-sizing: border-box;
-  padding: 30px;
-  border-radius: 24px;
+  padding: 20px;
+  border-radius: 16px;
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
   height: var(--cardHeight);
   display: flex;
@@ -59,12 +59,12 @@
 
 @media (max-width: 768px) {
   :root {
-    --cardHeight: 85vh;
-    --cardTopPadding: 1em;
+    --cardHeight: 55vh;
+    --cardTopPadding: 0.5em;
   }
   
   .cardBody {
-    padding: 20px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 10px;
   }
 }

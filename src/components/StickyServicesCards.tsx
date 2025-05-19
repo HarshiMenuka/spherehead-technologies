@@ -92,7 +92,7 @@ const StickyServicesCards = () => {
                   "bg-[#1a1a1a] border border-neutral-800 overflow-hidden"
                 )}
               >
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-5 mb-5">
                   <div
                     className={cn(
                       "flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full text-2xl",
@@ -106,11 +106,11 @@ const StickyServicesCards = () => {
                   </h3>
                 </div>
 
-                <p className="text-gray-300 mb-6">{service.description}</p>
+                <p className="text-gray-300 mb-5">{service.description}</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
                   <div className="md:col-span-1">
-                    <div className="h-40 md:h-48 rounded-lg overflow-hidden">
+                    <div className="h-28 md:h-32 rounded-lg overflow-hidden">
                       <img
                         src={service.image}
                         alt={service.title}
@@ -119,11 +119,11 @@ const StickyServicesCards = () => {
                     </div>
                   </div>
 
-                  <div className="md:col-span-2 space-y-4">
+                  <div className="md:col-span-2 space-y-5">
                     <h4 className="text-lg font-semibold text-white">
                       Key Features
                     </h4>
-                    <ul className="space-y-2">
+                    <ul className="space-y-5">
                       {[1, 2, 3].map((item) => (
                         <li key={item} className="flex items-start">
                           <span className="text-green-400 mr-2">✓</span>
