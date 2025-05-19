@@ -124,7 +124,7 @@ function ContactSection() {
         </section>
 
         <Suspense fallback={<Loading />}>
-          <Joinus />
+     
         </Suspense>
       </>
 
