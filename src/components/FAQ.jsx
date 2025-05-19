@@ -19,7 +19,7 @@ const FAQ = () => {
       question: "Do you offer customer support?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
-        {
+    {
       question: "What is your return policy?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
@@ -30,7 +30,7 @@ const FAQ = () => {
     {
       question: "Do you offer customer support?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },  
+    },
     // Add more FAQs as needed
   ];
 
@@ -39,15 +39,17 @@ const FAQ = () => {
   };
 
   return (
-    <div className="faq-container flex space-x-4">
-      <div className="w-1/2 p-4 ml-15">
+    <div className="faq-container flex flex-col md:flex-row space-x-0 md:space-x-4">
+      <div className="w-full md:w-1/2 pl-20">
         <div className="founder-left">
           <span className="founder-label">FAQ</span>
-          <h1 className="founder-title">Frequently asked <br/>questions</h1>
-          <div className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <h1 className="founder-title">Frequently asked <br />questions</h1>
+          <div className='description'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
         </div>
       </div>
-      <div className="faq-section w-1/2 pt-12">
+      <div className="faq-section w-full md:w-1/2 pt-0 md:pt-12"> {/* Adjusted padding */}
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item pb-2">
             <h3 onClick={() => toggleFAQ(index)}>
