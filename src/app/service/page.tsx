@@ -1,13 +1,13 @@
 "use client";
 import React, { Suspense } from "react";
-import Loading from '../../components/ui/loading';
-import Whyservices from '../../components/why';
-import SectionHeader from '../../components/sectionheader';
-import ServicesList from '../../components/ServicesList';
-import JoinUsSection from '../../components/Joinus';
-import Spline from '@splinetool/react-spline';
+import Loading from "../../components/ui/loading";
+import Whyservices from "../../components/why";
+import SectionHeader from "../../components/sectionheader";
+import StickyServicesCards from "../../components/StickyServicesCards";
+import JoinUsSection from "../../components/Joinus";
+import Spline from "@splinetool/react-spline";
 
-import '../page.css';
+import "../page.css";
 
 export default function ServicePage() {
   return (
@@ -15,7 +15,7 @@ export default function ServicePage() {
       {/* Section: Header Spacer */}
       <div className="relative w-full h-[100vh]">
         {/* Spline background */}
-        {/* <Suspense fallback={<Loading size="large" fullScreen={false} />}>
+        {/* <Suspense fallback={<Loading />}>
           <div className="absolute inset-0 z-0">
             <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
           </div>
@@ -32,29 +32,18 @@ export default function ServicePage() {
       </div>
 
       {/* Section: Why Services */}
-      <Suspense fallback={<Loading size="large" fullScreen={false} />}>
+      <Suspense fallback={<Loading />}>
         <section>
           <Whyservices />
         </section>
       </Suspense>
 
-      {/* Section: Services List Header */}
-      <section className="bg-[#111]">
-        <SectionHeader
-          overline="Our Services"
-          title="Comprehensive Solutions for Your Business Needs"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-      </section>
-
-      {/* Section: Services List Cards */}
-      <Suspense fallback={<Loading size="large" fullScreen={false} />}>
-        <section>
-          <ServicesList />
-        </section>
+      {/* Section: Sticky Card Services Display */}
+      <Suspense fallback={<Loading />}>
+        <StickyServicesCards />
       </Suspense>
 
-      <Suspense fallback={<Loading size="large" fullScreen={false} />}>
+      <Suspense fallback={<Loading />}>
         <section>
           <JoinUsSection />
         </section>
