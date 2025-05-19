@@ -85,9 +85,10 @@ const PricingPlans = () => {
                   </li>
                 </ul>
                 
-                <button className="w-full bg-[#96BDD9] text-white py-2 rounded hover:bg-[#7BA7C5] transition-colors text-sm">
-                  Let's Talk
-                </button>
+                <a href="/contact" className="w-full bg-[#96BDD9] text-white py-2 rounded hover:bg-[#7BA7C5] transition-colors text-sm text-center block">
+  Let's Talk
+</a>
+
               </div>
             );
           })}
