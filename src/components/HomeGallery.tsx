@@ -32,41 +32,43 @@ const HomeGallery = () => {
   }, []);
 
   return (
-    <ContainerScroll className="h-[350vh] bg-[#121212]">
-      <BentoGrid className="sticky left-0 top-0 z-0 h-screen w-full p-4">
-        {IMAGES.map((imageUrl, index) => (
-          <BentoCell
-            key={index}
-            className="overflow-hidden rounded-xl shadow-xl"
-          >
-            <img
-              className="size-full object-cover object-center"
-              src={imageUrl}
-              alt={`Gallery image ${index + 1}`}
-            />
-          </BentoCell>
-        ))}
-      </BentoGrid>
+    <div className="relative">
+      <ContainerScroll className="h-[350vh] bg-[#121212]">
+        <BentoGrid className="sticky left-0 top-0 z-0 h-screen w-full p-4">
+          {IMAGES.map((imageUrl, index) => (
+            <BentoCell
+              key={index}
+              className="overflow-hidden rounded-xl shadow-xl"
+            >
+              <img
+                className="size-full object-cover object-center"
+                src={imageUrl}
+                alt={`Gallery image ${index + 1}`}
+              />
+            </BentoCell>
+          ))}
+        </BentoGrid>
 
-      <div className={`sticky top-0 left-0 z-10 h-screen w-full ${showText ? 'opacity-100' : 'opacity-0'}`}>
-        <ContainerScale className="flex h-full items-center justify-center">
-          <div className="max-w-2xl px-4 text-center">
-            <h1 className="pt-18 text-4xl font-bold tracking-tighter text-white md:text-6xl">
-              Our Portfolio speaks for itself
-            </h1>
-            <p className="mx-auto my-6 max-w-xl text-sm text-gray-300 md:text-base">
-              We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
-            </p>
-            <div className="flex items-center justify-center gap-4 w-full">
-              <Button className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
-                Get Started
-              </Button>
+        <div className={`sticky top-0 left-0 z-10 h-screen w-full ${showText ? 'opacity-100' : 'opacity-0'}`}>
+          <ContainerScale className="flex h-full items-center justify-center">
+            <div className="max-w-2xl px-4 text-center">
+              <h1 className="pt-18 text-4xl font-bold tracking-tighter text-white md:text-6xl">
+                Our Portfolio speaks for itself
+              </h1>
+              <p className="mx-auto my-6 max-w-xl text-sm text-gray-300 md:text-base">
+                We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
+              </p>
+              <div className="flex items-center justify-center gap-4 w-full">
+                <Button className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
+                  Get Started
+                </Button>
+              </div>
+
             </div>
-
-          </div>
-        </ContainerScale>
-      </div>
-    </ContainerScroll>
+          </ContainerScale>
+        </div>
+      </ContainerScroll>
+    </div>
   )
 }
 

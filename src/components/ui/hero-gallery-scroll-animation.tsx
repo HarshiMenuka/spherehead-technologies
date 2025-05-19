@@ -72,6 +72,7 @@ const ContainerScroll = ({
       <div
         ref={scrollRef}
         className={cn("relative min-h-screen w-full", className)}
+        style={{ position: 'relative' }}
         {...props}
       >
         {children}

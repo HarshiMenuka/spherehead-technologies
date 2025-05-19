@@ -41,7 +41,7 @@ export default function Home() {
     <>
       <div className="home-container">
         <div className="spline-wrapper">
-        <Spline scene="/images/orb_copy/scene.splinecode" />
+          <Spline scene="/images/orb_copy/scene.splinecode" />
         </div>
         <div className="text-section">
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
@@ -54,16 +54,26 @@ export default function Home() {
       {/* First component loaded immediately */}
       <AppleCardsCarouselDemo />
 
-      {/* Other components lazy loaded */}
-      {/* <Suspense fallback={<Loading />}> */}
-      <>
+      {/* Other components lazy loaded with Suspense boundaries */}
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <TechStack />
+      </Suspense>
+      
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <HomeGallery />
+      </Suspense>
+      
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <CountiesCart />
+      </Suspense>
+      
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <Testimoinals />
+      </Suspense>
+      
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <JoinUsSection />
-      </>
-      {/* </Suspense> */}
+      </Suspense>
     </>
   );
 }

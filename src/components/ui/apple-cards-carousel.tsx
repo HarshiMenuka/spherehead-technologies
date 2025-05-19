@@ -283,6 +283,7 @@ export const BlurImage = ({
   className,
   alt,
   fill,
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
   ...rest
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
@@ -293,9 +294,10 @@ export const BlurImage = ({
         isLoading ? "scale-110 blur-2xl grayscale" : "scale-100 blur-0 grayscale-0",
         className,
       )}
-      onLoadingComplete={() => setLoading(false)}
+      onLoad={() => setLoading(false)}
       src={src}
       fill={fill}
+      sizes={sizes}
       quality={90}
       priority={false}
       alt={alt || "Background image"}
