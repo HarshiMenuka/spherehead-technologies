@@ -18,7 +18,7 @@ const Portfolio = () => {
       <section className="relative z-10 pt-[150px] text-left px-4">
         <SectionHeader
           overline=""
-          title="We Create Solutions for Your Business"
+          title={<span className="text-[3rem] font-normal">We Create Solution for Your Business</span>}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       </section>
