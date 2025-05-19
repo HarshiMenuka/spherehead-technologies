@@ -5,8 +5,8 @@
 }
 
 .faq-section {
-  margin: 20px auto; /* Center the section */
-  width: 400px; /* Set your desired fixed width */
+  margin: 0.5rem auto; /* Center the section */
+  width: 600px; /* Set your desired fixed width */
   max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack items vertically */
