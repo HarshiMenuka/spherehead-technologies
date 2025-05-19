@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BentoCell, BentoGrid, ContainerScale, ContainerScroll } from "./ui/hero-gallery-scroll-animation"
 import { Button } from "./ui/button"
+import { useRouter } from "next/navigation";
 
 const IMAGES = [
   "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -12,12 +13,22 @@ const IMAGES = [
 
 const HomeGallery = () => {
   const [showText, setShowText] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      if (scrollPosition > windowHeight * 3.2) {
+      const screenWidth = window.innerWidth;
+      let triggerPoint;
+
+      if (screenWidth < 768) {
+        triggerPoint = windowHeight * 3.8;
+      } else {
+        // For larger screens
+        triggerPoint = windowHeight * 3.2;
+      }
+
+      if (scrollPosition > triggerPoint) {
         setShowText(true);
       } else {
         setShowText(false);
@@ -59,7 +70,7 @@ const HomeGallery = () => {
                 We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
               </p>
               <div className="flex items-center justify-center gap-4 w-full">
-                <Button className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
+                <Button onClick={() => router.push('/contact')} className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
                   Get Started
                 </Button>
               </div>
