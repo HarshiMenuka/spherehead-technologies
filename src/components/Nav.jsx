@@ -119,7 +119,7 @@ function Nav() {
     { href: "/service", text: "Services" },
     { href: "/portfolio", text: "Portfolio" },
     { href: "/pricing", text: "Pricing" },
-    { href: "/blogs", text: "Blogs" },
+    // { href: "/blogs", text: "Blogs" },
   ], []);
 
   // Measure performance in development

@@ -300,7 +300,7 @@ const Footer = () => {
               <li><a href="/service">Services</a></li>
               <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="/pricing">Pricing</a></li>
-              <li><a href="/blogs">Blogs</a></li>
+              {/* <li><a href="/blogs">Blogs</a></li> */}
             </ul>
           </div>
 
