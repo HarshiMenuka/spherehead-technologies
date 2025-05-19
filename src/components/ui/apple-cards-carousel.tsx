@@ -170,111 +170,35 @@ export const Card = ({
   index: number;
   layout?: boolean;
 }) => {
-  const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null!);
   const { onCardClose, currentIndex } = useContext(CarouselContext);
 
-  useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        handleClose();
-      }
-    }
-
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
-
-  useOutsideClick(containerRef, () => handleClose());
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
-  };
-
   return (
-    <>
-      <AnimatePresence>
-        {open && (
-          <div className="fixed inset-0 z-50 h-screen overflow-auto">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg"
-            />
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              ref={containerRef}
-              layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
-            >
-              <button
-                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
-                onClick={handleClose}
-              >
-                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
-              </button>
-              <motion.p
-                layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
-              >
-                {card.category}
-              </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
-              >
-                {card.title}
-              </motion.p>
-              <div className="py-10">{card.content}</div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-      <motion.button
-        layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
-        className="relative z-10 flex h-[420px] w-[calc(100vw-32px)] flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 sm:h-60 sm:w-44 md:h-[28rem] md:w-72 dark:bg-neutral-900 mx-auto sm:mx-0"
-      >
-        <div className="pointer-events-none absolute inset-0 z-30">
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+    <div
+      className="relative z-10 flex h-[420px] w-[calc(100vw-32px)] flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 sm:h-60 sm:w-44 md:h-[28rem] md:w-72 dark:bg-neutral-900 mx-auto sm:mx-0"
+    >
+      <div className="pointer-events-none absolute inset-0 z-30">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+      </div>
+      <div className="relative z-40 flex h-full w-full flex-col justify-start px-4 pt-10 md:px-6 md:pt-14">
+        <div className="w-full">
+          <p className="text-left font-sans text-lg font-semibold [text-wrap:balance] text-white md:text-2xl mb-4 md:mb-6">
+            {card.title}
+          </p>
+          <p className="text-sm text-gray-200 md:text-base text-left">
+            {card.description}
+          </p>
         </div>
-        <div className="relative z-40 flex h-full w-full flex-col justify-start px-4 pt-10 md:px-6 md:pt-14">
-          <div className="w-full">
-            <motion.p
-              layoutId={layout ? `title-${card.title}` : undefined}
-              className="text-left font-sans text-lg font-semibold [text-wrap:balance] text-white md:text-2xl mb-4 md:mb-6"
-            >
-              {card.title}
-            </motion.p>
-            <p className="text-sm text-gray-200 md:text-base text-left">
-              {card.description}
-            </p>
-          </div>
-        </div>
-        <BlurImage
-          src={card.src}
-          alt={card.title}
-          fill
-          className="absolute inset-0 z-10 object-cover transition-transform duration-500 hover:scale-105"
-        />
-      </motion.button>
-    </>
+      </div>
+      <BlurImage
+        src={card.src}
+        alt={card.title}
+        fill
+        className="absolute inset-0 z-10 object-cover"
+      />
+    </div>
   );
 };
 

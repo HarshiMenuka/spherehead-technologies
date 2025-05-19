@@ -39,7 +39,8 @@ export function AppleCardsCarouselDemo() {
           </p>
           <button 
             onClick={() => router.push('/service')} 
-            className="bg-[#64B5F6] text-white px-6 py-2 rounded-md hover:bg-[#5AA3E8] transition-colors text-sm md:text-base whitespace-nowrap self-center md:self-start mt-0"
+            style={{color:'black'}}
+            className="bg-[#629dc7] text-white px-6 py-2 rounded-md hover:bg-[#5AA3E8] transition-colors text-sm md:text-base whitespace-nowrap self-center md:self-start mt-0"
           >
             Learn More
           </button>
