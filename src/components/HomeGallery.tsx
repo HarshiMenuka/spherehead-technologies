@@ -17,7 +17,7 @@ const HomeGallery = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      if (scrollPosition > windowHeight * 2.8) {
+      if (scrollPosition > windowHeight * 3.2) {
         setShowText(true);
       } else {
         setShowText(false);

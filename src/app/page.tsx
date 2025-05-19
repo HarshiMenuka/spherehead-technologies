@@ -41,7 +41,7 @@ export default function Home() {
     <>
       <div className="home-container">
         <div className="spline-wrapper">
-          {/* <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" /> */}
+        <Spline scene="/images/orb_copy/scene.splinecode" />
         </div>
         <div className="text-section">
           <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
@@ -56,13 +56,13 @@ export default function Home() {
 
       {/* Other components lazy loaded */}
       {/* <Suspense fallback={<Loading />}> */}
-        <>
-          <TechStack />
-          <HomeGallery />
-          <CountiesCart />
-          <Testimoinals />
-          <JoinUsSection />
-        </>
+      <>
+        <TechStack />
+        <HomeGallery />
+        <CountiesCart />
+        <Testimoinals />
+        <JoinUsSection />
+      </>
       {/* </Suspense> */}
     </>
   );
