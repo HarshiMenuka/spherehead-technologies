@@ -40,7 +40,7 @@ const FAQ = () => {
 
   return (
     <div className="faq-container flex flex-col md:flex-row space-x-0 md:space-x-4">
-      <div className="w-full md:w-1/2 pl-20">
+      <div className="w-full md:w-40% pl-20">
         <div className="founder-left">
           <span className="founder-label">FAQ</span>
           <h1 className="founder-title">Frequently asked <br />questions</h1>

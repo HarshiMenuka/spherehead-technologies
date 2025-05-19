@@ -135,9 +135,6 @@ const StickyServicesCards = () => {
                       ))}
                     </ul>
 
-                    <button className="mt-4 px-6 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
-                      Learn More
-                    </button>
                   </div>
                 </div>
               </div>
