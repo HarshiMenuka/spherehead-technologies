@@ -27,6 +27,26 @@
   object-fit: cover;
 }
 
+/* Add a loading placeholder for lazy-loaded components */
+.lazy-loading-placeholder {
+  min-height: 300px;
+  width: 100%;
+  background: linear-gradient(90deg, #1e1e1e 25%, #292929 50%, #1e1e1e 75%);
+  background-size: 200% 100%;
+  animation: loading-pulse 1.5s infinite;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+@keyframes loading-pulse {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 .text-section {
   position: relative;
   color: #fff;
