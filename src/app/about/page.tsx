@@ -141,13 +141,13 @@ export function ValueDriven() {
           <div className="value-top">
           <AboutFlip 
             image="/images/user2.jpg"
-            description="Your description text here"
+            description="Our team’s daily fuel is coffee, but we suspect it’s 90% caffeine and 10% magic."
             width="200px"
             height="300px"
           />
           <AboutFlip 
             image="/images/user3.jpg"
-            description="Your description text here"
+            description="Our team chat is a mix of work related discussions and memes we have our priorities straight."
             width="320px"
             height="320px"
           />
@@ -155,13 +155,13 @@ export function ValueDriven() {
           <div className="value-bottom">
             <AboutFlip 
             image="/images/user1.jpg"
-            description="Your description text here"
+            description="Our team motto is “work hard, laugh harder”, it’s been proven to increase productivity!"
             width="200px"
             height="300px"
           />
           <AboutFlip 
             image="/images/user4.jpg"
-            description="Your description text here"
+            description="We once had a heated debate about which fictional character would win in a fight."
             width="320px"
             height="320px"
           />
