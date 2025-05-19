@@ -30,7 +30,7 @@ const BlogPosts = () => {
     <div className="py-20">
       <SectionHeader
         overline="Blog"
-        title="Latest Insights & News"
+        title={<span className="text-[3rem] font-normal">Latest Insights & News</span>}
         description="Stay updated with our latest thoughts on technology, design, and development."
       />
       

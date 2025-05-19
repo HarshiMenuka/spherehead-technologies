@@ -3,6 +3,7 @@
 
 .full{
   background-color: #161616;
+  padding-bottom: 3rem;
 }
 .contact-section {
   width: 100%;
@@ -11,6 +12,7 @@
   justify-content: center;
   align-items: center;
   background-color: #161616;
+  margin-bottom: 0;
 }
 .contact-container {
   display: flex;
@@ -55,7 +57,7 @@
 }
 .contact-title {
   font-size: 3rem;
-  font-weight: 400; /* ensure only 400 is set */
+  font-weight: 400; 
   margin-bottom: 1rem;
   color: #fff;
   line-height: 1.1;

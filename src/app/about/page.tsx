@@ -180,7 +180,7 @@ export default function AboutPage() {
       <div className="about-hero-container mt-20">
         <SectionHeader
           overline=""
-          title="We Create Solution for Your Business"
+          title={<span className="text-[3rem] font-normal">We Create Solution for Your Business</span>}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
 
