@@ -208,21 +208,21 @@ export default function AboutPage() {
       </div>
 
       {/* Team Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center mt-8 px-4 max-w-[900px] mx-auto">
-        {teamMembers.map((member, index) => (
-          <TeamProfile
-            key={index}
-            name={member.name}
-            position={member.position}
-            qualification={member.qualification}
-            university={member.university}
-            image={member.image}
-            linkedinLink={member.linkedinLink}
-            facebookLink={member.facebookLink}
-            instagramLink={member.instagramLink}
-          />
-        ))}
-      </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
+      {teamMembers.map((member, index) => (
+        <TeamProfile
+          key={index}
+          name={member.name}
+          position={member.position}
+          qualification={member.qualification}
+          university={member.university}
+          image={member.image}
+          linkedinLink={member.linkedinLink}
+          facebookLink={member.facebookLink}
+          instagramLink={member.instagramLink}
+        />
+      ))}
+    </div>
 
       {/* Founder Section */}
       <FoundersMessage />
