@@ -1,11 +1,11 @@
 export const projectsData = [
   {
     id: 1,
-    largeImage: '/images/portimage1.svg',
+    largeImage: '/images/portimage1.png',
     portHeroImage: '/images/macheriehero.svg',
     title: 'Project One',
     description: 'Detailed write-up for Project One.',
-    smallImages: ['/images/user1.jpg', '/images/user2.jpg', '/images/user3.jpg'],
+    smallImages: ['/images/macherie1.svg', '/images/macherie2.svg', '/images/macherie3.svg'],
     texts: [
       'First paragraph about Project One. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       'Second paragraph with more details. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -13,7 +13,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    largeImage: '/images/portimage2.svg',
+    largeImage: '/images/portimage2.png',
     portHeroImage: '/images/serendihero.svg',
     title: 'Project Two',
     description: 'Detailed write-up for Project Two.',
@@ -25,11 +25,11 @@ export const projectsData = [
   },
   {
     id: 3,
-    largeImage: '/images/portimage3.svg',
+    largeImage: '/images/portimage3.png',
     portHeroImage: '/images/hourmarkershero.svg',
     title: 'Project Three',
     description: 'Detailed write-up for Project Three.',
-    smallImages: ['/images/user7.jpg', '/images/user8.jpg', '/images/user9.jpg'],
+    smallImages: ['/images/hour1.svg', '/images/hour2.svg', '/images/hour3.svg'],
     texts: [
       'First paragraph about Project Three. Duis aute irure dolor in reprehenderit.',
       'Second paragraph with more details. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
