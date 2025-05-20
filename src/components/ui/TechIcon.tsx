@@ -10,26 +10,12 @@ export const TechIcon = ({ src, alt, shadowColor }: TechIconProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    // <div
-    //   className="flex items-center justify-center bg-[#151515] bg-opacity-20 p-2 sm:p-2.5 md:p-3 rounded-md transition-shadow duration-300"
-    //   style={{
-    //     width: "75px",
-    //     height: "75px",
-    //     boxShadow: `0 0 8px ${isHovered ? shadowColor : 'rgba(0, 0, 0, 0)'}`,
-    //     border: "1px solid rgba(135, 135, 135,0.1)",
-    //     borderRadius: "0.5rem",
-    //   }}
-    //   onMouseEnter={() => setIsHovered(true)}
-    //   onMouseLeave={() => setIsHovered(false)}
-    // >
-    //   <img src={src} alt={alt} className="h-10 w-10" />
-    // </div>
     <div
       className="flex items-center justify-center bg-[#151515] bg-opacity-20 
-               rounded-md transition-shadow duration-300 
-               w-20 h-20 sm:w-16 sm:h-16 md:w-13 md:h-13 lg:w-18 lg:h-18 p-2.5 sm:p-2 md:p-3 lg:p-4"
+                 rounded-md transition-shadow duration-300 
+                 w-20 h-20 sm:w-16 sm:h-16 md:w-13 md:h-13 lg:w-18 lg:h-18 p-2.5 sm:p-2 md:p-3 lg:p-4"
       style={{
-        boxShadow: `0 0 8px ${isHovered ? shadowColor : 'rgba(0, 0, 0, 0)'}`,
+        boxShadow: isHovered ? `0 0 8px ${shadowColor}` : 'none',
         border: "1px solid rgba(135, 135, 135,0.1)",
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -42,4 +28,4 @@ export const TechIcon = ({ src, alt, shadowColor }: TechIconProps) => {
       />
     </div>
   );
-}; 
+};

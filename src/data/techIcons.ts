@@ -52,8 +52,8 @@ const row3 = [
 // Construct the full array with proper spacing
 export const techIcons: TechIcon[] = [
   ...emptyIcons(13), // Top row
-  ...emptyIcons(1),  ...row1.slice(0, 10), ...emptyIcons(1), // First row with empty squares between
-  ...emptyIcons(1), ...emptyIcons(1), ...row2.slice(0, 9), ...emptyIcons(3), // Second row with empty squares between
-  ...emptyIcons(1), ...emptyIcons(1), ...row3.slice(0, 8), ...emptyIcons(4), // Third row with empty squares between
+  ...emptyIcons(1),  ...row1, ...emptyIcons(1), // First row with empty squares between
+  ...emptyIcons(1), ...emptyIcons(1), ...row2, ...emptyIcons(3), // Second row with empty squares between
+  ...emptyIcons(1), ...emptyIcons(1), ...row3, ...emptyIcons(4), // Third row with empty squares between
   ...emptyIcons(13), // Bottom row
 ]; 
