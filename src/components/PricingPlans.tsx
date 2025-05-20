@@ -36,9 +36,9 @@ const services = [
 
 const PricingPlans = () => {
   return (
-    <div className="mt-0 lg:mt-35 py-20 bg-[#161616]">
+    <div className="pt-0 mt-0 pb-20 bg-[#161616]" style={{marginTop: 0, paddingTop: 0}}>
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-medium text-white text-center lg:text-left mb-2 mt-10">
+        <h1 className="text-3xl md:text-4xl font-medium text-white text-center lg:text-left mb-2 mt-0 pt-12">
           Pick your type of Project
         </h1>
         <h1 className="text-1xl md:text-1xl font-medium text-white text-center lg:text-left mb-10 max-w-2xl">
