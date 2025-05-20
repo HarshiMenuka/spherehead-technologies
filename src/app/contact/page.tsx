@@ -50,11 +50,12 @@ function ContactSection() {
 
   return (
     <div className="full">
+
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-image-col">
             <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+              src="/images/wtc.jpg"
               alt="Contact"
               className="contact-image"
             />
@@ -81,6 +82,7 @@ function ContactSection() {
                 </div>
 
                 :
+
 
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <h2 className="contact-form-title">Let&apos;s Talk</h2>

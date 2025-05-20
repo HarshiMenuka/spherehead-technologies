@@ -1,7 +1,8 @@
 export const projectsData = [
   {
     id: 1,
-    largeImage: '/images/img1.jpg',
+    largeImage: '/images/portimage1.svg',
+    portHeroImage: '/images/macheriehero.svg',
     title: 'Project One',
     description: 'Detailed write-up for Project One.',
     smallImages: ['/images/user1.jpg', '/images/user2.jpg', '/images/user3.jpg'],
@@ -12,7 +13,8 @@ export const projectsData = [
   },
   {
     id: 2,
-    largeImage: '/images/img2.jpg',
+    largeImage: '/images/portimage2.svg',
+    portHeroImage: '/images/serendihero.svg',
     title: 'Project Two',
     description: 'Detailed write-up for Project Two.',
     smallImages: ['/images/user4.jpg', '/images/user5.jpg', '/images/user6.jpg'],
@@ -23,7 +25,8 @@ export const projectsData = [
   },
   {
     id: 3,
-    largeImage: '/images/img3.jpg',
+    largeImage: '/images/portimage3.svg',
+    portHeroImage: '/images/hourmarkershero.svg',
     title: 'Project Three',
     description: 'Detailed write-up for Project Three.',
     smallImages: ['/images/user7.jpg', '/images/user8.jpg', '/images/user9.jpg'],
