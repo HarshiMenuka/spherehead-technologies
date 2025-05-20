@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './teamprofile.module.css';
+import Image from 'next/image';
 
 interface TeamProfileProps {
   name: string;
@@ -24,7 +25,13 @@ const TeamProfile: React.FC<TeamProfileProps> = ({
 }) => {
   return (
     <div className={styles['team-card']}>
-      <img src={image} alt={name} className={styles['team-card-img']} />
+      <Image 
+        src={image} 
+        alt={name} 
+        className={styles['team-card-img']} 
+        width={300}
+        height={300}
+      />
       <div className={styles['team-card-info']}>
         <div className={styles['team-card-overlay']}>
           <div className={styles['team-card-main']}>
@@ -36,17 +43,17 @@ const TeamProfile: React.FC<TeamProfileProps> = ({
           <div className={styles['team-card-socials-hover']}>
             {linkedinLink && (
               <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                <img src="/images/Linkedin.svg" alt="LinkedIn" />
+                <Image src="/images/Linkedin.svg" alt="LinkedIn" width={24} height={24} />
               </a>
             )}
             {instagramLink && (
               <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-                <img src="/images/Instagram.svg" alt="Instagram" />
+                <Image src="/images/Instagram.svg" alt="Instagram" width={24} height={24} />
               </a>
             )}
             {facebookLink && (
               <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-                <img src="/images/Facebook.svg" alt="Facebook" />
+                <Image src="/images/Facebook.svg" alt="Facebook" width={24} height={24} />
               </a>
             )}
           </div>

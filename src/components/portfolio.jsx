@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const MasonryGrid = () => {
   const images = [
@@ -39,10 +40,12 @@ const MasonryGrid = () => {
           href={links[index]}
           className={`col-span-${gridItems[index].cols} row-span-${gridItems[index].rows} group overflow-hidden rounded-[12px]`}
         >
-          <img
+          <Image
             src={src}
             alt={`Image ${index + 1}`}
             className="w-full h-full object-cover rounded-[12px] transition-transform duration-300 group-hover:scale-105"
+            width={800}
+            height={600}
           />
         </a>
       ))}
