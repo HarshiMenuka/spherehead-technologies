@@ -1,0 +1,121 @@
+/* Main Container */
+.faq-container {
+  background-color: #161616;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content Wrapper */
+.faq-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Increased gap for mobile */
+}
+
+/* Header Section */
+.faq-header {
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.founder-label {
+  color: #60a5fa;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.founder-title {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.description {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem; /* Added margin below description */
+}
+
+/* FAQ Items */
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 0 1rem; /* Added side padding for mobile */
+  margin-top: 1rem; /* Added top margin for mobile */
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.2rem 0;
+  cursor: pointer;
+}
+
+.faq-item h3 {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.arrow {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 0;
+  line-height: 1.6;
+}
+
+.answer.active {
+  max-height: 300px;
+  padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .faq-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .faq-header {
+    width: 40%;
+    padding: 0;
+  }
+
+  .faq-items {
+    width: 55%;
+    padding: 0;
+    margin-top: 0; /* Reset margin for desktop */
+  }
+
+  .founder-title {
+    font-size: 3rem;
+  }
+  
+  .description {
+    margin-bottom: 0; /* Reset margin for desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq-container {
+    padding: 6rem 2rem;
+  }
+}
