@@ -27,7 +27,7 @@ export function CountiesCart() {
     <div className="w-full bg-[#111] text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ">
         {/* Header */}
-        <div className="text-center mb-12 py-[72px]">
+        <div className="text-center mb-1 md:mb-12 py-[72px]">
           <p className="text-[#64B5F6] text-sm mb-2">Countries</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Our Global Reach
@@ -39,7 +39,7 @@ export function CountiesCart() {
         </div>
 
         {/* Stats Grid */}
-       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-[-50px] mx-12 md:mx-32">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-[-30px] md:mb-[-50px] mx-4 md:mx-32">
   {stats.map((stat, index) => (
     <div 
       key={index} 

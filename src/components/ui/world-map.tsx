@@ -47,10 +47,10 @@ export function WorldMap({
   };
 
   return (
-    <div
-      ref={ref}
-      className="w-full max-w-[1200px] mx-auto aspect-[2/1] bg-[#111] rounded-lg relative font-sans overflow-hidden"
-    >
+<div
+  ref={ref}
+  className="w-full max-w-[1200px] mx-auto aspect-[2/1] bg-[#111] rounded-lg relative font-sans overflow-hidden mt-[2rem] sm:mt-0"
+>
       {/* 🗺️ Map SVG Image */}
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
@@ -144,7 +144,7 @@ export function WorldMap({
 
       {/* 🔼 Top Gradient */}
       <div
-        className="absolute top-0 left-0 w-full h-50 pointer-events-none z-30"
+        className="hidden sm:block absolute top-0 left-0 w-full h-50 pointer-events-none z-30"
         style={{
           background: "linear-gradient(to bottom, #111111, rgba(247, 245, 245, 0))",
         }}
@@ -152,7 +152,7 @@ export function WorldMap({
 
       {/* 🔽 Bottom Gradient */}
       <div
-        className="absolute bottom-0 left-0 w-full h-50 pointer-events-none z-30"
+        className="hidden sm:block absolute bottom-0 left-0 w-full h-50 pointer-events-none z-30"
         style={{
           background: "linear-gradient(to top, #111111, rgba(247, 245, 245, 0))",
         }}

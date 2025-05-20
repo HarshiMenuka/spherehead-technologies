@@ -4,9 +4,6 @@ import Image from 'next/image';
 import './page.css';
 import SectionHeader from '../../components/sectionheader';
 import Link from 'next/link';
-import cardImage1 from '../../../public/images/img1.jpg';
-import cardImage2 from '../../../public/images/img2.jpg';
-import cardImage3 from '../../../public/images/img3.jpg';
 import { projectsData } from '@/data/projects';
 
 const Portfolio = () => {
@@ -45,17 +42,7 @@ const Portfolio = () => {
       </section>
 
 
-      {/* Our Work Text Block */}
-      <section className="px-4 py-20">
-        <div className="max-w-5xl mx-auto text-left">
-          <h2 className="text-4xl font-bold mb-4">Our work</h2>
-          <p className="text-base leading-relaxed max-w-4xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-        </div>
-      </section>
+    
     </div>
   );
 };

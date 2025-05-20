@@ -32,14 +32,15 @@ export default function SinglePortfolioPage() {
 
   return (
     <main className="bg-black text-white min-h-screen">
-      <section className="px-4 py-40 space-y-10 max-w-7xl mx-auto">
+      <section className="px-4 py-30 sm:py-40 space-y-10 max-w-7xl mx-auto">
+
         <SectionHeader
           overline="Our Work"
           title={project.title}
           description={project.description}
         />
 
-        <LargeCard image={project.largeImage} description={project.description} />
+        <LargeCard image={project.portHeroImage} description={project.description} />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {project.smallImages.map((img, i) => (
@@ -51,8 +52,10 @@ export default function SinglePortfolioPage() {
           <Discript key={i} description={txt} />
         ))}
 
-        <JoinUsSection />
+        
       </section>
+      <JoinUsSection />
     </main>
+    
   );
 }
