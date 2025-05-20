@@ -54,7 +54,7 @@ function Nav() {
   }, [isScrolled, lastScrollY]);
 
   const handleMouseMove = useCallback((e) => {
-    if (e.clientY <= 100 && !isScrolling && window.scrollY > 0) {
+    if (e.clientY <= 450 && !isScrolling && window.scrollY > 0) {
       setIsVisible(true);
     }
   }, [isScrolling]);
