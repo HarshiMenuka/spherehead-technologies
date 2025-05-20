@@ -37,15 +37,7 @@
 }
 
 
-.text-section {
-  position: absolute; /* Position it absolutely within the relative container */
-  top: 20%; /* Adjust as needed */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  color: white; /* Change text color for visibility */
-  text-align: center; /* Center text */
-  z-index: 10; /* Ensure it appears above the image */
-}
+
 .founder-section {
   width: 100vw;
   min-height: 100vh;
