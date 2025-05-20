@@ -84,9 +84,9 @@ export function FoundersMessage() {
           <Image
             src="/images/AboutPage/founder.png"
             alt="Founder"
-            fill
             className="w-[90%] h-[350px] rounded-[24px] mt-6 object-cover"
-          // width={}
+            width={500}
+            height={200}
           />
         </div>
         <div className="founder-right">
