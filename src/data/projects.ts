@@ -29,7 +29,7 @@ export const projectsData = [
     portHeroImage: '/images/hourmarkershero.svg',
     title: 'Project Three',
     description: 'Detailed write-up for Project Three.',
-    smallImages: ['/images/user7.jpg', '/images/user8.jpg', '/images/user9.jpg'],
+    smallImages: ['/images/hour1.svg', '/images/hour2.svg', '/images/hour3.svg'],
     texts: [
       'First paragraph about Project Three. Duis aute irure dolor in reprehenderit.',
       'Second paragraph with more details. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
