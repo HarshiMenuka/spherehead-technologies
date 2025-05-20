@@ -1,17 +1,16 @@
 "use client";
 import React from "react";
 
-export default function SmallCard({ image}) {
+export default function SmallCard({ image }) {
   return (
-    <div className="text-white rounded-sm p-5 space-y-4">
-      <div className="h-60 md:h-80 lg:h-96 bg-gray-300 rounded-md overflow-hidden">
+    <div className="text-white rounded-sm p-3 sm:p-4 md:p-5 space-y-4">
+      <div className="w-full bg-gray-300 rounded-md overflow-hidden flex justify-center items-center">
         <img
           src={image}
           alt="Small Visual"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-contain"
         />
       </div>
-    
     </div>
   );
 }
