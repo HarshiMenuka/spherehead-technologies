@@ -34,21 +34,18 @@ function Nav() {
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
     
-    // Performance optimization: Only update state when needed
     if (currentScrollY <= 10 && isScrolled) {
       setIsScrolled(false);
     } else if (currentScrollY > 10 && !isScrolled) {
       setIsScrolled(true);
     }
     
-    // Always show navbar at the top of the page
     if (currentScrollY === 0) {
       setIsVisible(true);
       setIsScrolling(false);
       return;
     }
     
-    // Hide navbar when scrolling in any direction
     if (Math.abs(currentScrollY - lastScrollY) > 5) {
       setIsVisible(false);
       setIsScrolling(true);
@@ -57,7 +54,6 @@ function Nav() {
   }, [isScrolled, lastScrollY]);
 
   const handleMouseMove = useCallback((e) => {
-    // Show navbar when mouse is in top 100px of the page and not actively scrolling
     if (e.clientY <= 100 && !isScrolling && window.scrollY > 0) {
       setIsVisible(true);
     }
@@ -83,7 +79,6 @@ function Nav() {
 
     window.addEventListener("scroll", debouncedScroll, { passive: true });
     
-    // Use debounced mousemove for performance
     let mouseMoveTimer;
     const debouncedMouseMove = (e) => {
       clearTimeout(mouseMoveTimer);
@@ -112,17 +107,14 @@ function Nav() {
     return `nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""} ${!isVisible ? "hidden" : ""}`;
   }, [isScrolled, isMenuOpen, isVisible]);
 
-  // Pre-define link data to avoid recreation on each render
   const navLinks = useMemo(() => [
     { href: "/", text: "Home" },
     { href: "/about", text: "About Us" },
     { href: "/service", text: "Services" },
     { href: "/portfolio", text: "Portfolio" },
     { href: "/pricing", text: "Pricing" },
-    // { href: "/blogs", text: "Blogs" },
   ], []);
 
-  // Measure performance in development
   useEffect(() => {
     const perfMark = measurePerformance('Nav-render');
     return () => perfMark.end();
@@ -155,11 +147,15 @@ function Nav() {
         </div>
 
         <div className="nav-right">
-          <Link href="/contact" className="contact-btn">Contact Us</Link>
+          {/* Only visible on desktop (hidden on mobile) */}
+          <div className="desktop-contact-btn">
+            <Link href="/contact" className="contact-btn">Contact Us</Link>
+          </div>
           <MobileMenuButton isOpen={isMenuOpen} onClick={toggleMenu} />
         </div>
       </nav>
 
+      {/* Mobile Menu (includes Contact Us button) */}
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           {navLinks.map(link => (

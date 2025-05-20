@@ -163,7 +163,12 @@ body {
   gap: 1rem;
 }
 
+/* Hide desktop contact button on mobile */
 @media (max-width: 768px) {
+  .desktop-contact-btn {
+    display: none;
+  }
+
   .nav-links {
     display: none;
   }
@@ -195,10 +200,6 @@ body {
     gap: 0;
   }
 
-  .contact-btn {
-    display: none;
-  }
-
   .nav-container.mobile-menu-open {
     background: rgba(39, 39, 42, 0.95);
     backdrop-filter: blur(15px);
@@ -227,4 +228,4 @@ body {
     display: inline-block;
     margin-top: 1rem;
   }
-} 
+}
