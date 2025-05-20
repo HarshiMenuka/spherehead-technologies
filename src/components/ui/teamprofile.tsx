@@ -36,7 +36,7 @@ const TeamProfile: React.FC<TeamProfileProps> = ({
           <div className={styles['team-card-socials-hover']}>
             {linkedinLink && (
               <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                <img src="/images/Linkedin.svg" alt="LinkedIn" />
+                <img src="/images/LinkedIn.svg" alt="LinkedIn" />
               </a>
             )}
             {instagramLink && (

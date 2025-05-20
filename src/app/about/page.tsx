@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import TeamProfile from "../../components/ui/teamprofile";
-import "./page.css";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import TeamProfile from '../../components/ui/teamprofile';
+import './page.css';
+
 // import founderImage from '@images/AboutPage/founder.png';
 
 import SectionHeader from "@/components/sectionheader";

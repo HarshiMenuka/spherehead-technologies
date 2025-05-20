@@ -280,13 +280,13 @@ const Footer = () => {
                 <img src="images/Facebook.svg" alt="Facebook" />
               </a>
               <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="Instagram" />
+                <img src="images/Instagram.svg" alt="Instagram" />
               </a>
               <a href="https://twitter.com" className="social-icon" aria-label="Twitter">
                 <img src="images/X.svg" alt="Twitter" />
               </a>
               <a href="https://linkedin.com" className="social-icon" aria-label="LinkedIn">
-                <img src="images/Linkedin.svg" alt="LinkedIn" />
+                <img src="images/LinkedIn.svg" alt="LinkedIn" />
               </a>
             </div>
           </div>
