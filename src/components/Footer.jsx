@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -270,23 +271,46 @@ const Footer = () => {
           {/* Logo and description section */}
           <div className="footer-logo-section">
             <div className="logo-wrapper">
-              <img src="/images/Spherehead.svg" alt="Spherehead Technologies" className="footer-logo" />
+              <Image
+                src="/images/Spherehead.svg"
+                alt="Spherehead Technologies"
+                width={220}
+                height={60}
+                className="footer-logo"
+              />
             </div>
             <p className="footer-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="social-icons">
-              <a href="https://facebook.com" className="social-icon" aria-label="Facebook">
-                <img src="images/Facebook.svg" alt="Facebook" />
+              <a
+                href="https://facebook.com"
+                className="social-icon"
+                aria-label="Facebook"
+              >
+                <Image src="/images/Facebook.svg" alt="Facebook" width={32} height={32} />
               </a>
-              <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="Instagram" />
+              <a
+                href="https://instagram.com"
+                className="social-icon"
+                aria-label="Instagram"
+              >
+                <Image src="/images/instagram.svg" alt="Instagram" width={32} height={32} />
               </a>
-              <a href="https://twitter.com" className="social-icon" aria-label="Twitter">
-                <img src="images/X.svg" alt="Twitter" />
+              <a
+                href="https://twitter.com"
+                className="social-icon"
+                aria-label="Twitter"
+              >
+                <Image src="/images/X.svg" alt="Twitter" width={32} height={32} />
               </a>
-              <a href="https://linkedin.com" className="social-icon" aria-label="LinkedIn">
-                <img src="images/Linkedin.svg" alt="LinkedIn" />
+              <a
+                href="https://linkedin.com"
+                className="social-icon"
+                aria-label="LinkedIn"
+              >
+                <Image src="/images/Linkedin.svg" alt="LinkedIn" width={32} height={32} />
               </a>
             </div>
           </div>
@@ -295,12 +319,21 @@ const Footer = () => {
           <div className="footer-links-section">
             <h3 className="footer-heading">Links</h3>
             <ul className="footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/service">Services</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/pricing">Pricing</a></li>
-              {/* <li><a href="/blogs">Blogs</a></li> */}
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about">About Us</a>
+              </li>
+              <li>
+                <a href="/service">Services</a>
+              </li>
+              <li>
+                <a href="/portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
             </ul>
           </div>
 
@@ -308,9 +341,15 @@ const Footer = () => {
           <div className="footer-legal-section">
             <h3 className="footer-heading">Legal</h3>
             <ul className="footer-links">
-              <li><a href="/legal-policies">Legal Policies</a></li>
-              <li><a href="/terms-of-service">Terms of Service</a></li>
-              <li><a href="/privacy-policies">Privacy Policies</a></li>
+              <li>
+                <a href="/legal-policies">Legal Policies</a>
+              </li>
+              <li>
+                <a href="/terms-of-service">Terms of Service</a>
+              </li>
+              <li>
+                <a href="/privacy-policies">Privacy Policies</a>
+              </li>
             </ul>
           </div>
 
@@ -329,9 +368,12 @@ const Footer = () => {
               <li className="contact-item">
                 <MapPin className="contact-icon" />
                 <span>
-                  Level 05, East Lower Block,<br />
-                  Echelon Square,<br />
-                  World Trade Centre,<br />
+                  Level 05, East Lower Block,
+                  <br />
+                  Echelon Square,
+                  <br />
+                  World Trade Centre,
+                  <br />
                   Colombo 01
                 </span>
               </li>

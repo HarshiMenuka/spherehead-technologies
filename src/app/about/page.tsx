@@ -116,21 +116,21 @@ export function ValueDriven() {
           </p>
           <div className="value-points-list">
             <div className="value-point">
-              <img src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
+              <Image src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Personalized Service</div>
                 <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
               </div>
             </div>
             <div className="value-point">
-              <img src="/images/compass.svg" alt="Innovative Solutions" className="value-point-icon" />
+              <Image src="/images/compass.svg" alt="Innovative Solutions" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Innovative Solutions</div>
                 <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
               </div>
             </div>
             <div className="value-point">
-              <img src="/images/compass.svg" alt="Proven Track Record" className="value-point-icon" />
+              <Image src="/images/compass.svg" alt="Proven Track Record" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Proven Track Record</div>
                 <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>

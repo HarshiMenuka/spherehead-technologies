@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Loading from '../../components/ui/loading';
 import './page.css';
+import Image from 'next/image';
 
 function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,11 +55,14 @@ function ContactSection() {
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-image-col">
-            <img
-              src="/images/wtc.jpg"
-              alt="Contact"
-              className="contact-image"
-            />
+          <Image
+  src="/images/wtc.jpg"
+  alt="Contact"
+  width={400}    
+  height={300}      
+  className="contact-image"
+/>
+
           </div>
           <div className="contact-content-col">
             <div className="contact-content">

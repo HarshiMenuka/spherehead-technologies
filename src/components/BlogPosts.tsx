@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionHeader from './sectionheader';
+import Image from 'next/image';
 
 const BLOG_POSTS = [
   {
@@ -39,7 +40,7 @@ const BlogPosts = () => {
           {BLOG_POSTS.map((post, index) => (
             <div key={index} className="bg-[#2E2E2E] rounded-xl overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img 
+                <Image
                   src={post.image} 
                   alt={post.title}
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
