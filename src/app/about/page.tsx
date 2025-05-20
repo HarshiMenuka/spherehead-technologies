@@ -3,7 +3,7 @@ import React from 'react';
 import TeamProfile from '../../components/ui/teamprofile';
 import './page.css';
 import Image from 'next/image';
-import founderImage from './founder.png';
+// import founderImage from '@images/AboutPage/founder.png';
 
 import SectionHeader from "@/components/sectionheader";
 import AboutHero from "@/components/ui/about-hero";
@@ -80,21 +80,23 @@ export function FoundersMessage() {
       <div className="founder-container">
         <div className="founder-left">
           <span className="founder-label">Founder</span>
-          <h1 className="founder-title">Founder's<br />Message</h1>
+          <h1 className="founder-title">Founder&apos;s<br />Message</h1>
           <Image
-            src={founderImage}
+            src="/images/AboutPage/founder.png"
             alt="Founder"
+            fill
             className="w-[90%] h-[350px] rounded-[24px] mt-6 object-cover"
+          // width={}
           />
         </div>
         <div className="founder-right">
-          <div className="founder-quote-mark">"</div>
+          <div className="founder-quote-mark">&quot;</div>
           <div className="founder-message">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div className="founder-quote-mark founder-quote-mark-bottom">"</div>
+          <div className="founder-quote-mark founder-quote-mark-bottom">&quot;</div>
         </div>
       </div>
     </section>
@@ -105,12 +107,12 @@ export function ValueDriven() {
   return (
     <section className="value-section-custom">
       <div className="value-content-custom">
-        
+
         <div className="value-text-custom">
           <span className="value-overline">Why</span>
           <h1 className="value-title">We are value driven</h1>
           <p className="value-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
           </p>
           <div className="value-points-list">
             <div className="value-point">
@@ -136,36 +138,36 @@ export function ValueDriven() {
             </div>
           </div>
         </div>
-        
+
         <div className="value-flipcards-grid">
           <div className="value-top">
-          <AboutFlip 
-            image="/images/user2.jpg"
-            description="Our team’s daily fuel is coffee, but we suspect it’s 90% caffeine and 10% magic."
-            width="200px"
-            height="300px"
-          />
-          <AboutFlip 
-            image="/images/user3.jpg"
-            description="Our team chat is a mix of work related discussions and memes we have our priorities straight."
-            width="320px"
-            height="320px"
-          />
+            <AboutFlip
+              image="/images/user2.jpg"
+              description="Our team’s daily fuel is coffee, but we suspect it’s 90% caffeine and 10% magic."
+              width="200px"
+              height="300px"
+            />
+            <AboutFlip
+              image="/images/user3.jpg"
+              description="Our team chat is a mix of work related discussions and memes we have our priorities straight."
+              width="320px"
+              height="320px"
+            />
           </div>
           <div className="value-bottom">
-            <AboutFlip 
-            image="/images/user1.jpg"
-            description="Our team motto is “work hard, laugh harder”, it’s been proven to increase productivity!"
-            width="200px"
-            height="300px"
-          />
-          <AboutFlip 
-            image="/images/user4.jpg"
-            description="We once had a heated debate about which fictional character would win in a fight."
-            width="320px"
-            height="320px"
-          />
-          
+            <AboutFlip
+              image="/images/user1.jpg"
+              description="Our team motto is “work hard, laugh harder”, it’s been proven to increase productivity!"
+              width="200px"
+              height="300px"
+            />
+            <AboutFlip
+              image="/images/user4.jpg"
+              description="We once had a heated debate about which fictional character would win in a fight."
+              width="320px"
+              height="320px"
+            />
+
           </div>
         </div>
       </div>
@@ -208,27 +210,27 @@ export default function AboutPage() {
       </div>
 
       {/* Team Section */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
-      {teamMembers.map((member, index) => (
-        <TeamProfile
-          key={index}
-          name={member.name}
-          position={member.position}
-          qualification={member.qualification}
-          university={member.university}
-          image={member.image}
-          linkedinLink={member.linkedinLink}
-          facebookLink={member.facebookLink}
-          instagramLink={member.instagramLink}
-        />
-      ))}
-    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
+        {teamMembers.map((member, index) => (
+          <TeamProfile
+            key={index}
+            name={member.name}
+            position={member.position}
+            qualification={member.qualification}
+            university={member.university}
+            image={member.image}
+            linkedinLink={member.linkedinLink}
+            facebookLink={member.facebookLink}
+            instagramLink={member.instagramLink}
+          />
+        ))}
+      </div>
 
       {/* Founder Section */}
       <FoundersMessage />
-<ValueDriven />
+      <ValueDriven />
 
-  
+
       <JoinUsSection />
     </div>
   );

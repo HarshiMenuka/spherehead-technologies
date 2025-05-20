@@ -34,9 +34,9 @@ const TechStack = () => {
   // Split icons into rows with proper spacing for desktop
   const rows = [
     techIcons.slice(0, 13),                    // Top empty row
-    techIcons.slice(13, 26),                   // First row: 2 empty + 10 icons + 1 empty
-    techIcons.slice(26, 39),                   // Second row: 3 empty + 9 icons + 1 empty
-    techIcons.slice(39, 52),                   // Third row: 4 empty + 8 icons + 1 empty
+    techIcons.slice(13, 25),                   // First row: 2 empty + 10 icons + 1 empty
+    techIcons.slice(25, 38),                   // Second row: 3 empty + 9 icons + 1 empty
+    techIcons.slice(38, 52),                   // Third row: 4 empty + 8 icons + 1 empty
     techIcons.slice(52, 65),                   // Bottom empty row
   ];
 

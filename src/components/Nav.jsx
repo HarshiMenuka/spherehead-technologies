@@ -134,7 +134,7 @@ function Nav() {
         <div className="logo-container">
           <Link href="/" className="logo-link">
             <Image
-              src="/images/spherehead.svg"
+              src="images/spherehead.svg"
               alt="Logo"
               width={200}
               height={60}

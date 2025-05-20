@@ -11,6 +11,7 @@ const HomeGallery = lazy(() =>
   }))
 );
 const TechStack = lazy(() => import('@/components/ui/tech-stack'));
+const TechStackTab = lazy(() => import('@/components/ui/tech-stack-tab'));
 const CountiesCart = lazy(() =>
   import('@/components/CountiesCart').then(module => ({
     default: module.CountiesCart
@@ -56,21 +57,32 @@ export default function Home() {
 
       {/* Other components lazy loaded with Suspense boundaries */}
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
-        <TechStack />
+        <div className="hide-techstack">
+          <TechStack />
+        </div>
       </Suspense>
-      
+
+      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
+        <div className="techstack-tab-wrapper">
+          <TechStackTab />
+        </div>
+      </Suspense>
+
+
+
+
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <HomeGallery />
       </Suspense>
-      
+
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <CountiesCart />
       </Suspense>
-      
+
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <Testimoinals />
       </Suspense>
-      
+
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <JoinUsSection />
       </Suspense>
