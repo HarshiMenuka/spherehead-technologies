@@ -17,7 +17,7 @@ export const projectsData = [
     portHeroImage: '/images/serendihero.svg',
     title: 'Project Two',
     description: 'Detailed write-up for Project Two.',
-    smallImages: ['/images/user4.jpg', '/images/user5.jpg', '/images/user6.jpg'],
+    smallImages: ['/images/serendi1.svg', '/images/serendi2.svg', '/images/serendi3.svg'],
     texts: [
       'First paragraph about Project Two. Ut enim ad minim veniam, quis nostrud exercitation.',
       'Second paragraph with more details. Ullamco laboris nisi ut aliquip ex ea commodo consequat.'

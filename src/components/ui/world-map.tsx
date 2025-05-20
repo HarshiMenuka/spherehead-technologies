@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import DottedMap from "dotted-map";
 import { useTheme } from "next-themes";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 interface MapProps {
   dots?: Array<{
@@ -52,14 +53,13 @@ export function WorldMap({
   className="w-full max-w-[1200px] mx-auto aspect-[2/1] bg-[#111] rounded-lg relative font-sans overflow-hidden mt-[2rem] sm:mt-0"
 >
       {/* 🗺️ Map SVG Image */}
-      <img
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full object-cover object-center pointer-events-none select-none z-10 relative"
-        alt="world map"
-        height="100%"
-        width="100%"
-        draggable={false}
-      />
+      <Image
+    src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
+    alt="world map"
+    fill
+    className="h-full w-full object-cover object-center pointer-events-none select-none z-10 relative"
+    draggable={false}
+  />
 
       {/* 🟦 Animated Paths & Points */}
       <svg

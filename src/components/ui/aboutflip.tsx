@@ -1,5 +1,6 @@
 import React from 'react';
 import './aboutflip.css';
+import Image from 'next/image';
 
 interface FlipCardProps {
   image: string;
@@ -18,7 +19,7 @@ const AboutFlip: React.FC<FlipCardProps> = ({
     <div className="flip-card" style={{ width, height }}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={image} alt="Card front" />
+          <Image src={image} alt="Card front" />
         </div>
         <div className="flip-card-back">
           <p>{description}</p>

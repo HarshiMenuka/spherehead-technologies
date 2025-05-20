@@ -2,6 +2,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import styles from "../styles/stickyCards.module.css";
+import Image from "next/image";
 // Service data with colors, icons and descriptions
 const services = [
   {
@@ -111,7 +112,7 @@ const StickyServicesCards = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
                   <div className="md:col-span-1">
                     <div className="h-28 md:h-32 rounded-lg overflow-hidden">
-                      <img
+                      <Image
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover"

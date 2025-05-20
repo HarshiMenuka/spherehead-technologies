@@ -15,11 +15,11 @@ export default function ServicePage() {
       {/* Section: Header Spacer */}
       <div className="relative w-full h-[100vh]">
         {/* Spline background */}
-        {/* <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
           <div className="absolute inset-0 z-0">
-            <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
+            <Spline scene="/images/abstract_nirvana/scene.splinecode" />
           </div>
-        </Suspense> */}
+        </Suspense>
 
         {/* SectionHeader overlayed on top */}
         <section className="relative z-10 pt-[150px] text-center bg-transparent">

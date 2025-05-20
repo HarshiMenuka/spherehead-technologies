@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface TechIconProps {
   src: string;
@@ -21,9 +22,11 @@ export const TechIcon = ({ src, alt, shadowColor }: TechIconProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
+        width={64}
+        height={64}
         className="h-10 w-10 sm:h-8 sm:w-8 md:h-12 md:w-12 lg:h-16 lg:w-16"
       />
     </div>

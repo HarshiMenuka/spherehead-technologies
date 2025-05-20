@@ -3,6 +3,7 @@ import { BentoCell, BentoGrid, ContainerScale, ContainerScroll } from "./ui/hero
 import { Button } from "./ui/button"
 import { useRouter } from "next/navigation";
 import '../styles/homeComponents.css';
+import Image from 'next/image';
 
 const IMAGES = [
   "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -52,10 +53,12 @@ const HomeGallery = () => {
               key={index}
               className="overflow-hidden rounded-xl shadow-xl"
             >
-              <img
+              <Image
                 className="size-full object-cover object-center"
                 src={imageUrl}
                 alt={`Gallery image ${index + 1}`}
+                width={800}
+                height={600}
               />
             </BentoCell>
           ))}
