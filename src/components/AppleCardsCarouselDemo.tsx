@@ -4,6 +4,7 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { IconDeviceMobile, IconCode, IconWorld, IconServer } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
+import '../styles/homeComponents.css';
 
 export function AppleCardsCarouselDemo() {
   const router = useRouter();
@@ -40,7 +41,7 @@ export function AppleCardsCarouselDemo() {
           <button 
             onClick={() => router.push('/service')} 
             style={{color:'black'}}
-            className="bg-[#629dc7] text-white px-6 py-2 rounded-md hover:bg-[#5AA3E8] transition-colors text-sm md:text-base whitespace-nowrap self-center md:self-start mt-0"
+            className="contact-btn px-6 py-2 text-sm md:text-base whitespace-nowrap self-center md:self-start mt-0"
           >
             Learn More
           </button>
