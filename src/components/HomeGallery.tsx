@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BentoCell, BentoGrid, ContainerScale, ContainerScroll } from "./ui/hero-gallery-scroll-animation"
 import { Button } from "./ui/button"
 import { useRouter } from "next/navigation";
+import '../styles/homeComponents.css';
 
 const IMAGES = [
   "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -70,7 +71,7 @@ const HomeGallery = () => {
                 We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
               </p>
               <div className="flex items-center justify-center gap-4 w-full">
-                <Button onClick={() => router.push('/contact')} className="bg-white px-4 py-2 font-medium text-black hover:bg-gray-200">
+                <Button onClick={() => router.push('/contact')} className="px-4 py-2 font-medium contact-btn">
                   Get Started
                 </Button>
               </div>

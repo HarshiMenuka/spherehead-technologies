@@ -119,7 +119,7 @@ function Nav() {
     { href: "/service", text: "Services" },
     { href: "/portfolio", text: "Portfolio" },
     { href: "/pricing", text: "Pricing" },
-    { href: "/blogs", text: "Blogs" },
+    // { href: "/blogs", text: "Blogs" },
   ], []);
 
   // Measure performance in development
@@ -134,7 +134,7 @@ function Nav() {
         <div className="logo-container">
           <Link href="/" className="logo-link">
             <Image
-              src="/images/spherehead.svg"
+              src="images/spherehead.svg"
               alt="Logo"
               width={200}
               height={60}

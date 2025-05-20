@@ -1,0 +1,16 @@
+.contact-btn {
+  background: linear-gradient(to right, #96bdd9, #629dc7);
+  border-radius: 12px;
+  color: black;
+  padding: 0.4rem 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(to right, #88b2d1, #4d8bb8);
+  transform: translateY(-2px);
+}

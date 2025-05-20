@@ -110,7 +110,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
           <div
             className={cn(
-              "flex flex-row justify-center sm:justify-start gap-0 sm:gap-4",
+              "flex flex-row justify-start gap-4 overflow-visible",
               "mx-auto max-w-7xl w-full px-4 sm:pl-4 sm:pr-0",
             )}
           >
@@ -131,7 +131,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="w-full sm:w-auto rounded-3xl last:pr-0 sm:last:pr-[5%] md:last:pr-[33%] snap-center"
+                className="flex-shrink-0 w-[80%] sm:w-auto rounded-3xl last:pr-0 sm:last:pr-[5%] md:last:pr-[33%] snap-center"
               >
                 {item}
               </motion.div>
@@ -175,7 +175,7 @@ export const Card = ({
 
   return (
     <div
-      className="relative z-10 flex h-[420px] w-[calc(100vw-32px)] flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 sm:h-60 sm:w-44 md:h-[28rem] md:w-72 dark:bg-neutral-900 mx-auto sm:mx-0"
+      className="relative z-10 flex h-[420px] w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 sm:h-60 sm:w-44 md:h-[28rem] md:w-72 dark:bg-neutral-900 mx-auto sm:mx-0"
     >
       <div className="pointer-events-none absolute inset-0 z-30">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-transparent" />

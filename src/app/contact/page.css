@@ -233,3 +233,6 @@
   justify-content: center;
   padding: 2rem 1rem;
 }
+.successfulMessage{
+  color: white;
+}
