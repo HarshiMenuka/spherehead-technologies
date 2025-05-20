@@ -248,6 +248,13 @@
   }
 }
 
+@media (min-width: 425px) and (max-width: 1024px) {
+  .hide-techstack {
+    display: none;
+  }
+}
+
+
 /* --- JoinUsSection Component Styles --- */
 .joinus-section {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%,rgba(98, 157, 199, 0.77) 100%);
@@ -502,6 +509,12 @@
     padding: 48px 16px;
   }
 }
+@media (max-width: 424px), (min-width: 1025px) {
+  .techstack-tab-wrapper {
+    display: none;
+  }
+}
+
 /* 161616 */
 
 
