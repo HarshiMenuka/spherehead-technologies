@@ -28,10 +28,10 @@ function ContactSection() {
 
     emailjs
       .sendForm(
-        'service_sldip2d',
-        'template_5lruo4q',
+        'service_c0two2l',
+        'template_m4ldwcd',
         e.currentTarget,
-        '_AzWIaN4yYX_nD8mK'
+        '6-3S6Le8STefRLBhv'
       )
       .then(
         () => {
@@ -75,7 +75,7 @@ function ContactSection() {
                     Thank you for reaching out!
                   </h1>
                   <p className="text-base md:text-lg">
-                    We've received your message and we'll be in touch soon — usually within a day. <br />
+                    We&apos;ve received your message and we&apos;ll be in touch soon — usually within a day. <br />
                     Looking forward to bringing your ideas to life!
                   </p>
                 </div>
