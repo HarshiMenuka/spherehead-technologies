@@ -1,63 +1,47 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Loading from '../../components/ui/loading';
+import Image from 'next/image';
 import './page.css';
 
 function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isPageLoading, setIsPageLoading] = useState(true);
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  useEffect(() => {
-    const hasReloaded = sessionStorage.getItem('contactPageReloaded');
-    if (!hasReloaded) {
-      sessionStorage.setItem('contactPageReloaded', 'true');
-      setTimeout(() => {
-        window.location.reload();
-      }, 100);
-    } else {
-      setIsPageLoading(false);
-    }
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         'service_c0two2l',
         'template_m4ldwcd',
         e.currentTarget,
         '6-3S6Le8STefRLBhv'
-      )
-      .then(
-        () => {
-          setIsSubmitted(true);
-          setIsSubmitting(false);
-        },
-        (error) => {
-          console.error('EmailJS Error:', error.text);
-          alert('Failed to send message. Please try again.');
-          setIsSubmitting(false);
-        }
       );
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      alert('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
-
-  if (isPageLoading) return <Loading />;
 
   return (
     <div className="full">
-
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-image-col">
-            <img
+            <Image
               src="/images/wtc.jpg"
               alt="Contact"
               className="contact-image"
+              width={480}
+              height={730}
+              priority
+              quality={90}
             />
           </div>
           <div className="contact-content-col">
@@ -70,7 +54,7 @@ function ContactSection() {
                 Take the first step towards your digital transformation journey with us...
               </p>
 
-              {isSubmitted ?
+              {isSubmitted ? (
                 <div className="flex contact-form successfulMessage flex-col items-center justify-center text-center p-6">
                   <h1 className="text-2xl md:text-3xl mb-4">
                     Thank you for reaching out!
@@ -80,10 +64,7 @@ function ContactSection() {
                     Looking forward to bringing your ideas to life!
                   </p>
                 </div>
-
-                :
-
-
+              ) : (
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <h2 className="contact-form-title">Let&apos;s Talk</h2>
 
@@ -131,7 +112,8 @@ function ContactSection() {
                       'Contact us'
                     )}
                   </button>
-                </form>}
+                </form>
+              )}
             </div>
           </div>
         </div>
