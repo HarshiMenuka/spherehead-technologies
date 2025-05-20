@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .spline-wrapper {
@@ -19,12 +21,16 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .spline-wrapper canvas {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /* Add a loading placeholder for lazy-loaded components */
@@ -35,7 +41,8 @@
   background-size: 200% 100%;
   animation: loading-pulse 1.5s infinite;
   border-radius: 8px;
-  margin: 20px 0;
+  margin: 0;
+  padding: 20px 0;
 }
 
 @keyframes loading-pulse {
