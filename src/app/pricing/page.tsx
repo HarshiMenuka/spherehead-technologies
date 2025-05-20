@@ -14,12 +14,12 @@ function Pricing() {
     <>
       <div className="home-container">
         <div className="spline-wrapper">
-          <Spline scene="https://prod.spline.design/2BYPhGAm9V-fx62e/scene.splinecode" />
+          <Spline scene="/images/clarity_stream/scene.splinecode" />
         </div>
         <div className="text-section">
-          <h1 className="heading">Pick your type of Project</h1>
+          <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
           <h2 className="subheading">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
           </h2>
         </div>
       </div>
