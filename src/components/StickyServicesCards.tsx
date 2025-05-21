@@ -24,7 +24,7 @@ const services = [
     id: 2,
     title: "Software Development",
     description:
-      "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
+      "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
     image: "/images/software-dev.png",
 
     color: "bg-amber-500",
@@ -57,7 +57,7 @@ const services = [
     id: 4,
     title: "Software Maintenance & Support",
     description:
-      "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+      "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
     image: "/images/It-support.png",
     color: "bg-rose-500",
     icon: "🔧",
@@ -87,7 +87,8 @@ const services = [
     id: 6,
     title: "UI/UX Design",
     description:
-      "We design intuitive and engaging user experiences that guide customers smoothly through your digital products, balancing aesthetic appeal with practical functionality.",
+      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
+
     image: "/images/uiux.png",
     color: "bg-purple-500",
     icon: "✨",
@@ -127,6 +128,37 @@ const services = [
       "AI-powered chatbots and automation",
       "Business intelligence dashboards and data visualization",
       "Data integration and management solutions",
+    ],
+  },
+  {
+    id: 9,
+    title: " IT Consulting",
+    description:
+      "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Technology stack advisory",
+      "Software feasibility assessments",
+      "MVP development strategy for startups",
+      "Digital transformation planning",
+    ],
+  },
+  {
+    id: 9,
+    title: "Research & Innovation (R&D)",
+    description:
+      "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Prototype and Proof-of-Concept (POC) development",
+      "Exploring emerging tech (IoT, AR/VR)",
+      "Building in-house tools and internal product innovation",
     ],
   },
 ];
