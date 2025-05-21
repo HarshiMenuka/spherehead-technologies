@@ -15,8 +15,8 @@ const Portfolio = () => {
       <section className="relative z-10 pt-[150px] text-left px-4">
         <SectionHeader
           overline=""
-          title={<span className="text-[3rem] font-normal">We Create Solution for Your Business</span>}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title={<span className="text-[3rem] font-normal">Our Work Speaks for Itself</span>}
+          description="Explore our portfolio of custom-designed websites, applications, and digital solutions—each built to solve unique business challenges and deliver solutions."
         />
       </section>
 
