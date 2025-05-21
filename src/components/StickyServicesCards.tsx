@@ -147,7 +147,7 @@ const services = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Research & Innovation (R&D)",
     description:
       "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
@@ -198,7 +198,7 @@ const StickyServicesCards = () => {
                   </h3>
                 </div>
 
-                <p className="text-gray-300 mb-5">{service.description}</p>
+                <p className="text-gray-300 mb-6">{service.description}</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-8">
                   <div className="md:col-span-1">

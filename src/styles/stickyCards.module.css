@@ -1,5 +1,5 @@
 .stickyCardsRoot {
-  --cards: 6;
+  --cards: 10;
 
   --cardHeight: 55vh;
   --cardTopPadding: 1.5em;
@@ -41,6 +41,18 @@
 }
 .card:nth-child(6) {
   padding-top: calc(6 * var(--cardTopPadding));
+}
+.card:nth-child(7) {
+  padding-top: calc(7 * var(--cardTopPadding));
+}
+.card:nth-child(8) {
+  padding-top: calc(8 * var(--cardTopPadding));
+}
+.card:nth-child(9) {
+  padding-top: calc(9 * var(--cardTopPadding));
+}
+.card:nth-child(10) {
+  padding-top: calc(10 * var(--cardTopPadding));
 }
 
 .cardBody {
