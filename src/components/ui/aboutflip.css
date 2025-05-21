@@ -58,6 +58,12 @@
   padding-bottom: 20px;
 } 
 
+@media (max-width: 768px) {
+  .flip-card-back p {
+    font-size: 0.75rem;
+  }
+}
+
 
 
 

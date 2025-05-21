@@ -2,14 +2,14 @@
 import React from 'react';
 import TeamProfile from '../../components/ui/teamprofile';
 import './page.css';
-
+import Image from 'next/image';
 // import founderImage from '@images/AboutPage/founder.png';
 
 import SectionHeader from "@/components/sectionheader";
 import AboutHero from "@/components/ui/about-hero";
 import { AboutCount } from "@/components/ui/aboout-counts";
-import AboutFlip from "@/components/ui/aboutflip";
-import JoinUsSection from "@/components/Joinus";
+import AboutFlip from '@/components/ui/aboutflip';
+import JoinUsSection from '@/components/Joinus';
 
 const teamMembers = [
   {
@@ -20,7 +20,7 @@ const teamMembers = [
     image: "/images/user1.jpg",
     linkedinLink: "https://linkedin.com/in/johnsmith",
     facebookLink: "https://facebook.com/johnsmith",
-    instagramLink: "https://instagram.com/johnsmith",
+    instagramLink: "https://instagram.com/johnsmith"
   },
   {
     name: "Sarah Johnson",
@@ -30,7 +30,7 @@ const teamMembers = [
     image: "/images/user2.jpg",
     linkedinLink: "https://linkedin.com/in/sarahjohnson",
     facebookLink: "https://facebook.com/sarahjohnson",
-    instagramLink: "https://instagram.com/sarahjohnson",
+    instagramLink: "https://instagram.com/sarahjohnson"
   },
   {
     name: "Michael Chen",
@@ -40,7 +40,7 @@ const teamMembers = [
     image: "/images/user3.jpg",
     linkedinLink: "https://linkedin.com/in/michaelchen",
     facebookLink: "https://facebook.com/michaelchen",
-    instagramLink: "https://instagram.com/michaelchen",
+    instagramLink: "https://instagram.com/michaelchen"
   },
   {
     name: "Emily Davis",
@@ -50,7 +50,7 @@ const teamMembers = [
     image: "/images/user4.jpg",
     linkedinLink: "https://linkedin.com/in/emilydavis",
     facebookLink: "https://facebook.com/emilydavis",
-    instagramLink: "https://instagram.com/emilydavis",
+    instagramLink: "https://instagram.com/emilydavis"
   },
   {
     name: "David Kim",
@@ -60,7 +60,7 @@ const teamMembers = [
     image: "/images/user5.jpg",
     linkedinLink: "https://linkedin.com/in/davidkim",
     facebookLink: "https://facebook.com/davidkim",
-    instagramLink: "https://instagram.com/davidkim",
+    instagramLink: "https://instagram.com/davidkim"
   },
   {
     name: "Lisa Wang",
@@ -70,8 +70,8 @@ const teamMembers = [
     image: "/images/user6.jpg",
     linkedinLink: "https://linkedin.com/in/lisawang",
     facebookLink: "https://facebook.com/lisawang",
-    instagramLink: "https://instagram.com/lisawang",
-  },
+    instagramLink: "https://instagram.com/lisawang"
+  }
 ];
 
 function FoundersMessage() {
@@ -80,11 +80,7 @@ function FoundersMessage() {
       <div className="founder-container">
         <div className="founder-left">
           <span className="founder-label">Founder</span>
-          <h1 className="founder-title">
-            Founder&apos;s
-            <br />
-            Message
-          </h1>
+          <h1 className="founder-title">Founder&apos;s<br />Message</h1>
           <img
             src="/images/AboutPage/founder.png"
             alt="Founder"
@@ -94,28 +90,11 @@ function FoundersMessage() {
         <div className="founder-right">
           <div className="founder-quote-mark">&quot;</div>
           <div className="founder-message">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div className="founder-quote-mark founder-quote-mark-bottom">
-            &quot;
-          </div>
+          <div className="founder-quote-mark founder-quote-mark-bottom">&quot;</div>
         </div>
       </div>
     </section>
@@ -126,55 +105,33 @@ function ValueDriven() {
   return (
     <section className="value-section-custom">
       <div className="value-content-custom">
+
         <div className="value-text-custom">
           <span className="value-overline">Why</span>
           <h1 className="value-title">We are value driven</h1>
           <p className="value-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s
-          </p>
+At the core of everything we do is a strong commitment to delivering real, measurable value. We don’t just focus on outcomes—we focus on the impact behind them.
+ By combining purpose, integrity, and innovation, we build lasting partnerships and solutions that truly make a difference.</p>
           <div className="value-points-list">
             <div className="value-point">
-              <img
-                src="/images/compass.svg"
-                alt="Personalized Service"
-                className="value-point-icon"
-              />
+              <img src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Personalized Service</div>
-                <div className="value-point-desc">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
+                <div className="value-point-desc">We tailor our approach to fit your unique needs, ensuring every solution feels like it was built just for you.</div>
               </div>
             </div>
             <div className="value-point">
-              <img
-                src="/images/compass.svg"
-                alt="Innovative Solutions"
-                className="value-point-icon"
-              />
+              <img src="/images/compass.svg" alt="Innovative Solutions" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Innovative Solutions</div>
-                <div className="value-point-desc">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
+                <div className="value-point-desc">We bring fresh ideas and creative thinking to every challenge, turning complexity into clarity.</div>
               </div>
             </div>
             <div className="value-point">
-              <img
-                src="/images/compass.svg"
-                alt="Proven Track Record"
-                className="value-point-icon"
-              />
+              <img src="/images/compass.svg" alt="Proven Track Record" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Proven Track Record</div>
-                <div className="value-point-desc">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
+                <div className="value-point-desc">With a history of successful projects and happy clients, we deliver results you can trust—time and time again.</div>
               </div>
             </div>
           </div>
@@ -208,6 +165,7 @@ function ValueDriven() {
               width="320px"
               height="320px"
             />
+
           </div>
         </div>
       </div>
@@ -222,12 +180,8 @@ export default function AboutPage() {
       <div className="about-hero-container mt-20">
         <SectionHeader
           overline=""
-          title={
-            <span className="text-[3rem] font-normal">
-              We Create Solution for Your Business
-            </span>
-          }
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title={<span className="text-[3rem] font-normal">Innovative Solutions Crafted for Your Business</span>}
+          description="We blend strategy, design, and technology to create solutions that drive real business results.."
         />
 
         <div>
@@ -249,30 +203,32 @@ export default function AboutPage() {
         <SectionHeader
           overline="Team"
           title="Meet Our Team"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          description="We’re a team of curious minds, creative thinkers, and tech enthusiasts who love what we do. From developers and designers to strategists and problem-solvers, we bring our unique skills together to make awesome things happen."
         />
       </div>
 
-      {/* Team Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-[72px] justify-items-center px-4 max-w-5xl mx-auto">
-        {teamMembers.map((member, index) => (
-          <TeamProfile
-            key={index}
-            name={member.name}
-            position={member.position}
-            qualification={member.qualification}
-            university={member.university}
-            image={member.image}
-            linkedinLink={member.linkedinLink}
-            facebookLink={member.facebookLink}
-            instagramLink={member.instagramLink}
-          />
-        ))}
-      </div>
+{/* Team Section */}
+<div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
+  {teamMembers.map((member, index) => (
+    <TeamProfile
+      key={index}
+      name={member.name}
+      position={member.position}
+      qualification={member.qualification}
+      university={member.university}
+      image={member.image}
+      linkedinLink={member.linkedinLink}
+      facebookLink={member.facebookLink}
+      instagramLink={member.instagramLink}
+    />
+  ))}
+</div>
+
 
       {/* Founder Section */}
       <FoundersMessage />
       <ValueDriven />
+
 
       <JoinUsSection />
     </div>
