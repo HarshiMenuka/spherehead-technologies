@@ -4,57 +4,42 @@ import { cn } from "@/lib/utils";
 import styles from "../styles/stickyCards.module.css";
 
 const services = [
+
+  // {
+  //   id: 2,
+  //   title: "Software Development",
+  //   description:
+  //     "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
+  //   image: "/images/software-dev.png",
+
+  //   color: "bg-amber-500",
+  //   icon: "💻",
+  //   keyfeatures: [
+  //     "E-commerce Development.",
+  //     "Web Portal Development",
+  //     "CMS-Based Website Development",
+  //     "Native Mobile App Development",
+  //     "Native Mobile App Development",
+  //   ],
+  // },
   {
     id: 1,
-    title: "Mobile Development",
-    description:
-      "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
-
-    image: "/images/mobile app dev.png",
-
-    color: "bg-blue-500",
-    icon: "📱",
-    keyfeatures: [
-      "Cross-platform compatibility (iOS & Android)",
-      "Optimized for performance and speed",
-      "Intuitive and modern user interfaces",
-    ],
-  },
-  {
-    id: 2,
-    title: "Software Development",
-    description:
-      "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
-    image: "/images/software-dev.png",
-
-    color: "bg-amber-500",
-    icon: "💻",
-    keyfeatures: [
-      "E-commerce Development.",
-      "Web Portal Development",
-      "CMS-Based Website Development",
-      "Native Mobile App Development",
-      "Native Mobile App Development",
-    ],
-  },
-  {
-    id: 3,
     title: "Web Development",
     description:
-      "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
+      "From static pages to dynamic websites, our web development services provide scalable, secure, and visually engaging solutions tailored to meet your business objectives.",
 
     image: "/images/Web-dev.png",
 
     color: "bg-indigo-500",
     icon: "🌐",
     keyfeatures: [
-      "SEO-friendly responsive design",
-      "Lightning-fast load times",
-      "Accessible across all screen sizes",
+      "Custom Website Development",
+      "Responsive Design and Optimization",
+      "E-commerce Website Development",
     ],
   },
   {
-    id: 4,
+    id: 2,
     title: "Software Maintenance & Support",
     description:
       "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
@@ -69,22 +54,7 @@ const services = [
     ],
   },
   {
-    id: 5,
-    title: "Graphic Design",
-    description:
-      "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
-    image: "/images/Graphics.png",
-    color: "bg-green-500",
-    icon: "🎨",
-    keyfeatures: [
-      "Branding & Identity ",
-      "Marketing & Advertising",
-      "Digital Design ",
-      "Custom Visual Content ",
-    ],
-  },
-  {
-    id: 6,
+    id: 3,
     title: "UI/UX Design",
     description:
       "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
@@ -100,7 +70,38 @@ const services = [
     ],
   },
   {
-    id: 7,
+    id: 4,
+    title: "Graphic Design",
+    description:
+      "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
+    image: "/images/Graphics.png",
+    color: "bg-green-500",
+    icon: "🎨",
+    keyfeatures: [
+      "Branding & Identity ",
+      "Marketing & Advertising",
+      "Digital Design ",
+      "Custom Visual Content ",
+    ],
+  },
+  {
+    id: 5,
+    title: "Mobile Development",
+    description:
+      "Delivering feature-rich, user-friendly mobile applications across platforms, designed to boost engagement, ensure seamless usability, and provide exceptional performance for a diverse range of business needs.",
+
+    image: "/images/mobile app dev.png",
+
+    color: "bg-blue-500",
+    icon: "📱",
+    keyfeatures: [
+      "Native Mobile App Development (iOS & Android)",
+      "Cross-Platform App Development (React Native, Flutter, etc.)",
+      "Mobile App Maintenance & Support",
+    ],
+  },
+  {
+    id: 6,
     title: "Quality Assurance & Testing",
     description:
       "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures. ",
@@ -115,7 +116,7 @@ const services = [
     ],
   },
   {
-    id: 8,
+    id: 7,
     title: "AI, ML & Data Services",
     description:
       "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
@@ -131,7 +132,7 @@ const services = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     title: " IT Consulting",
     description:
       "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
@@ -147,7 +148,7 @@ const services = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     title: "Research & Innovation (R&D)",
     description:
       "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
