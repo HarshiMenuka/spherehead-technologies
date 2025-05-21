@@ -171,6 +171,12 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .founder-right {
+    padding-bottom: 0rem;
+  }
+}
+
 .founder-quote-mark {
   color: #fff;
   font-size: 5.5rem;
@@ -315,6 +321,12 @@
   padding: 4rem 0;
 }
 
+@media (max-width: 768px) {
+  .value-section-custom {
+    padding-top: 0;
+  }
+}
+
 .value-content-custom {
   display: flex;
   flex-direction: row;
@@ -335,7 +347,6 @@
   font-family: 'Poppins', sans-serif;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
-
 .value-overline {
   color: #60a5fa;
   font-size: 1rem;
@@ -415,11 +426,11 @@
 
 .value-top > *:first-child, .value-bottom > *:last-child {
   width: 220px !important;
-  height: 320px !important;
+  height: 300px !important;
 }
 .value-top > *:last-child, .value-bottom > *:first-child {
   width: 320px !important;
-  height: 320px !important;
+  height: 200px !important;
 }
 
 .value-top > *, .value-bottom > * {
