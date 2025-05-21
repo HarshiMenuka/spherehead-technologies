@@ -110,28 +110,28 @@ function ValueDriven() {
           <span className="value-overline">Why</span>
           <h1 className="value-title">We are value driven</h1>
           <p className="value-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
-          </p>
+At the core of everything we do is a strong commitment to delivering real, measurable value. We don’t just focus on outcomes—we focus on the impact behind them.
+ By combining purpose, integrity, and innovation, we build lasting partnerships and solutions that truly make a difference.</p>
           <div className="value-points-list">
             <div className="value-point">
               <img src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Personalized Service</div>
-                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <div className="value-point-desc">We tailor our approach to fit your unique needs, ensuring every solution feels like it was built just for you.</div>
               </div>
             </div>
             <div className="value-point">
               <img src="/images/compass.svg" alt="Innovative Solutions" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Innovative Solutions</div>
-                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <div className="value-point-desc">We bring fresh ideas and creative thinking to every challenge, turning complexity into clarity.</div>
               </div>
             </div>
             <div className="value-point">
               <img src="/images/compass.svg" alt="Proven Track Record" className="value-point-icon" />
               <div>
                 <div className="value-point-title">Proven Track Record</div>
-                <div className="value-point-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <div className="value-point-desc">With a history of successful projects and happy clients, we deliver results you can trust—time and time again.</div>
               </div>
             </div>
           </div>
@@ -180,8 +180,8 @@ export default function AboutPage() {
       <div className="about-hero-container mt-20">
         <SectionHeader
           overline=""
-          title={<span className="text-[3rem] font-normal">We Create Solution for Your Business</span>}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title={<span className="text-[3rem] font-normal">Innovative Solutions Crafted for Your Business</span>}
+          description="We blend strategy, design, and technology to create solutions that drive real business results.."
         />
 
         <div>
@@ -203,26 +203,27 @@ export default function AboutPage() {
         <SectionHeader
           overline="Team"
           title="Meet Our Team"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          description="We’re a team of curious minds, creative thinkers, and tech enthusiasts who love what we do. From developers and designers to strategists and problem-solvers, we bring our unique skills together to make awesome things happen."
         />
       </div>
 
-      {/* Team Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
-        {teamMembers.map((member, index) => (
-          <TeamProfile
-            key={index}
-            name={member.name}
-            position={member.position}
-            qualification={member.qualification}
-            university={member.university}
-            image={member.image}
-            linkedinLink={member.linkedinLink}
-            facebookLink={member.facebookLink}
-            instagramLink={member.instagramLink}
-          />
-        ))}
-      </div>
+{/* Team Section */}
+<div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
+  {teamMembers.map((member, index) => (
+    <TeamProfile
+      key={index}
+      name={member.name}
+      position={member.position}
+      qualification={member.qualification}
+      university={member.university}
+      image={member.image}
+      linkedinLink={member.linkedinLink}
+      facebookLink={member.facebookLink}
+      instagramLink={member.instagramLink}
+    />
+  ))}
+</div>
+
 
       {/* Founder Section */}
       <FoundersMessage />
