@@ -147,7 +147,7 @@ const services = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Research & Innovation (R&D)",
     description:
       "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
