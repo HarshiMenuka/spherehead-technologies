@@ -2,15 +2,16 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import styles from "../styles/stickyCards.module.css";
-// Service data with colors, icons and descriptions
+
 const services = [
   {
     id: 1,
     title: "Mobile Development",
     description:
       "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
-    image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
+
+       image: "/images/mobile app dev.png",
+
     color: "bg-blue-500",
     icon: "📱",
     keyfeatures: [
@@ -18,14 +19,17 @@ const services = [
       "Optimized for performance and speed",
       "Intuitive and modern user interfaces",
     ],
+
+
   },
   {
     id: 2,
     title: "Software Development",
     description:
-      "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60",
+
+      "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
+        image: "/images/software-dev.png",
+
     color: "bg-amber-500",
     icon: "💻",
     keyfeatures: [
@@ -35,14 +39,17 @@ const services = [
       "Native Mobile App Development",
       "Native Mobile App Development",
     ],
+
+
   },
   {
     id: 3,
     title: "Web Development",
     description:
       "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
-    image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60",
+
+        image: "/images/Web-dev.png",
+
     color: "bg-indigo-500",
     icon: "🌐",
     keyfeatures: [
@@ -50,14 +57,17 @@ const services = [
       "Lightning-fast load times",
       "Accessible across all screen sizes",
     ],
+
+
   },
   {
     id: 4,
     title: "Software Maintenance & Support",
     description:
-      "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60",
+
+     
+      "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+    image: "/images/It-support.png",
     color: "bg-rose-500",
     icon: "🔧",
     keyfeatures: [
@@ -66,14 +76,17 @@ const services = [
       "Ongoing monitoring and optimization",
       "Client-requested changes and real-time updates",
     ],
+
+
   },
   {
     id: 5,
     title: "Graphic Design",
     description:
-      " Designing cornerstone of transforming information into clear visuals, building brand identity, influencing audiences, and combining creativity with functionality.",
-    image:
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60",
+
+   
+      "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
+    image: "/images/Graphics.png",
     color: "bg-green-500",
     icon: "🎨",
     keyfeatures: [
@@ -82,14 +95,16 @@ const services = [
       "Digital Design ",
       "Custom Visual Content ",
     ],
+
+
   },
   {
     id: 6,
     title: "UI/UX Design",
     description:
-      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+
+         "We design intuitive and engaging user experiences that guide customers smoothly through your digital products, balancing aesthetic appeal with practical functionality.",
+    image: "/images/uiux.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -129,6 +144,9 @@ const services = [
       "Business intelligence dashboards and data visualization",
       "Data integration and management solutions",
     ],
+
+  
+
   },
 ];
 
@@ -137,6 +155,7 @@ const StickyServicesCards = () => {
     <section className={cn("bg-[#111] py-16 relative", styles.stickyCardsRoot)}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
+
           <p className="text-blue-400 text-sm font-medium mb-2">
             Our Offerings
           </p>
@@ -148,6 +167,7 @@ const StickyServicesCards = () => {
             From strategy and design to development and support, we provide
             end-to-end solutions tailored to your unique needs, helping you stay
             ahead in a fast-paced digital landscape.
+
           </p>
         </div>
 
@@ -157,18 +177,12 @@ const StickyServicesCards = () => {
               <div
                 className={cn(
                   styles.cardBody,
+
                   "bg-[#1a1a1a] border border-neutral-800 overflow-hidden "
+
                 )}
               >
                 <div className="flex items-center gap-5 mb-5">
-                  <div
-                    className={cn(
-                      "flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full text-2xl",
-                      service.color
-                    )}
-                  >
-                    {service.icon}
-                  </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white">
                     {service.title}
                   </h3>
@@ -179,10 +193,11 @@ const StickyServicesCards = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
                   <div className="md:col-span-1">
                     <div className="h-[250px] md:h-[200px] rounded-lg overflow-hidden">
+
                       <img
                         src={service.image}
                         alt={service.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-2"
                       />
                     </div>
                   </div>
@@ -196,8 +211,7 @@ const StickyServicesCards = () => {
                         <li key={item} className="flex items-start">
                           <span className="text-green-400 mr-2">✓</span>
                           <span className="text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           </span>
                         </li>
                       ))} */}

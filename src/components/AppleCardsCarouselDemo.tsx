@@ -56,48 +56,48 @@ const data = [
     icon: <IconDeviceMobile className="w-8 h-8" />,
     title: "Software Development",
     description: "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60"
+    image: "/images/software engineer.jpg"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "UI/UX Design",
     description: "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60"
+    image: "/images/UI UX Design.jpg"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Quality Assurance & Testing",
     description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
+    image: "/images/Quality Assurance & Testing in IT.jpg"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "Software Maintenance & Support",
     description: "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60"
+    image: "/images/Software Maintenance & Support.jpg"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "AI, ML & Data Services",
     description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
+    image: "/images/AI, ML & Data Services.jpg"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "IT Consulting",
     description: "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60"
+    image: "/images/IT Consulting.jpg"
   },
     {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Research & Innovation (R&D)",
     description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
+    image: "/images/Research & Innovation (R&D).jpg"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "Graphic Designing",
     description: "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60"
+    image: "/images/Graphic Designing.jpg"
   }
 ];

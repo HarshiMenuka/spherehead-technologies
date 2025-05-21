@@ -177,12 +177,11 @@ export const Card = ({
     <div
       className="relative z-10 flex h-[420px] w-full flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 sm:h-60 sm:w-44 md:h-[28rem] md:w-72 dark:bg-neutral-900 mx-auto sm:mx-0"
     >
-      <div className="pointer-events-none absolute inset-0 z-30">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
-      </div>
-      <div className="relative z-40 flex h-full w-full flex-col justify-start px-4 pt-10 md:px-6 md:pt-14">
+     <div className="pointer-events-none absolute inset-0 z-30">
+  <div className="absolute inset-0 bg-gradient-to-b from-black/99 to-black/50" />
+</div>
+
+      <div className="relative z-40 flex h-full w-full flex-col justify-start px-4 pt-4 md:px-6 md:pt-14">
         <div className="w-full">
           <p className="text-left font-sans text-lg font-semibold [text-wrap:balance] text-white md:text-2xl mb-4 md:mb-6">
             {card.title}
