@@ -415,11 +415,11 @@
 
 .value-top > *:first-child, .value-bottom > *:last-child {
   width: 220px !important;
-  height: 320px !important;
+  height: 300px !important;
 }
 .value-top > *:last-child, .value-bottom > *:first-child {
   width: 320px !important;
-  height: 320px !important;
+  height: 200px !important;
 }
 
 .value-top > *, .value-bottom > * {

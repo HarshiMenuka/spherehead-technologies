@@ -12,7 +12,7 @@ const AboutFlip: React.FC<FlipCardProps> = ({
   image, 
   description, 
   width = '300px', 
-  height = '300px' 
+  height = '200px'
 }) => {
   return (
     <div className="flip-card" style={{ width, height }}>
