@@ -32,7 +32,7 @@ const row2 = [
   { src: "/images/tech-icons/joomla.svg", alt: "Joomla", shadowColor: "rgba(97, 218, 251, 0.7)" },
   { src: "/images/tech-icons/mysql.svg", alt: "MySQL", shadowColor: "rgba(65, 184, 131, 0.7)" },
   { src: "/images/tech-icons/nist.svg", alt: "N IST", shadowColor: "rgba(139, 195, 74, 0.7)" },
-  { src: "/images/tech-icons/ai.svg", alt: "Adobe Illustrator", shadowColor: "rgba(104, 109, 224, 0.7)" },
+  { src: "/images/tech-icons/Ai.svg", alt: "Adobe Illustrator", shadowColor: "rgba(104, 109, 224, 0.7)" },
   { src: "/images/tech-icons/shopify.svg", alt: "Shopify", shadowColor: "rgba(255, 255, 255, 0.3)" },
   { src: "/images/tech-icons/googlecloud.svg", alt: "G-Cloud", shadowColor: "rgba(255, 0, 0, 0.7)" }
 ];
@@ -44,7 +44,7 @@ const row3 = [
   { src: "/images/tech-icons/swift.svg", alt: "SWIFT", shadowColor: "rgba(139, 195, 74, 0.7)" },
   { src: "/images/tech-icons/Figma.svg", alt: "Figma", shadowColor: "rgba(255, 255, 255, 0.3)" },
   { src: "/images/tech-icons/docker.svg", alt: "Docker", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/DigitalOcean.svg", alt: "Digital Ocean", shadowColor: "rgba(104, 109, 224, 0.7)" },
+  { src: "/images/tech-icons/DIgitalOcean.svg", alt: "Digital Ocean", shadowColor: "rgba(104, 109, 224, 0.7)" },
   { src: "/images/tech-icons/Azure.svg", alt: "Azure", shadowColor: "rgba(139, 195, 74, 0.7)" },
   { src: "/images/tech-icons/cloudfare.svg", alt: "CloudFare", shadowColor: "rgba(104, 109, 224, 0.7)" }
 ];
