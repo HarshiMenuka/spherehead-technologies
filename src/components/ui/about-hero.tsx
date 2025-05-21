@@ -5,17 +5,19 @@ const AboutHero = () => {
   return (
     <div className="w-full">
       {/* Hero Image Section */}
-      <div className="relative w-full max-w-6xl mx-auto mt-5 px-4">
-        <div className="relative w-full h-[150px] sm:h-[300px]">
-          <Image
-            src="/images/AboutPage/aboutHero.png"
-            alt="About Spherehead Technologies"
-            fill
-            className="object-contain rounded-lg"
-            priority
-          />
-        </div>
-      </div>
+<div className="relative w-full max-w-6xl mx-auto mt-5 px-4">
+  <div className="relative w-full h-[200px] sm:h-[300px] rounded-[12px] overflow-hidden">
+    <Image
+      src="/images/AboutPage/aboutHero.jpg"
+      alt="About Spherehead Technologies"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
+</div>
+
+
 
       {/* Description Section */}
       <div className="about-hero-description max-w-[90rem] mx-auto px-6 py-8">
