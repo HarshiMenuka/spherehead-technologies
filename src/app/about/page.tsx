@@ -76,7 +76,7 @@ const teamMembers = [
 
 function FoundersMessage() {
   return (
-    <section className="founder-section mt-12">
+    <section className="founder-section mt-12 bg-[#161616]">
       <div className="founder-container">
         <div className="founder-left">
           <span className="founder-label">Founder</span>
@@ -217,7 +217,7 @@ function ValueDriven() {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#111] py-20">
+    <div className="min-h-screen bg-[#161616] py-20">
       {/* About Hero Section */}
       <div className="about-hero-container mt-20">
         <SectionHeader
