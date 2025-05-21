@@ -139,8 +139,7 @@ export default function Testimonials() {
               What our Clients <br className="hidden sm:block" /> say about us
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-xs sm:text-sm md:text-base px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              We believe great work starts with mutual trust. That’s why our clients aren’t just customers, they’re collaborators. Hear what they have to say about working with a team that’s as invested in their success as they are.
             </p>
           </div>
         </div>

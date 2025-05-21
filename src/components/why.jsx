@@ -6,32 +6,32 @@ const features = [
   {
     title: "Expertise in Latest Tech Stacks",
     description:
-      "Our team builds efficient solutions using modern and trending tech stacks.",
+      "Harnessing the power of the latest technologies to create future-ready solutions that elevate your business.",
   },
   {
     title: "Agile and Rapid Development",
     description:
-      "We ensure fast, flexible delivery through agile methodologies and sprints.",
+      "Delivering faster, adaptable solutions that evolve with your needs, ensuring quick turnarounds without sacrificing quality.",
   },
   {
     title: "Seamless Integration",
     description:
-      "We create solutions that integrate effortlessly with your existing systems.",
+      "Ensuring smooth integration with your existing systems for efficient workflows and uninterrupted operations.",
   },
   {
-    title: "Human Centered Innovation",
+    title: "Human-Centered Innovation",
     description:
-      "We blend technology with intuitive design for seamless user experiences.",
+      "Focusing on user experience to design solutions that are intuitive, impactful, and designed with real people in mind.",
   },
   {
     title: "Reliable & Secure Development",
     description:
-      "Our robust coding standards ensure high performance and security.",
+      "Building dependable, secure solutions that safeguard your business and provide peace of mind.",
   },
   {
     title: "Code Quality and Version Control",
     description:
-      "We maintain clean, efficient code with proper version control and reviews.",
+      "Maintaining exceptional code quality with robust version control to ensure scalability, reliability, and smooth collaboration.",
   },
 ];
 
@@ -44,14 +44,12 @@ export default function whyservices() {
           <p className="text-sm text-blue-300 uppercase mb-2">Why</p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
             Empowering Your Business
+
             <br />
             With Innovative Solutions
           </h2>
           <p className="text-gray-300 text-base max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Unlocking the true potential of your business through innovative solutions that drive growth and streamline operations. By combining creativity and technology, every solution is designed to tackle challenges and deliver real results, empowering your business to thrive in a dynamic world.
           </p>
         </div>
 

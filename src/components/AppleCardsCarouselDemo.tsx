@@ -9,8 +9,8 @@ import '../styles/homeComponents.css';
 export function AppleCardsCarouselDemo() {
   const router = useRouter();
   const cards = data.map((card, index) => (
-    <Card 
-      key={index} 
+    <Card
+      key={index}
       card={{
         src: card.image,
         title: card.title,
@@ -34,13 +34,11 @@ export function AppleCardsCarouselDemo() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 text-center md:text-left">What we do?</h2>
         <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 mb-8 items-center md:items-start">
           <p className="text-gray-300 text-sm md:text-base max-w-2xl text-center md:text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            We are a full-service IT solutions company specializing in website development, digital design, and custom technology services. Our mission is to help businesses grow by creating powerful online experiences and providing reliable IT support tailored to their needs.From crafting responsive websites to delivering end-to-end technical solutions, we combine creativity, technology, and strategy to bring your vision to life.
           </p>
-          <button 
-            onClick={() => router.push('/service')} 
-            style={{color:'black'}}
+          <button
+            onClick={() => router.push('/service')}
+            style={{ color: 'black' }}
             className="contact-btn px-6 py-2 text-sm md:text-base whitespace-nowrap self-center md:self-start mt-0"
           >
             Learn More
@@ -55,49 +53,49 @@ const data = [
   {
     icon: <IconDeviceMobile className="w-8 h-8" />,
     title: "Software Development",
-    description: "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
+    description: "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms.",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "UI/UX Design",
-    description: "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
+    description: "From wireframes to final visuals our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Quality Assurance & Testing",
-    description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
+    description: "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures.",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "Software Maintenance & Support",
-    description: "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
+    description: "Improving application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "AI, ML & Data Services",
-    description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
+    description: "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "IT Consulting",
-    description: "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+    description: "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60"
   },
-    {
+  {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Research & Innovation (R&D)",
-    description: "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
+    description: "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "Graphic Designing",
-    description: "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+    description: "Designing cornerstone of transforming information into clear visuals, building brand identity, influencing audiences, and combining creativity with functionality.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60"
   }
 ];

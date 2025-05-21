@@ -1,8 +1,10 @@
 .stickyCardsRoot {
   --cards: 6;
-  --cardHeight: 45vh;
+
+  --cardHeight: 55vh;
   --cardTopPadding: 1.5em;
   --cardMargin: 1.2em;
+
 }
 
 .cardsContainer {
@@ -25,23 +27,18 @@
 .card:nth-child(1) {
   padding-top: calc(1 * var(--cardTopPadding));
 }
-
 .card:nth-child(2) {
   padding-top: calc(2 * var(--cardTopPadding));
 }
-
 .card:nth-child(3) {
   padding-top: calc(3 * var(--cardTopPadding));
 }
-
 .card:nth-child(4) {
   padding-top: calc(4 * var(--cardTopPadding));
 }
-
 .card:nth-child(5) {
   padding-top: calc(5 * var(--cardTopPadding));
 }
-
 .card:nth-child(6) {
   padding-top: calc(6 * var(--cardTopPadding));
 }
@@ -50,21 +47,27 @@
   box-sizing: border-box;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
   height: var(--cardHeight);
   display: flex;
   flex-direction: column;
   transition: all 0.5s;
+  background-color: #1a1a1a;
+  min-height: 24rem;
+ 
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
   .stickyCardsRoot {
     --cardHeight: 55vh;
-    --cardTopPadding: 0.5em;
+    --cardTopPadding: 1em;
+    --cardMargin: 1.2em;
   }
-  
+
   .cardBody {
     padding: 12px;
     border-radius: 10px;
+    margin-bottom: 1.2rem;
   }
 }
