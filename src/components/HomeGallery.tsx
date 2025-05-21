@@ -10,7 +10,7 @@ const IMAGES = [
   'images/homeGallery/F3.jpg',
   'images/homeGallery/F4.jpg',
   'images/homeGallery/F5.jpg'
-  
+
 ]
 
 const HomeGallery = () => {
@@ -23,11 +23,17 @@ const HomeGallery = () => {
       const screenWidth = window.innerWidth;
       let triggerPoint;
 
-      if (screenWidth < 768) {
-        triggerPoint = windowHeight * 3.8;
+      if (screenWidth < 321) {
+        triggerPoint = windowHeight * 4.7;
+      } else if (screenWidth < 376) {
+        triggerPoint = windowHeight * 4.5;
+      } else if (screenWidth < 426) {
+        triggerPoint = windowHeight * 4.2;
+      } else if (screenWidth < 769) {
+        triggerPoint = windowHeight * 3.7;
       } else {
         // For larger screens
-        triggerPoint = windowHeight * 3.2;
+        triggerPoint = windowHeight * 3.4;
       }
 
       if (scrollPosition > triggerPoint) {
@@ -69,7 +75,7 @@ const HomeGallery = () => {
                 Our Portfolio speaks for itself
               </h1>
               <p className="mx-auto my-6 max-w-xl text-sm text-gray-300 md:text-base">
-                We turn your business idea into a website or web application that not only looks good, but is also intuitive and easy to use
+                We turn your business idea into a powerful digital solution that not only looks great but is also intuitive, user-friendly, and built to scale.
               </p>
               <div className="flex items-center justify-center gap-4 w-full">
                 <Button onClick={() => router.push('/contact')} className="px-4 py-2 font-medium contact-btn">
@@ -85,4 +91,6 @@ const HomeGallery = () => {
   )
 }
 
-export { HomeGallery } 
+export { HomeGallery }
+
+

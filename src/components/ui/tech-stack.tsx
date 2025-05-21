@@ -47,10 +47,7 @@ const TechStack = () => {
         Powering Innovation<br />with the Best Tools
       </h3>
       <p style={styles.paragraph}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        At the core of everything we build is a carefully selected, modern tech stack that ensures performance, scalability, and security. We combine industry best practices with cutting-edge tools to deliver digital solutions that grow with your business.
       </p>
 
       {/* Desktop view */}
