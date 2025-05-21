@@ -4,41 +4,42 @@ import { cn } from "@/lib/utils";
 import styles from "../styles/stickyCards.module.css";
 
 const services = [
+
+  // {
+  //   id: 2,
+  //   title: "Software Development",
+  //   description:
+  //     "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
+  //   image: "/images/software-dev.png",
+
+  //   color: "bg-amber-500",
+  //   icon: "💻",
+  //   keyfeatures: [
+  //     "E-commerce Development.",
+  //     "Web Portal Development",
+  //     "CMS-Based Website Development",
+  //     "Native Mobile App Development",
+  //     "Native Mobile App Development",
+  //   ],
+  // },
   {
     id: 1,
-    title: "Mobile Development",
-    description:
-      "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
-
-    image: "/images/mobile app dev.png",
-
-    color: "bg-blue-500",
-    icon: "📱",
-    keyfeatures: [
-      "Cross-platform compatibility (iOS & Android)",
-      "Optimized for performance and speed",
-      "Intuitive and modern user interfaces",
-    ],
-  },
-  
-  {
-    id: 2,
     title: "Web Development",
     description:
-      "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
+      "From static pages to dynamic websites, our web development services provide scalable, secure, and visually engaging solutions tailored to meet your business objectives.",
 
     image: "/images/Web-dev.png",
 
     color: "bg-indigo-500",
     icon: "🌐",
     keyfeatures: [
-      "SEO-friendly responsive design",
-      "Lightning-fast load times",
-      "Accessible across all screen sizes",
+      "Custom Website Development",
+      "Responsive Design and Optimization",
+      "E-commerce Website Development",
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Software Maintenance & Support",
     description:
       "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
@@ -50,6 +51,22 @@ const services = [
       "Version upgrades and feature enhancements",
       "Ongoing monitoring and optimization",
       "Client-requested changes and real-time updates",
+    ],
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    description:
+      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
+
+    image: "/images/uiux.png",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "User research and analytics",
+      "Wireframing and prototyping",
+      "Modern user interface design",
+      "Usability testing and user feedback analysis",
     ],
   },
   {
@@ -69,18 +86,18 @@ const services = [
   },
   {
     id: 5,
-    title: "UI/UX Design",
+    title: "Mobile Development",
     description:
-      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
+      "Delivering feature-rich, user-friendly mobile applications across platforms, designed to boost engagement, ensure seamless usability, and provide exceptional performance for a diverse range of business needs.",
 
-    image: "/images/uiux.png",
-    color: "bg-purple-500",
-    icon: "✨",
+    image: "/images/mobile app dev.png",
+
+    color: "bg-blue-500",
+    icon: "📱",
     keyfeatures: [
-      "User research and analytics",
-      "Wireframing and prototyping",
-      "Modern user interface design",
-      "Usability testing and user feedback analysis",
+      "Native Mobile App Development (iOS & Android)",
+      "Cross-Platform App Development (React Native, Flutter, etc.)",
+      "Mobile App Maintenance & Support",
     ],
   },
   {

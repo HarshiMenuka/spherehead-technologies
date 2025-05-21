@@ -2,7 +2,7 @@
 import React from 'react';
 import TeamProfile from '../../components/ui/teamprofile';
 import './page.css';
-import Image from 'next/image';
+
 // import founderImage from '@images/AboutPage/founder.png';
 
 import SectionHeader from "@/components/sectionheader";
@@ -110,8 +110,8 @@ function ValueDriven() {
           <span className="value-overline">Why</span>
           <h1 className="value-title">We are value driven</h1>
           <p className="value-description">
-At the core of everything we do is a strong commitment to delivering real, measurable value. We don't just focus on outcomes—we focus on the impact behind them.
- By combining purpose, integrity, and innovation, we build lasting partnerships and solutions that truly make a difference.</p>
+            At the core of everything we do is a strong commitment to delivering real, measurable value. We don’t just focus on outcomes—we focus on the impact behind them.
+            By combining purpose, integrity, and innovation, we build lasting partnerships and solutions that truly make a difference.</p>
           <div className="value-points-list">
             <div className="value-point">
               <img src="/images/compass.svg" alt="Personalized Service" className="value-point-icon" />
@@ -160,7 +160,7 @@ At the core of everything we do is a strong commitment to delivering real, measu
               height="200px"
             />
             <AboutFlip
-              image="/images/user4.jpg"
+              image="/images/coffee4.jpg"
               description="We once had a heated debate about which fictional character would win in a fight."
               width="300px"
               height="200px"
@@ -207,22 +207,22 @@ export default function AboutPage() {
         />
       </div>
 
-{/* Team Section */}
-<div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
-  {teamMembers.map((member, index) => (
-    <TeamProfile
-      key={index}
-      name={member.name}
-      position={member.position}
-      qualification={member.qualification}
-      university={member.university}
-      image={member.image}
-      linkedinLink={member.linkedinLink}
-      facebookLink={member.facebookLink}
-      instagramLink={member.instagramLink}
-    />
-  ))}
-</div>
+      {/* Team Section */}
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 max-w-7xl mx-auto">
+        {teamMembers.map((member, index) => (
+          <TeamProfile
+            key={index}
+            name={member.name}
+            position={member.position}
+            qualification={member.qualification}
+            university={member.university}
+            image={member.image}
+            linkedinLink={member.linkedinLink}
+            facebookLink={member.facebookLink}
+            instagramLink={member.instagramLink}
+          />
+        ))}
+      </div>
 
 
       {/* Founder Section */}
