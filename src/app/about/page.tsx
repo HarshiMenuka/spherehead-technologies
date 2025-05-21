@@ -110,7 +110,7 @@ function ValueDriven() {
           <span className="value-overline">Why</span>
           <h1 className="value-title">We are value driven</h1>
           <p className="value-description">
-At the core of everything we do is a strong commitment to delivering real, measurable value. We don’t just focus on outcomes—we focus on the impact behind them.
+At the core of everything we do is a strong commitment to delivering real, measurable value. We don't just focus on outcomes—we focus on the impact behind them.
  By combining purpose, integrity, and innovation, we build lasting partnerships and solutions that truly make a difference.</p>
           <div className="value-points-list">
             <div className="value-point">
@@ -140,30 +140,30 @@ At the core of everything we do is a strong commitment to delivering real, measu
         <div className="value-flipcards-grid">
           <div className="value-top">
             <AboutFlip
-              image="/images/user2.jpg"
+              image="/images/coffee2.jpg"
               description="Our team's daily fuel is coffee, but we suspect it's 90% caffeine and 10% magic."
-              width="200px"
-              height="300px"
+              width="300px"
+              height="200px"
             />
             <AboutFlip
-              image="/images/user3.jpg"
+              image="/images/coffee3.jpg"
               description="Our team chat is a mix of work related discussions and memes we have our priorities straight."
-              width="320px"
-              height="320px"
+              width="300px"
+              height="200px"
             />
           </div>
           <div className="value-bottom">
             <AboutFlip
-              image="/images/user1.jpg"
+              image="/images/coffee1.jpg"
               description="Our team motto is 'work hard, laugh harder', it's been proven to increase productivity!"
-              width="200px"
-              height="300px"
+              width="300px"
+              height="200px"
             />
             <AboutFlip
               image="/images/user4.jpg"
               description="We once had a heated debate about which fictional character would win in a fight."
-              width="320px"
-              height="320px"
+              width="300px"
+              height="200px"
             />
 
           </div>
@@ -203,7 +203,7 @@ export default function AboutPage() {
         <SectionHeader
           overline="Team"
           title="Meet Our Team"
-          description="We’re a team of curious minds, creative thinkers, and tech enthusiasts who love what we do. From developers and designers to strategists and problem-solvers, we bring our unique skills together to make awesome things happen."
+          description="We're a team of curious minds, creative thinkers, and tech enthusiasts who love what we do. From developers and designers to strategists and problem-solvers, we bring our unique skills together to make awesome things happen."
         />
       </div>
 

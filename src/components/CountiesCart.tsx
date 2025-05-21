@@ -33,23 +33,22 @@ export function CountiesCart() {
             Our Global Reach
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            We proudly collaborate with clients across the globe—empowering startups, small businesses, and enterprises to bring their visions to life. With a diverse, distributed team and a proven ability to work seamlessly across time zones, we ensure clear communication, on-time delivery, and a deep understanding of your unique goals, wherever your business calls home.
           </p>
         </div>
 
         {/* Stats Grid */}
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-[-30px] md:mb-[-50px] mx-4 md:mx-32">
-  {stats.map((stat, index) => (
-    <div 
-      key={index} 
-      className="bg-[#1E1E1E] p-3 md:p-3 rounded-lg text-center shadow-lg"
-    >
-      <div className="text-sm md:text-xl font-bold mb-1 ">{stat.value}</div>
-  <div className="text-gray-400 text-sm  font-normal">{stat.label}</div>
-    </div>
-  ))}
-</div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 mb-[-30px] md:mb-[-50px] mx-4 md:mx-32">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-[#1E1E1E] p-3 md:p-3 rounded-lg text-center shadow-lg"
+            >
+              <div className="text-sm md:text-xl font-bold mb-1 ">{stat.value}</div>
+              <div className="text-gray-400 text-sm  font-normal">{stat.label}</div>
+            </div>
+          ))}
+        </div>
 
 
         {/* World Map */}
@@ -57,91 +56,91 @@ export function CountiesCart() {
           <WorldMap
             dots={[
               {
-                start: { lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 56.1304, lng: -106.3468, label: "Canada" },
 
               },
               {
-                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 30.0902, lng: -95.7129, label: "USA" },
 
               },
               {
-                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: -6.5380, lng: -85.7821, label: "Panama" },
 
               },
               {
-                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 50.2639, lng: 9.5018, label: "Denmark" },
 
 
               },
               {
-                   start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: 30.8719, lng: 12.5674, label: "Italy" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 30.8719, lng: 12.5674, label: "Italy" },
 
 
               },
               {
-                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 25.0742, lng: 21.8243, label: "Greece" },
 
 
               },
               {
-                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                 end: { lat: 61.5240, lng: 90.3188, label: "Russia" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 61.5240, lng: 90.3188, label: "Russia" },
 
               },
               {
-                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 56.8796, lng: 24.6032, label: "Latvia" },
 
 
               },
               {
-                 start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                 end: { lat: -15.2105, lng: 101.9758, label: "Malaysia" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -15.2105, lng: 101.9758, label: "Malaysia" },
 
 
               },
               {
-                start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
                 end: { lat: 56.8796, lng: 30.6032, label: "Latvia" },
 
 
               },
-               {
-                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: -15.2744, lng: 133.7751, label: "Australia" },
+              {
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -15.2744, lng: 133.7751, label: "Australia" },
 
 
               },
-               {
-                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: -15.7893, lng: 113.9213, label: "Indonesia" },
-
-
-
-              },
-               {
-                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: -5.0583, lng: 108.2772, label: "Vietnam" },
-
-
-
-              },
-               {
-                   start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: -5.8700, lng: 100.9925, label: "Thailand" },
+              {
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -15.7893, lng: 113.9213, label: "Indonesia" },
 
 
 
               },
               {
-                  start: {  lat:-8.8731, lng: 80.7718, label: "Sri Lanka" },
-                  end: { lat: 26.2048, lng: 140.2529, label: "Japan" },
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -5.0583, lng: 108.2772, label: "Vietnam" },
+
+
+
+              },
+              {
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: -5.8700, lng: 100.9925, label: "Thailand" },
+
+
+
+              },
+              {
+                start: { lat: -8.8731, lng: 80.7718, label: "Sri Lanka" },
+                end: { lat: 26.2048, lng: 140.2529, label: "Japan" },
 
 
 

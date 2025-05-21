@@ -10,7 +10,7 @@ const services = [
     description:
       "We craft user-friendly and high-performance mobile apps that bring your business directly to your customers, delivering smooth and consistent experiences across all devices.",
 
-       image: "/images/mobile app dev.png",
+    image: "/images/mobile app dev.png",
 
     color: "bg-blue-500",
     icon: "📱",
@@ -19,16 +19,13 @@ const services = [
       "Optimized for performance and speed",
       "Intuitive and modern user interfaces",
     ],
-
-
   },
   {
     id: 2,
     title: "Software Development",
     description:
-
-      "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
-        image: "/images/software-dev.png",
+      "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
+    image: "/images/software-dev.png",
 
     color: "bg-amber-500",
     icon: "💻",
@@ -39,8 +36,6 @@ const services = [
       "Native Mobile App Development",
       "Native Mobile App Development",
     ],
-
-
   },
   {
     id: 3,
@@ -48,7 +43,7 @@ const services = [
     description:
       "We create fast, responsive, and visually engaging websites that bring your brand to life online—optimized for performance, usability, and seamless access across all devices.",
 
-        image: "/images/Web-dev.png",
+    image: "/images/Web-dev.png",
 
     color: "bg-indigo-500",
     icon: "🌐",
@@ -57,16 +52,12 @@ const services = [
       "Lightning-fast load times",
       "Accessible across all screen sizes",
     ],
-
-
   },
   {
     id: 4,
     title: "Software Maintenance & Support",
     description:
-
-     
-      "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+      "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
     image: "/images/It-support.png",
     color: "bg-rose-500",
     icon: "🔧",
@@ -76,15 +67,11 @@ const services = [
       "Ongoing monitoring and optimization",
       "Client-requested changes and real-time updates",
     ],
-
-
   },
   {
     id: 5,
     title: "Graphic Design",
     description:
-
-   
       "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
     image: "/images/Graphics.png",
     color: "bg-green-500",
@@ -95,15 +82,13 @@ const services = [
       "Digital Design ",
       "Custom Visual Content ",
     ],
-
-
   },
   {
     id: 6,
     title: "UI/UX Design",
     description:
+      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
 
-         "We design intuitive and engaging user experiences that guide customers smoothly through your digital products, balancing aesthetic appeal with practical functionality.",
     image: "/images/uiux.png",
     color: "bg-purple-500",
     icon: "✨",
@@ -144,9 +129,37 @@ const services = [
       "Business intelligence dashboards and data visualization",
       "Data integration and management solutions",
     ],
-
-  
-
+  },
+  {
+    id: 9,
+    title: " IT Consulting",
+    description:
+      "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Technology stack advisory",
+      "Software feasibility assessments",
+      "MVP development strategy for startups",
+      "Digital transformation planning",
+    ],
+  },
+  {
+    id: 10,
+    title: "Research & Innovation (R&D)",
+    description:
+      "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Prototype and Proof-of-Concept (POC) development",
+      "Exploring emerging tech (IoT, AR/VR)",
+      "Building in-house tools and internal product innovation",
+    ],
   },
 ];
 
@@ -155,7 +168,6 @@ const StickyServicesCards = () => {
     <section className={cn("bg-[#111] py-16 relative", styles.stickyCardsRoot)}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-
           <p className="text-blue-400 text-sm font-medium mb-2">
             Our Offerings
           </p>
@@ -167,7 +179,6 @@ const StickyServicesCards = () => {
             From strategy and design to development and support, we provide
             end-to-end solutions tailored to your unique needs, helping you stay
             ahead in a fast-paced digital landscape.
-
           </p>
         </div>
 
@@ -179,7 +190,6 @@ const StickyServicesCards = () => {
                   styles.cardBody,
 
                   "bg-[#1a1a1a] border border-neutral-800 overflow-hidden "
-
                 )}
               >
                 <div className="flex items-center gap-5 mb-5">
@@ -188,12 +198,11 @@ const StickyServicesCards = () => {
                   </h3>
                 </div>
 
-                <p className="text-gray-300 mb-5">{service.description}</p>
+                <p className="text-gray-300 mb-6">{service.description}</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-8">
                   <div className="md:col-span-1">
                     <div className="h-[250px] md:h-[200px] rounded-lg overflow-hidden">
-
                       <img
                         src={service.image}
                         alt={service.title}
