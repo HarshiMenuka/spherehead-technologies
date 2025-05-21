@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // Make sure you're using next/image if using Next.js
 
 const features = [
   {
@@ -35,16 +36,15 @@ const features = [
   },
 ];
 
-export default function whyservices() {
+export default function WhyServices() {
   return (
     <section className="bg-[#111] text-white py-[72px] px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto py-[72px]">
         {/* Header */}
-        <div className="mb-12 ">
+        <div className="mb-12">
           <p className="text-sm text-blue-300 uppercase mb-2">Why</p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
             Empowering Your Business
-
             <br />
             With Innovative Solutions
           </h2>
@@ -54,18 +54,23 @@ export default function whyservices() {
         </div>
 
         {/* Main Grid */}
-        <div className="grid md:grid-cols-3 gap-20">
-          {/* Image or Placeholder */}
-          <div className="bg-gray-800 rounded-xl aspect-[4/5] w-full" />
+        <div className="grid md:grid-cols-3 gap-20 items-start">
+          {/* Image Section */}
+          <div className="w-full rounded-xl overflow-hidden aspect-[4/5] relative">
+            <Image
+              src="/images/serverimg.jpg" // Replace with your actual image path
+              alt="Why choose us"
+              fill
+              className="object-cover rounded-xl"
+            />
+          </div>
 
           {/* Features List */}
           <div className="md:col-span-2 grid sm:grid-cols-2 gap-10">
             {features.map((feature, index) => (
               <div key={index}>
                 <h3 className="text-xl font-semibold mb-1">{feature.title}</h3>
-                <p className="text-gray-400 text-base">
-                  {feature.description}
-                </p>
+                <p className="text-gray-400 text-base">{feature.description}</p>
               </div>
             ))}
           </div>
