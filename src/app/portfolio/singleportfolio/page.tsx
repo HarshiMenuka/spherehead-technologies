@@ -14,7 +14,7 @@ import Loading from '@/components/ui/loading';
 function PortfolioContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const id = Number(searchParams.get('id')); 
+  const id = Number(searchParams.get('id'));
   const project = projectsData.find(p => p.id === id);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function PortfolioContent() {
         <SectionHeader
           overline="Our Work"
           title={project.title}
-          description={project.description}
+          description={project.subTitle}
         />
 
         <LargeCard image={project.portHeroImage} description={project.description} />
@@ -47,10 +47,17 @@ function PortfolioContent() {
             <SmallCard key={i} image={img} />
           ))}
         </div>
-
-        {project.texts.map((txt, i) => (
-          <Discript key={i} description={txt} />
-        ))}
+        <h1 className='text-lg md:text-xl font-semibold text-white'>What We Delivered</h1> 
+        {project.texts.map((text, index) => {
+          if (typeof text === 'string') return null; 
+          return (
+            <Discript
+              key={index}
+              title={text.title}
+              description={text.description}
+            />
+          );
+        })}
       </section>
       <JoinUsSection />
     </>
