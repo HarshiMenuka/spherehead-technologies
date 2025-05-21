@@ -1,8 +1,10 @@
 .stickyCardsRoot {
   --cards: 6;
-  --cardHeight: 48vh;
-  --cardTopPadding: 2em;
-  --cardMargin: 1.5em;
+
+  --cardHeight: 65vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 1.2em;
+
 }
 
 .cardsContainer {
