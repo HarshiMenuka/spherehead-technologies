@@ -35,7 +35,7 @@ function Pricing() {
           )}
         </div>
         <div className="text-section">
-          <h1 className="heading">Whole Sphere of tech <br />satisfying all your needs</h1>
+          <h1 className="heading">Transparent Pricing for Powerful Web Solutions</h1>
           <h2 className="subheading">
             Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
           </h2>
