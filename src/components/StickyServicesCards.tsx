@@ -13,16 +13,28 @@ const services = [
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
     color: "bg-blue-500",
     icon: "📱",
+    keyfeatures: [
+      "Cross-platform compatibility (iOS & Android)",
+      "Optimized for performance and speed",
+      "Intuitive and modern user interfaces",
+    ],
   },
   {
     id: 2,
     title: "Software Development",
     description:
-      "We build smart, reliable software solutions that streamline your operations and enhance user experiences designed to work seamlessly across platforms and scale with your business.",
+      "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms.",
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=60",
     color: "bg-amber-500",
     icon: "💻",
+    keyfeatures: [
+      "E-commerce Development.",
+      "Web Portal Development",
+      "CMS-Based Website Development",
+      "Native Mobile App Development",
+      "Native Mobile App Development",
+    ],
   },
   {
     id: 3,
@@ -33,36 +45,90 @@ const services = [
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop&q=60",
     color: "bg-indigo-500",
     icon: "🌐",
+    keyfeatures: [
+      "SEO-friendly responsive design",
+      "Lightning-fast load times",
+      "Accessible across all screen sizes",
+    ],
   },
   {
     id: 4,
-    title: "IT Support and Maintenance",
+    title: "Software Maintenance & Support",
     description:
-      "We provide reliable IT support and proactive maintenance services to keep your systems running smoothly, minimize downtime, and ensure your technology works seamlessly around the clock.",
+      "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues",
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=60",
     color: "bg-rose-500",
     icon: "🔧",
+    keyfeatures: [
+      "Bug fixing and performance improvements",
+      "Version upgrades and feature enhancements",
+      "Ongoing monitoring and optimization",
+      "Client-requested changes and real-time updates",
+    ],
   },
   {
     id: 5,
     title: "Graphic Design",
     description:
-      "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
+      " Designing cornerstone of transforming information into clear visuals, building brand identity, influencing audiences, and combining creativity with functionality.",
     image:
       "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60",
     color: "bg-green-500",
     icon: "🎨",
+    keyfeatures: [
+      "Branding & Identity ",
+      "Marketing & Advertising",
+      "Digital Design ",
+      "Custom Visual Content ",
+    ],
   },
   {
     id: 6,
     title: "UI/UX Design",
     description:
-      "We design intuitive and engaging user experiences that guide customers smoothly through your digital products, balancing aesthetic appeal with practical functionality.",
+      "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
     image:
       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
     color: "bg-purple-500",
     icon: "✨",
+    keyfeatures: [
+      "User research and analytics",
+      "Wireframing and prototyping",
+      "Modern user interface design",
+      "Usability testing and user feedback analysis",
+    ],
+  },
+  {
+    id: 7,
+    title: "Quality Assurance & Testing",
+    description:
+      "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures. ",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Manual and automated testing",
+      "Security, performance, and stress testing",
+      "End-user testing before launch",
+    ],
+  },
+  {
+    id: 8,
+    title: "AI, ML & Data Services",
+    description:
+      "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    color: "bg-purple-500",
+    icon: "✨",
+    keyfeatures: [
+      "Predictive analytics and machine learning models",
+      "AI-powered chatbots and automation",
+      "Business intelligence dashboards and data visualization",
+      "Data integration and management solutions",
+    ],
   },
 ];
 
@@ -75,11 +141,13 @@ const StickyServicesCards = () => {
             Our Offerings
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Our Services
+            Ground Breaking Technology Services <br></br>To Make Your Life
+            Easier
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Explore our comprehensive range of services designed to power your
-            digital transformation
+            From strategy and design to development and support, we provide
+            end-to-end solutions tailored to your unique needs, helping you stay
+            ahead in a fast-paced digital landscape.
           </p>
         </div>
 
@@ -89,7 +157,7 @@ const StickyServicesCards = () => {
               <div
                 className={cn(
                   styles.cardBody,
-                  "bg-[#1a1a1a] border border-neutral-800 overflow-hidden"
+                  "bg-[#1a1a1a] border border-neutral-800 overflow-hidden "
                 )}
               >
                 <div className="flex items-center gap-5 mb-5">
@@ -108,9 +176,9 @@ const StickyServicesCards = () => {
 
                 <p className="text-gray-300 mb-5">{service.description}</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
                   <div className="md:col-span-1">
-                    <div className="h-28 md:h-32 rounded-lg overflow-hidden">
+                    <div className="h-[250px] md:h-[200px] rounded-lg overflow-hidden">
                       <img
                         src={service.image}
                         alt={service.title}
@@ -124,7 +192,7 @@ const StickyServicesCards = () => {
                       Key Features
                     </h4>
                     <ul className="space-y-5">
-                      {[1, 2, 3].map((item) => (
+                      {/* {[1, 2, 3].map((item) => (
                         <li key={item} className="flex items-start">
                           <span className="text-green-400 mr-2">✓</span>
                           <span className="text-gray-300">
@@ -132,9 +200,16 @@ const StickyServicesCards = () => {
                             elit.
                           </span>
                         </li>
-                      ))}
+                      ))} */}
+                      <ul className="space-y-5">
+                        {service.keyfeatures.map((feature, index) => (
+                          <li key={index} className="flex items-start">
+                            <span className="text-green-400 mr-2">✓</span>
+                            <span className="text-gray-300">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </ul>
-
                   </div>
                 </div>
               </div>

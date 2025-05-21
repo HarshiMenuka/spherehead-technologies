@@ -25,8 +25,8 @@ export default function ServicePage() {
         <section className="relative z-10 pt-[150px] text-center bg-transparent">
           <SectionHeader
             overline=""
-            title={<span className="text-[3rem] font-normal">We Create Solution for Your Business</span>}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title={<span className="text-[3rem] font-normal">Solutions Designed to Move Your Business Forward</span>}
+            description="From strategy to execution, we offer a full range of digital and IT services designed to help your business grow, adapt, and thrive. Whether you need a custom-built solution or expert support, we’re here to deliver with precision and care."
           />
         </section>
       </div>
