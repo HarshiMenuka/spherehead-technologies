@@ -1,9 +1,12 @@
 .team-card {
   position: relative;
-  width: 100%;
+  width: 300px;
   aspect-ratio: 3/4;
   border-radius: 8px;
   overflow: hidden;
+  height: 350px;
+ 
+
 }
 
 .team-card-img {
@@ -24,6 +27,7 @@
   display: flex;
   align-items: flex-end;
   transition: background 0.3s ease;
+  
 }
 
 .team-card:hover .team-card-info {
