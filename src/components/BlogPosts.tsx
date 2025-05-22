@@ -66,7 +66,7 @@ const BlogPosts = () => {
               <div className="p-5 pb-0">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-sm text-blue-400">{post.category}</span>
-                  <span className="text-sm text-gray-400">{post.date}</span>
+                  <span className="text-sm text-gray-400">{post.published}</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{post.title}</h3>
                 <p className="text-gray-400 mb-4">{post.excerpt}</p>
