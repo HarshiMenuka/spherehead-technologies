@@ -49,24 +49,48 @@ const HeroSection = () => {
 
           {/* Left Column – Main Content */}
           <div className="w-full md:w-3/4 space-y-8">
+            {blog?.content?.map((section, index) => {
+              const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
+              return (
+                <div key={index} id={sectionId}>
+                  <h3 className="text-xl font-semibold mb-2 scroll-mt-16">{section.heading}</h3>
+                  <p className="text-gray-400">{section.text}</p>
+                  {section.image ? (
+                    <img
+                      src={section.image}
+                      alt={section.heading}
+                      className="w-1/2 rounded-lg shadow-md mt-5"
+                    />
+                  ) : null}
+                </div>
+              );
+            })}
           </div>
 
-          {/* Right Column – Content Headings (narrower) */}
+          {/* Right Column – Contents Section */}
           <div className="w-full md:w-1/4">
             <h2 className="text-xl mb-6">Contents</h2>
             <ul className="list-inside space-y-2 text-gray-300 text-base">
-              {blog?.content?.map((section, index) => (
-                <li key={index}>{section.heading}</li>
-              ))}
+              {blog?.content?.map((section, index) => {
+                const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
+                return (
+                  <li key={index}>
+                    <a
+                      href={`#${sectionId}`}
+                      className="hover:text-white hover:underline"
+                    >
+                      {section.heading}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-
         </div>
       </section>
       <section>
         <Articles />
       </section>
-
     </div>
   );
 };
