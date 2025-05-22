@@ -12,41 +12,41 @@ const emptyIcons = (count: number) => Array(count).fill(emptyIcon);
 
 // Row 1: Angular, React, Vue, Node, PHP, Next.js, Ex, AWS, Python, Flutter
 const row1 = [
-  { src: "/images/tech-icons/angular.svg", alt: "Angular", shadowColor: "rgba(255, 0, 0, 0.7)" },
-  { src: "/images/tech-icons/react.svg", alt: "React", shadowColor: "rgba(97, 218, 251, 0.7)" },
-  { src: "/images/tech-icons/vue.svg", alt: "Vue", shadowColor: "rgba(65, 184, 131, 0.7)" },
-  { src: "/images/tech-icons/node-js.svg", alt: "Node.js", shadowColor: "rgba(139, 195, 74, 0.7)" },
-  { src: "/images/tech-icons/php.svg", alt: "PHP", shadowColor: "rgba(104, 109, 224, 0.7)" },
-  { src: "/images/tech-icons/next.svg", alt: "Next.js", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/ex.svg", alt: "Ex", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/aws.svg", alt: "AWS", shadowColor: "rgba(97, 218, 251, 0.7)" },
-  { src: "/images/tech-icons/python.svg", alt: "Python", shadowColor: "rgba(65, 184, 131, 0.7)" },
-  { src: "/images/tech-icons/flutter.svg", alt: "Flutter", shadowColor: "rgba(139, 195, 74, 0.7)" }
+  { src: "/images/tech-icons/angular.svg", alt: "Angular", shadowColor: "#c3002f" },
+  { src: "/images/tech-icons/react.svg", alt: "React", shadowColor: "#61dafb" },
+  { src: "/images/tech-icons/vue.svg", alt: "Vue", shadowColor: "#34495e" },
+  { src: "/images/tech-icons/node-js.svg", alt: "Node.js", shadowColor: "#6ca45e" },
+  { src: "/images/tech-icons/php.svg", alt: "PHP", shadowColor: "#777bb3" },
+  { src: "/images/tech-icons/next.svg", alt: "Next.js", shadowColor: "#f3f3f3" },
+  { src: "/images/tech-icons/ex.svg", alt: "Ex", shadowColor: "#ffffff" },
+  { src: "/images/tech-icons/aws.svg", alt: "AWS", shadowColor: "#70480d" },
+  { src: "/images/tech-icons/python.svg", alt: "Python", shadowColor: "#3975a5" },
+  { src: "/images/tech-icons/flutter.svg", alt: "Flutter", shadowColor: "#47c5fb" }
 ];
 
 // Row 2: Firebase, COBIT, MongoDB, Joomla, MySQL, NIST, AI, Shopify, G-Cloud
 const row2 = [
-  { src: "/images/tech-icons/firebase.svg", alt: "Firebase", shadowColor: "rgba(104, 109, 224, 0.7)" },
-  { src: "/images/tech-icons/cobit.svg", alt: "COBIT", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/mongodb.svg", alt: "Mongo DB", shadowColor: "rgba(255, 0, 0, 0.7)" },
-  { src: "/images/tech-icons/joomla.svg", alt: "Joomla", shadowColor: "rgba(97, 218, 251, 0.7)" },
-  { src: "/images/tech-icons/mysql.svg", alt: "MySQL", shadowColor: "rgba(65, 184, 131, 0.7)" },
-  { src: "/images/tech-icons/nist.svg", alt: "N IST", shadowColor: "rgba(139, 195, 74, 0.7)" },
-  { src: "/images/tech-icons/Ai.svg", alt: "Adobe Illustrator", shadowColor: "rgba(104, 109, 224, 0.7)" },
-  { src: "/images/tech-icons/shopify.svg", alt: "Shopify", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/googlecloud.svg", alt: "G-Cloud", shadowColor: "rgba(255, 0, 0, 0.7)" }
+  { src: "/images/tech-icons/firebase.svg", alt: "Firebase", shadowColor: "#ffc400" },
+  { src: "/images/tech-icons/cobit.svg", alt: "COBIT", shadowColor: "#c97b94" },
+  { src: "/images/tech-icons/mongodb.svg", alt: "Mongo DB", shadowColor: "#6cac48" },
+  { src: "/images/tech-icons/joomla.svg", alt: "Joomla", shadowColor: "#f9ae41" },
+  { src: "/images/tech-icons/mysql.svg", alt: "MySQL", shadowColor: "#54798f" },
+  { src: "/images/tech-icons/nist.svg", alt: "N IST", shadowColor: "#ffffff" },
+  { src: "/images/tech-icons/Ai.svg", alt: "Adobe Illustrator", shadowColor: "#803a00" },
+  { src: "/images/tech-icons/shopify.svg", alt: "Shopify", shadowColor: "#95bf47" },
+  { src: "/images/tech-icons/googlecloud.svg", alt: "G-Cloud", shadowColor: "#4285f4" }
 ];
 
 // Row 3: WordPress, Java, Swift, Figma, Docker, Digital Ocean, Azure, Cloudflare
 const row3 = [
-  { src: "/images/tech-icons/wordpress.svg", alt: "Wordpress", shadowColor: "rgba(97, 218, 251, 0.7)" },
-  { src: "/images/tech-icons/Java.svg", alt: "Java", shadowColor: "rgba(65, 184, 131, 0.7)" },
-  { src: "/images/tech-icons/swift.svg", alt: "SWIFT", shadowColor: "rgba(139, 195, 74, 0.7)" },
-  { src: "/images/tech-icons/Figma.svg", alt: "Figma", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/docker.svg", alt: "Docker", shadowColor: "rgba(255, 255, 255, 0.3)" },
-  { src: "/images/tech-icons/DIgitalOcean.svg", alt: "Digital Ocean", shadowColor: "rgba(104, 109, 224, 0.7)" },
-  { src: "/images/tech-icons/Azure.svg", alt: "Azure", shadowColor: "rgba(139, 195, 74, 0.7)" },
-  { src: "/images/tech-icons/cloudfare.svg", alt: "CloudFare", shadowColor: "rgba(104, 109, 224, 0.7)" }
+  { src: "/images/tech-icons/wordpress.svg", alt: "Wordpress", shadowColor: "#21759b" },
+  { src: "/images/tech-icons/Java.svg", alt: "Java", shadowColor: "#4e7896" },
+  { src: "/images/tech-icons/swift.svg", alt: "SWIFT", shadowColor: "#fb4b29" },
+  { src: "/images/tech-icons/Figma.svg", alt: "Figma", shadowColor: "#ff7262" },
+  { src: "/images/tech-icons/docker.svg", alt: "Docker", shadowColor: "#2396ed" },
+  { src: "/images/tech-icons/DIgitalOcean.svg", alt: "Digital Ocean", shadowColor: "#0069ff" },
+  { src: "/images/tech-icons/Azure.svg", alt: "Azure", shadowColor: "#36baee" },
+  { src: "/images/tech-icons/cloudfare.svg", alt: "CloudFare", shadowColor: "#f38020" }
 ];
 
 // Construct the full array with proper spacing
