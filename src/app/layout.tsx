@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Spherehead Technologies',
   description: 'Innovative digital solutions for businesses',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
   },
 }
 
@@ -36,9 +36,9 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         <ClientInit />
-        <Nav/>
+        <Nav />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )
