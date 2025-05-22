@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Spherehead Technologies',
   description: 'Innovative digital solutions for businesses',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.ico',
   },
 }
 

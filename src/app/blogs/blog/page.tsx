@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import { blogs } from "@/data/blogs";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
-import '../page.css';
+import Articles from "../../../components/Article";
 
 const HeroSection = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const id = Number(searchParams.get('id'));
-  const blog = blogs.find(p => p.id === id);
+  const id = Number(searchParams.get("id"));
+  const blog = blogs.find((p) => p.id === id);
 
   useEffect(() => {
     if (!blog) {
@@ -92,8 +92,10 @@ const HeroSection = () => {
               })}
             </ul>
           </div>
-
         </div>
+      </section>
+      <section>
+        <Articles />
       </section>
     </div>
   );
