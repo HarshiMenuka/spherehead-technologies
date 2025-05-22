@@ -68,33 +68,48 @@ function ContactSection() {
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <h2 className="contact-form-title">Let&apos;s Talk</h2>
 
-                  <input
-                    name="user_name"
-                    className="contact-input"
-                    type="text"
-                    placeholder="Your Name"
-                    required
-                    disabled={isSubmitting}
-                  />
+<input
+  name="user_name"
+  className="contact-input"
+  type="text"
+  placeholder="Your Name"
+  required
+  disabled={isSubmitting}
+  pattern="[A-Za-z\s]+"
+  title="Only letters and spaces are allowed"
+  onKeyDown={(e) => {
+    if (!/^[a-zA-Z\s]$/.test(e.key) && e.key.length === 1) {
+      e.preventDefault();
+    }
+  }}
+/>
 
-                  <div className="contact-row">
-                    <input
-                      name="user_contact"
-                      className="contact-input"
-                      type="text"
-                      placeholder="Contact Number"
-                      required
-                      disabled={isSubmitting}
-                    />
-                    <input
-                      name="user_email"
-                      className="contact-input"
-                      type="email"
-                      placeholder="Email"
-                      required
-                      disabled={isSubmitting}
-                    />
-                  </div>
+<div className="contact-row">
+  <input
+    name="user_contact"
+    className="contact-input"
+    type="text"
+    placeholder="Contact Number"
+    required
+    disabled={isSubmitting}
+    pattern="[0-9]+"
+    title="Only numbers are allowed"
+    onKeyDown={(e) => {
+      if (!/[0-9]/.test(e.key) && e.key.length === 1 && e.key !== 'Backspace') {
+        e.preventDefault();
+      }
+    }}
+  />
+  <input
+    name="user_email"
+    className="contact-input"
+    type="email"
+    placeholder="Email"
+    required
+    disabled={isSubmitting}
+  />
+</div>
+
                   <textarea
                     name="message"
                     className="contact-input contact-textarea"
