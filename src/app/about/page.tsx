@@ -37,7 +37,7 @@ const teamMembers = [
     position: "Full Stack Developer",
     qualification: "Bsc in CS",
     university: "IIT",
-    image: "/images/team/hasini.jpg",
+    image: "/images/team/hasini.JPG",
     linkedinLink: "https://linkedin.com/in/michaelchen",
     facebookLink: "https://facebook.com/michaelchen",
     instagramLink: "https://instagram.com/michaelchen"

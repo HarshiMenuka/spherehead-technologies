@@ -118,7 +118,7 @@ const services = [
     title: "AI, ML & Data Services",
     description:
       "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
-    image: "/images/AI.png",
+    image: "/images/Ai.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
