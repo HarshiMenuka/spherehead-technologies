@@ -320,21 +320,34 @@ const Footer = () => {
             <ul className="contact-info">
               <li className="contact-item">
                 <Phone className="contact-icon" />
-                <span>+94 76 666 6688</span>
+                <a href="tel:+94766666688" className="hover:underline">
+                  +94 76 666 6688
+                </a>
               </li>
               <li className="contact-item">
                 <Mail className="contact-icon" />
-                <span>contact@Spherehead.com</span>
+                <a href="mailto:info@Spherehead.tech" className="hover:underline">
+                  info@Spherehead.tech
+                </a>
               </li>
+
               <li className="contact-item">
-                <MapPin className="contact-icon" />
+              <MapPin className="contact-icon" />
+              <a
+                href="https://maps.app.goo.gl/XsuC7ZphRWZQwJW99"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 <span>
                   Level 05, East Lower Block,<br />
                   Echelon Square,<br />
                   World Trade Centre,<br />
                   Colombo 01
                 </span>
-              </li>
+              </a>
+            </li>
+
             </ul>
           </div>
         </div>
