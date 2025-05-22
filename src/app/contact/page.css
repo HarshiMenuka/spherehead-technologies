@@ -32,7 +32,7 @@
 .contact-image {
   width: 100%;
   max-width: 580px;
-  min-height: 650px; 
+  min-height: 685px; 
   border-radius: 18px;
   object-fit: cover;
   background: #e5e7eb;
@@ -106,7 +106,8 @@
   margin-bottom: 1rem;
 }
 .contact-textarea {
-  min-height: 80px;
+  margin-top:-15px;
+  min-height: 8rem;
   resize: vertical;
 }
 .contact-submit {
