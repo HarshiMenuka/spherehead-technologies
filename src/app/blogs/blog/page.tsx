@@ -52,8 +52,13 @@ const HeroSection = () => {
             {blog?.content?.map((section, index) => {
               const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
               return (
-                <div key={index} id={sectionId}>
-                  <h3 className="text-xl font-semibold mb-2 scroll-mt-16">{section.heading}</h3>
+                <div key={index} id={id}>
+                  <h3
+                    className="text-xl font-semibold mb-2 scroll-mt-16"
+                    id={sectionId}
+                  >
+                    {section.heading}
+                  </h3>
                   <p className="text-gray-400">{section.text}</p>
                   {section.image ? (
                     <img
@@ -68,7 +73,8 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column – Contents Section */}
-          <div className="w-full md:w-1/4">
+          <div className="hidden md:block sticky top-20 w-1/4 self-start">
+
             <h2 className="text-xl mb-6">Contents</h2>
             <ul className="list-inside space-y-2 text-gray-300 text-base">
               {blog?.content?.map((section, index) => {
