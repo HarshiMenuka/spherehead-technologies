@@ -26,9 +26,9 @@ const HomeGallery = () => {
       if (screenWidth < 321) {
         triggerPoint = windowHeight * 4.6;
       } else if (screenWidth < 376) {
-        triggerPoint = windowHeight * 4.5;
+        triggerPoint = windowHeight * 4.0;
       } else if (screenWidth < 426) {
-        triggerPoint = windowHeight * 4.2;
+        triggerPoint = windowHeight * 3.8;
       } else if (screenWidth < 769) {
         triggerPoint = windowHeight * 3.7;
       } else {
