@@ -9,6 +9,7 @@ export const blogs = [
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60",
     additionalImages: [
       "https://images.unsplash.com/photo-1581093588401-7a6f1eebc3d0?w=800&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1581093588401-7a6f1eebc3d0?w=800&auto=format&fit=crop&q=60",
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop&q=60"
     ],
     content: [
