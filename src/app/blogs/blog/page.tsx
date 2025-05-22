@@ -35,7 +35,6 @@ const HeroSection = () => {
           backgroundImage: `linear-gradient(to top, rgba(17,17,17,0.8), rgba(17,17,17,0.0)), url('${blog.image}')`,
         }}
       >
-
         <div className="absolute bottom-10 left-24 max-w-4xl p-10 rounded-xl">
           <h1 className="text-4xl font-bold mb-6">{blog.title}</h1>
           <div className="flex flex-col md:flex-row gap-x-10 text-sm">
@@ -45,6 +44,26 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+      <section className="bg-[#111] text-white px-10 py-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+
+          {/* Left Column – Main Content */}
+          <div className="w-full md:w-3/4 space-y-8">
+          </div>
+
+          {/* Right Column – Content Headings (narrower) */}
+          <div className="w-full md:w-1/4">
+            <h2 className="text-xl mb-6">Contents</h2>
+            <ul className="list-inside space-y-2 text-gray-300 text-base">
+              {blog?.content?.map((section, index) => (
+                <li key={index}>{section.heading}</li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
     </div>
   );
 };
