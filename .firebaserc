@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "jd-providers-cec94"
+  },
+  "targets": {
+    "jd-providers-cec94": {
+      "hosting": {
+        "jd-providers": [
+          "jd-providers-cec94"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

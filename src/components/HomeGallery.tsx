@@ -7,9 +7,9 @@ import '../styles/homeComponents.css';
 const IMAGES = [
   'images/homeGallery/F1.jpg',
   'images/homeGallery/F2.jpg',
+  'images/homeGallery/F5.jpg',
   'images/homeGallery/F3.jpg',
-  'images/homeGallery/F4.jpg',
-  'images/homeGallery/F5.jpg'
+  'images/homeGallery/F4.jpg'
 
 ]
 
@@ -24,7 +24,7 @@ const HomeGallery = () => {
       let triggerPoint;
 
       if (screenWidth < 321) {
-        triggerPoint = windowHeight * 4.7;
+        triggerPoint = windowHeight * 4.6;
       } else if (screenWidth < 376) {
         triggerPoint = windowHeight * 4.0;
       } else if (screenWidth < 426) {

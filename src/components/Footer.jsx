@@ -273,7 +273,7 @@ const Footer = () => {
               <img src="/images/Spherehead.svg" alt="Spherehead Technologies" className="footer-logo" />
             </div>
             <p className="footer-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
             </p>
             <div className="social-icons">
               <a href="https://facebook.com" className="social-icon" aria-label="Facebook">

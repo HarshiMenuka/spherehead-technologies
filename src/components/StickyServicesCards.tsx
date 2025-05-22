@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import styles from "../styles/stickyCards.module.css";
 
 const services = [
-
   // {
   //   id: 2,
   //   title: "Software Development",
@@ -105,8 +104,7 @@ const services = [
     title: "Quality Assurance & Testing",
     description:
       "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures. ",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    image: "/images/QA.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -120,8 +118,7 @@ const services = [
     title: "AI, ML & Data Services",
     description:
       "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    image: "/images/Ai.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -136,8 +133,7 @@ const services = [
     title: " IT Consulting",
     description:
       "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    image: "/images/It-consulting.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -152,8 +148,7 @@ const services = [
     title: "Research & Innovation (R&D)",
     description:
       "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60",
+    image: "/images/Research.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
