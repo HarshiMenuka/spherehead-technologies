@@ -4,29 +4,34 @@ import { blogs } from '@/data/blogs';
 import Link from 'next/link';
 
 const ProfileCard = () => {
+  const blog = blogs[6];
   return (
     <div className="flex max-w-6xl mx-auto p-10 gap-10 mt-14">
       {/* Image Column */}
       <div className="w-1/2">
-        <img
-          src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=800&auto=format&fit=crop&q=60"
-          alt="Profile"
-          className="w-full h-full rounded-2xl object-cover"
-        />
+        <Link
+          key={blog.id}
+          href={{ pathname: '/blogs/blog', query: { id: blog.id } }}
+          className="cursor-pointer bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src={blog.image}
+            alt="Profile"
+             className="w-full h-full rounded-2xl object-cover transform hover:scale-110 transition-transform duration-500"
+          />
+        </Link>
       </div>
 
       {/* Details Column */}
       <div className="w-1/2 flex flex-col justify-center">
-        <h2 className="text-3xl semi-font-bold text-white mb-4">Latest Insights & News</h2>
-        <p className="text-lg text-gray-300 leading-relaxed mb-4">
-          John is a passionate designer with over 10 years of experience in UX/UI, branding,
-          and product design. He enjoys solving user problems and creating delightful experiences.
-        </p>
-        <ul className="list-disc list-inside text-gray-300 text-base space-y-2">
-          <li>10+ years in UX/UI design</li>
-          <li>Expert in Figma, Adobe XD, and Sketch</li>
-          <li>Strong focus on user research and accessibility</li>
-          <li>Worked with startups and enterprise clients</li>
+        <h2 className="text-3xl semi-font-bold text-white mb-4">{blog.title}</h2>
+        <p className="text-lg text-gray-300 leading-relaxed mb-4">{blog.excerpt}</p>
+        <ul className="list-disc list-inside text-gray-300 text-base space-y-4">
+          {blog.content.map((item, index) => (
+            <li key={index}>
+              {item.heading}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
@@ -35,7 +40,7 @@ const ProfileCard = () => {
 
 
 const BlogPosts = () => {
-  const BLOG_POSTS = blogs;
+  const BLOG_POSTS = blogs.slice(0, 6);
   return (
     <div className="py-20 pt-30">
       <SectionHeader

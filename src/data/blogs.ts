@@ -63,7 +63,7 @@ export const blogs = [
     published: "March 12, 2024",
     category: "Technology",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1581276879432-15a87d98d6d4?w=800&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=800&auto=format&fit=crop&q=60",
     additionalImages: [
       "https://images.unsplash.com/photo-1581276879432-15a87d98d6d4?w=800&auto=format&fit=crop&q=60",
       "https://images.unsplash.com/photo-1581091215367-352e5c0d17fb?w=800&auto=format&fit=crop&q=60"
@@ -101,7 +101,7 @@ export const blogs = [
     published: "March 2, 2024",
     category: "Design",
     readTime: "4 min",
-    image: "https://images.unsplash.com/photo-1564866657310-005a1f7188e6?w=800&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60",
     additionalImages: [
       "https://images.unsplash.com/photo-1573497019413-b83f1980e0b3?w=800&auto=format&fit=crop&q=60",
       "https://images.unsplash.com/photo-1581090700227-1acb2f07394e?w=800&auto=format&fit=crop&q=60"
@@ -120,7 +120,7 @@ export const blogs = [
     published: "March 20, 2024",
     category: "Design",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1604147706284-46053e34a089?w=800&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&auto=format&fit=crop&q=60",
     additionalImages: [
       "https://images.unsplash.com/photo-1621535499836-c1a6364e6c8a?w=800&auto=format&fit=crop&q=60",
       "https://images.unsplash.com/photo-1618477460103-6f43c49fe2f3?w=800&auto=format&fit=crop&q=60"

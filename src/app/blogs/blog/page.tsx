@@ -1,6 +1,6 @@
 'use client';
 import { blogs } from "@/data/blogs";
-import { useSearchParams, useRouter} from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 
@@ -26,21 +26,20 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen text-white mt-24 bg-[#111111]" // ← added mt-24
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen text-white m-20" // ← added mt-24
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=1600&sat=-100')`,
+        backgroundImage: `url('${blog.image}')`,
       }}
     >
-
       <div className="absolute bottom-20 left-24 max-w-4xl p-10 rounded-xl">
         {/* Hero Title */}
         <h1 className="text-4xl font-bold mb-6">{blog.title}</h1>
 
         {/* Info Points */}
         <div className="flex flex-col md:flex-row gap-x-10 text-sm">
-          <p className="text-gray-300">Published Feb 10, 25</p>
-          <p className="text-gray-300">Design</p>
-          <p className="text-gray-300">Read Time 5 min</p>
+          <p className="text-gray-300">{blog.published}</p>
+          <p className="text-gray-300">{blog.category}</p>
+          <p className="text-gray-300">{blog.readTime}</p>
         </div>
       </div>
     </section>
