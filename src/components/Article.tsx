@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { blogs } from "../data/blogs";
 import Image from "next/image";
 
@@ -22,12 +23,18 @@ export default function Article() {
               {/* Image */}
               <div className="relative w-full md:w-[300px] h-[180px] rounded-lg overflow-hidden bg-gray-800 flex-shrink-0">
                 {displayImage ? (
-                  <Image
-                    src={displayImage}
-                    alt={blog.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Link
+                    key={blog.id}
+                    href={{ pathname: '/blogs/blog', query: { id: blog.id } }}
+                    className="cursor-pointer bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  >
+                    <Image
+                      src={displayImage}
+                      alt={blog.title}
+                      fill
+                      className="object-cover transform hover:scale-110 transition-transform duration-500"
+                    />
+                  </Link>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-gray-500">
                     No Image
