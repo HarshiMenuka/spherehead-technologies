@@ -7,9 +7,9 @@ import '../styles/homeComponents.css';
 const IMAGES = [
   'images/homeGallery/F1.jpg',
   'images/homeGallery/F2.jpg',
+  'images/homeGallery/F5.jpg',
   'images/homeGallery/F3.jpg',
-  'images/homeGallery/F4.jpg',
-  'images/homeGallery/F5.jpg'
+  'images/homeGallery/F4.jpg'
 
 ]
 
