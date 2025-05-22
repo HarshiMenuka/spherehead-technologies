@@ -23,15 +23,12 @@ export default function Article() {
   const images = blog.additionalImages?.slice(0, contentCount) || [];
 
   return (
-    <article className="bg-black text-white py-10 px-4 sm:px-8">
-      <div className="max-w-5xl mx-auto space-y-10">
+    <article className="text-white py-10 px-4 sm:px-8 bg-[#111111]">
+      <hr/>
+      <div className="max-w-5xl mx-auto space-y-10 pt-10">
         {/* Header */}
         <header>
-          <h1 className="text-4xl font-bold mb-2">{blog.title}</h1>
-          <p className="text-sm text-gray-400">
-            {blog.category} • {blog.published} • {blog.readTime} read
-          </p>
-          <p className="text-md text-gray-300 mt-4">{blog.excerpt}</p>
+          <h1 className="text-4xl font-bold mb-2">More articles you'll loves</h1>
         </header>
 
         {/* Image + Content Rows */}
