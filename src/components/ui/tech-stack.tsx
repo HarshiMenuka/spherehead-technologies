@@ -29,25 +29,30 @@ const TechStack = () => {
   } as const;
 
   // Get all non-empty icons for mobile view
-  const allIcons = techIcons.filter(icon => icon.alt !== "");
+  const allIcons = techIcons.filter((icon) => icon.alt !== "");
 
   // Split icons into rows with proper spacing for desktop
   const rows = [
-    techIcons.slice(0, 13),                    // Top empty row
-    techIcons.slice(13, 25),                   // First row: 2 empty + 10 icons + 1 empty
-    techIcons.slice(25, 38),                   // Second row: 3 empty + 9 icons + 1 empty
-    techIcons.slice(38, 52),                   // Third row: 4 empty + 8 icons + 1 empty
-    techIcons.slice(52, 65),                   // Bottom empty row
+    techIcons.slice(0, 13), // Top empty row
+    techIcons.slice(13, 25), // First row: 2 empty + 10 icons + 1 empty
+    techIcons.slice(25, 38), // Second row: 3 empty + 9 icons + 1 empty
+    techIcons.slice(38, 52), // Third row: 4 empty + 8 icons + 1 empty
+    techIcons.slice(52, 65), // Bottom empty row
   ];
 
   return (
     <div style={styles.container}>
       <h2 style={styles.subHeading}>Tech Stack</h2>
       <h3 style={styles.heading}>
-        Powering Innovation<br />with the Best Tools
+        Powering Innovation
+        <br />
+        with the Best Tools
       </h3>
       <p style={styles.paragraph}>
-        At the core of everything we build is a carefully selected, modern tech stack that ensures performance, scalability, and security. We combine industry best practices with cutting-edge tools to deliver digital solutions that grow with your business.
+        At the core of everything we build is a carefully selected, modern tech
+        stack that ensures performance, scalability, and security. We combine
+        industry best practices with cutting-edge tools to deliver digital
+        solutions that grow with your business.
       </p>
 
       {/* Desktop view */}
