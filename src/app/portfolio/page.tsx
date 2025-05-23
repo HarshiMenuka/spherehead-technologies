@@ -27,7 +27,7 @@ const Portfolio = () => {
             <Link
               key={project.id}
               href={{ pathname: '/portfolio/singleportfolio', query: { id: project.id } }}
-              className="cursor-pointer bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+              className="cursor-pointer bg-#161616 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
             >
               <Image
                 src={project.largeImage}
