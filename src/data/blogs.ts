@@ -6,7 +6,7 @@ export const blogs = [
     published: "March 15, 2024",
     category: "Technology",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60",
+       image: "../images/Blogs/img1.png",
     
     content: [
       { heading: "Emerging Technologies", 
@@ -32,7 +32,7 @@ export const blogs = [
     published: "March 10, 2024",
     category: "Development",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+       image: "../images/Blogs/img2.avif",
     
     content: [
       { heading: "Understanding Scalability", 
@@ -56,7 +56,7 @@ export const blogs = [
     published: "March 5, 2024",
     category: "Design",
     readTime: "4 min",
-    image: "images/Blogs/UIUX.png",
+        image: "../images/Blogs/img3.png",
     
     content: [
       { heading: "Clarity and Simplicity", 
@@ -89,8 +89,7 @@ export const blogs = [
     published: "March 12, 2024",
     category: "Technology",
     readTime: "5 min",
-    image: "images/Blogs/FrontEnd.png",
-    
+        image: "../images/Blogs/img4.png",
     content: [
       { heading: "JavaScript Frameworks and Libraries", 
         text: "Modern front-end development heavily relies on JavaScript frameworks and libraries to simplify coding and improve performance. They provide pre-built modules, reusable components, and optimized workflows." 
@@ -128,8 +127,7 @@ export const blogs = [
     published: "March 8, 2024",
     category: "Development",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1505685296765-3a2736de412f?w=800&auto=format&fit=crop&q=60",
-    
+        image: "../images/Blogs/img5.png",
     content: [
       { heading: "Reducing Page Load Time", 
         text: "Page load time is critical in retaining users. Faster load times mean better user engagement and reduced abandonment rates." 
@@ -170,7 +168,7 @@ export const blogs = [
     published: "March 2, 2024",
     category: "Design",
     readTime: "4 min",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60",
+        image: "../images/Blogs/blog.png",
     
     content: [
       { heading: "Establishing Clear Goals and Roles", 
@@ -215,7 +213,7 @@ export const blogs = [
     published: "March 20, 2024",
     category: "Design",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&auto=format&fit=crop&q=60",
+    image: "../images/Blogs/img6.png",
     
     content: [
       {
