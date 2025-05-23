@@ -25,7 +25,7 @@ export default function Article() {
                 {displayImage ? (
                   <Link
                     key={blog.id}
-                    href={{ pathname: '/blogs/blog', query: { id: blog.id } }}
+                    href={{ pathname: "/blogs/blog", query: { id: blog.id } }}
                     className="cursor-pointer bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   >
                     <Image
