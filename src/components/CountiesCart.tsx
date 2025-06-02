@@ -42,7 +42,7 @@ export function CountiesCart() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#1E1E1E] p-3 md:p-3 rounded-lg text-center shadow-lg"
+              className="bg-[#161616] p-3 md:p-3 rounded-lg text-center shadow-lg"
             >
               <div className="text-sm md:text-xl font-bold mb-1 ">{stat.value}</div>
               <div className="text-gray-400 text-sm  font-normal">{stat.label}</div>
@@ -52,7 +52,7 @@ export function CountiesCart() {
 
 
         {/* World Map */}
-        <div className="relative z-0 bg-[#161616] rounded-lg overflow-hidden">
+        <div className="relative z-0 bg-[#111111] rounded-lg overflow-hidden">
           <WorldMap
             dots={[
               {
