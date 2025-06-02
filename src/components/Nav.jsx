@@ -27,85 +27,24 @@ MobileMenuButton.displayName = 'MobileMenuButton';
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    
-    if (currentScrollY <= 10 && isScrolled) {
-      setIsScrolled(false);
-    } else if (currentScrollY > 10 && !isScrolled) {
-      setIsScrolled(true);
-    }
-    
-    if (currentScrollY === 0) {
-      setIsVisible(true);
-      setIsScrolling(false);
-      return;
-    }
-    
-    if (Math.abs(currentScrollY - lastScrollY) > 5) {
-      setIsVisible(false);
-      setIsScrolling(true);
-      setLastScrollY(currentScrollY);
-    }
-  }, [isScrolled, lastScrollY]);
-
-  const handleMouseMove = useCallback((e) => {
-    if (e.clientY <= 450 && !isScrolling && window.scrollY > 0) {
-      setIsVisible(true);
-    }
-  }, [isScrolling]);
-
+  // Only add scroll effect for "scrolled" style (e.g. background blur, etc.)
   useEffect(() => {
-    let scrollTimer;
-    let scrollHandler;
-    
-    const debouncedScroll = () => {
-      if (!scrollHandler) {
-        scrollHandler = requestAnimationFrame(() => {
-          handleScroll();
-          scrollHandler = null;
-        });
-      }
-      
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(() => {
-        setIsScrolling(false);
-      }, 150);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", debouncedScroll, { passive: true });
-    
-    let mouseMoveTimer;
-    const debouncedMouseMove = (e) => {
-      clearTimeout(mouseMoveTimer);
-      mouseMoveTimer = setTimeout(() => handleMouseMove(e), 50);
-    };
-    
-    window.addEventListener("mousemove", debouncedMouseMove, { passive: true });
-    
-    return () => {
-      window.removeEventListener("scroll", debouncedScroll);
-      window.removeEventListener("mousemove", debouncedMouseMove);
-      cancelAnimationFrame(scrollHandler);
-      clearTimeout(scrollTimer);
-      clearTimeout(mouseMoveTimer);
-    };
-  }, [handleScroll, handleMouseMove]);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = useCallback(() => {
-    setIsMenuOpen(prev => {
-      if (!prev) setIsVisible(true);
-      return !prev;
-    });
+    setIsMenuOpen(prev => !prev);
   }, []);
 
   const navClasses = useMemo(() => {
-    return `nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""} ${!isVisible ? "hidden" : ""}`;
-  }, [isScrolled, isMenuOpen, isVisible]);
+    return `nav-container ${isScrolled ? "scrolled" : ""} ${isMenuOpen ? "mobile-menu-open" : ""}`;
+  }, [isScrolled, isMenuOpen]);
 
   const navLinks = useMemo(() => [
     { href: "/", text: "Home" },
@@ -147,7 +86,6 @@ function Nav() {
         </div>
 
         <div className="nav-right">
-          {/* Only visible on desktop (hidden on mobile) */}
           <div className="desktop-contact-btn">
             <Link href="/contact" className="contact-btn">Contact Us</Link>
           </div>
@@ -155,7 +93,6 @@ function Nav() {
         </div>
       </nav>
 
-      {/* Mobile Menu (includes Contact Us button) */}
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           {navLinks.map(link => (
