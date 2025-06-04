@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -139,7 +140,8 @@ export default function Testimonials() {
               What our Clients <br className="hidden sm:block" /> say about us
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-xs sm:text-sm md:text-base px-4">
-              We believe great work starts with mutual trust. That’s why our clients aren’t just customers, they’re collaborators. Hear what they have to say about working with a team that’s as invested in their success as they are.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
           </div>
         </div>
@@ -167,9 +169,11 @@ export default function Testimonials() {
               <div className="quote-icon text-4xl text-[#64B5F6] font-serif mb-4">"</div>
               <div className="testimonial-text text-sm sm:text-base text-gray-700 mb-6">{t.text}</div>
               <div className="testimonial-footer flex items-center gap-4">
-                <img
+                <Image
                   src={t.avatar}
                   alt={t.name}
+                  width={48}
+                  height={48}
                   className="testimonial-avatar w-12 h-12 rounded-full object-cover"
                 />
                 <div>
@@ -199,9 +203,11 @@ export default function Testimonials() {
               <div className="quote-icon text-4xl text-[#64B5F6] font-serif mb-4">"</div>
               <div className="testimonial-text text-sm sm:text-base text-gray-700 mb-6">{t.text}</div>
               <div className="testimonial-footer flex items-center gap-4">
-                <img
+                <Image
                   src={t.avatar}
                   alt={t.name}
+                  width={48}
+                  height={48}
                   className="testimonial-avatar w-12 h-12 rounded-full object-cover"
                 />
                 <div>

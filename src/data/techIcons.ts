@@ -24,9 +24,8 @@ const row1 = [
   { src: "/images/tech-icons/flutter.svg", alt: "Flutter", shadowColor: "#47c5fb" }
 ];
 
-// Row 2: Firebase, COBIT, MongoDB, Joomla, MySQL, NIST, AI, Shopify, G-Cloud
+// Row 2: COBIT, MongoDB, Joomla, MySQL, NIST, AI, Shopify, G-Cloud
 const row2 = [
-  { src: "/images/tech-icons/firebase.svg", alt: "Firebase", shadowColor: "#ffc400" },
   { src: "/images/tech-icons/cobit.svg", alt: "COBIT", shadowColor: "#c97b94" },
   { src: "/images/tech-icons/mongodb.svg", alt: "Mongo DB", shadowColor: "#6cac48" },
   { src: "/images/tech-icons/joomla.svg", alt: "Joomla", shadowColor: "#f9ae41" },
@@ -53,7 +52,7 @@ const row3 = [
 export const techIcons: TechIcon[] = [
   ...emptyIcons(13), // Top row
   ...emptyIcons(1),  ...row1.slice(0, 10), ...emptyIcons(1), // First row with empty squares between
-  ...emptyIcons(1), ...emptyIcons(1), ...row2.slice(0, 9), ...emptyIcons(3), // Second row with empty squares between
+  ...emptyIcons(1), ...emptyIcons(1), ...row2.slice(0, 8), ...emptyIcons(5), // Second row with empty squares between
   ...emptyIcons(1), ...emptyIcons(1), ...row3.slice(0, 8), ...emptyIcons(4), // Third row with empty squares between
   ...emptyIcons(13), // Bottom row
 ]; 

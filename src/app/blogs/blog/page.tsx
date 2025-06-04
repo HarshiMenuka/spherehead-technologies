@@ -1,10 +1,10 @@
 "use client";
 import { blogs } from "@/data/blogs";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import Articles from "../../../components/Article";
 
-const HeroSection = () => {
+function HeroSection() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = Number(searchParams.get("id"));
@@ -52,7 +52,7 @@ const HeroSection = () => {
             {blog?.content?.map((section, index) => {
               const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
               return (
-                <div key={index} id={id}>
+                <div key={index} id={String(id)}>
                   <h3
                     className="text-xl font-semibold mb-2 scroll-mt-16"
                     id={sectionId}
@@ -99,6 +99,12 @@ const HeroSection = () => {
       </section>
     </div>
   );
-};
+}
 
-export default HeroSection;
+export default function BlogPage() {
+  return (
+    <Suspense>
+      <HeroSection />
+    </Suspense>
+  );
+}
