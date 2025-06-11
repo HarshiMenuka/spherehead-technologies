@@ -9,7 +9,7 @@ interface LoadingProps {
 export default function Loading({ 
   size = 'medium', 
   fullScreen = true,
-  minDisplayTime = 50000 
+  minDisplayTime = 60000 
 }: LoadingProps) {
   const [showLoader, setShowLoader] = useState(true);
 
@@ -47,7 +47,7 @@ export default function Loading({
       });
 
     return () => {
-      isMounted = false; // Cleanup on unmount
+      isMounted = false;
     };
   }, [minDisplayTime]);
 
