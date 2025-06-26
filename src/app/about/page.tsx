@@ -202,6 +202,7 @@ export default function AboutPage() {
             linkedinLink={member.linkedinLink}
             facebookLink={member.facebookLink}
             instagramLink={member.instagramLink}
+            
           />
         ))}
       </div>
