@@ -12,16 +12,7 @@ import AboutFlip from '@/components/ui/aboutflip';
 import JoinUsSection from '@/components/Joinus';
 
 const teamMembers = [
-  {
-    name: "Harshi Menuka",
-    position: "Fullstack Lead",
-    qualification: "Bsc in ICT",
-    university: "University of Colombo",
-    image: "/images/team/harshi.jpg",
-    linkedinLink: "https://linkedin.com/in/johnsmith",
-    facebookLink: "https://facebook.com/johnsmith",
-    instagramLink: "https://instagram.com/johnsmith"
-  },
+  
   {
     name: "Asith Nirmal",
     position: "UI/UX Lead",
@@ -32,16 +23,7 @@ const teamMembers = [
     facebookLink: "https://facebook.com/sarahjohnson",
     instagramLink: "https://instagram.com/sarahjohnson"
   },
-  {
-    name: "Hasini Wijemanna",
-    position: "Full Stack Developer",
-    qualification: "Bsc in CS",
-    university: "IIT",
-    image: "/images/team/hasini.JPG",
-    linkedinLink: "https://linkedin.com/in/michaelchen",
-    facebookLink: "https://facebook.com/michaelchen",
-    instagramLink: "https://instagram.com/michaelchen"
-  },
+
   {
     name: "Yeshan Binara",
     position: "UI/UX Designer",
