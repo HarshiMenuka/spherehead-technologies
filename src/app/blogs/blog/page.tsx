@@ -52,7 +52,8 @@ const HeroSection = () => {
             {blog?.content?.map((section, index) => {
               const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
               return (
-                <div key={index} id={id}>
+                <div key={index} id={sectionId}>
+
                   <h3
                     className="text-xl font-semibold mb-2 scroll-mt-16"
                     id={sectionId}
