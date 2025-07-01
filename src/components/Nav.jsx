@@ -20,6 +20,7 @@ const MobileMenuButton = memo(({ isOpen, onClick }) => (
     <span></span>
     <span></span>
     <span></span>
+    <span></span>
   </div>
 ));
 MobileMenuButton.displayName = 'MobileMenuButton';
@@ -52,6 +53,7 @@ function Nav() {
     { href: "/service", text: "Services" },
     { href: "/portfolio", text: "Portfolio" },
     { href: "/pricing", text: "Pricing" },
+    { href: "/blogs", text: "Blog" },
   ], []);
 
   useEffect(() => {
