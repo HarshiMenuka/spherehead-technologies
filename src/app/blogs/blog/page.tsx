@@ -1,10 +1,11 @@
 "use client";
-import { blogs } from "@/data/blogs";
+
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
+import { blogs } from "@/data/blogs";
 import Articles from "../../../components/Article";
 
-const HeroSection = () => {
+const BlogPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = Number(searchParams.get("id"));
@@ -28,7 +29,8 @@ const HeroSection = () => {
   }
 
   return (
-    <div className="bg-[#111111] p-21 ">
+    <div className="bg-[#111111] p-21">
+      {/* Hero Banner */}
       <section
         className="relative bg-cover bg-center bg-no-repeat min-h-[80vh] text-white rounded-2xl"
         style={{
@@ -44,16 +46,17 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+
+      {/* Main Content */}
       <section className="bg-[#111] text-white px-10 py-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
 
-          {/* Left Column – Main Content */}
+          {/* Left Column – Blog Sections */}
           <div className="w-full md:w-3/4 space-y-8">
             {blog?.content?.map((section, index) => {
               const sectionId = section.heading.toLowerCase().replace(/\s+/g, '-');
               return (
                 <div key={index} id={sectionId}>
-
                   <h3
                     className="text-xl font-semibold mb-2 scroll-mt-16"
                     id={sectionId}
@@ -61,21 +64,20 @@ const HeroSection = () => {
                     {section.heading}
                   </h3>
                   <p className="text-gray-400">{section.text}</p>
-                  {section.image ? (
+                  {section.image && (
                     <img
                       src={section.image}
                       alt={section.heading}
                       className="w-1/2 rounded-lg shadow-md mt-5"
                     />
-                  ) : null}
+                  )}
                 </div>
               );
             })}
           </div>
 
-          {/* Right Column – Contents Section */}
+          {/* Right Column – Table of Contents */}
           <div className="hidden md:block sticky top-20 w-1/4 self-start">
-
             <h2 className="text-xl mb-6">Contents</h2>
             <ul className="list-inside space-y-2 text-gray-300 text-base">
               {blog?.content?.map((section, index) => {
@@ -95,6 +97,8 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+
+      {/* Related Articles */}
       <section>
         <Articles />
       </section>
@@ -102,4 +106,11 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+
+const Page = () => (
+  <Suspense fallback={<p className="text-white text-center mt-20">Loading blog...</p>}>
+    <BlogPage />
+  </Suspense>
+);
+
+export default Page;
