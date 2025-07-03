@@ -122,13 +122,13 @@ function ValueDriven() {
         <div className="value-flipcards-grid">
           <div className="value-top">
             <AboutFlip
-              image="/images/coffee2.jpg"
+              image="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533368/coffee2_skoq5o.jpg"
               description="Our team's daily fuel is coffee, but we suspect it's 90% caffeine and 10% magic."
               width="300px"
               height="200px"
             />
             <AboutFlip
-              image="/images/coffee3.jpg"
+              image="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533373/coffee3_clexl9.jpg"
               description="Our team chat is a mix of work related discussions and memes we have our priorities straight."
               width="300px"
               height="200px"
@@ -136,13 +136,13 @@ function ValueDriven() {
           </div>
           <div className="value-bottom">
             <AboutFlip
-              image="/images/coffee1.jpg"
+              image="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533366/coffee1_isomqy.jpg"
               description="Our team motto is 'work hard, laugh harder', it's been proven to increase productivity!"
               width="300px"
               height="200px"
             />
             <AboutFlip
-              image="/images/coffee4.jpg"
+              image="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533372/coffee4_c62dwf.jpg"
               description="We once had a heated debate about which fictional character would win in a fight."
               width="300px"
               height="200px"
