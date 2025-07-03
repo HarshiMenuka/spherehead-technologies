@@ -9,7 +9,7 @@ const services = [
   //   title: "Software Development",
   //   description:
   //     "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms. ",
-  //   image: "/images/software-dev.png",
+  //   image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540569/software-dev_xup26m.png",
 
   //   color: "bg-amber-500",
   //   icon: "💻",
@@ -27,7 +27,7 @@ const services = [
     description:
       "From static pages to dynamic websites, our web development services provide scalable, secure, and visually engaging solutions tailored to meet your business objectives.",
 
-    image: "/images/Web-dev.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540565/Web-dev_lz2lua.png",
 
     color: "bg-indigo-500",
     icon: "🌐",
@@ -42,7 +42,7 @@ const services = [
     title: "Software Maintenance & Support",
     description:
       "Improving the application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
-    image: "/images/It-support.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540559/It-support_wfxbni.png",
     color: "bg-rose-500",
     icon: "🔧",
     keyfeatures: [
@@ -58,7 +58,7 @@ const services = [
     description:
       "From wireframes to final visuals, our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences. ",
 
-    image: "/images/uiux.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540556/uiux_wxpdgj.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -73,7 +73,7 @@ const services = [
     title: "Graphic Design",
     description:
       "We transform ideas into impactful visuals that capture attention and communicate your brand's message effectively, creating memorable designs that resonate with your target audience.",
-    image: "/images/Graphics.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540567/Graphics_kb3nr8.png",
     color: "bg-green-500",
     icon: "🎨",
     keyfeatures: [
@@ -89,7 +89,7 @@ const services = [
     description:
       "Delivering feature-rich, user-friendly mobile applications across platforms, designed to boost engagement, ensure seamless usability, and provide exceptional performance for a diverse range of business needs.",
 
-    image: "/images/mobile app dev.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540551/mobile_app_dev_nodahp.png",
 
     color: "bg-blue-500",
     icon: "📱",
@@ -118,7 +118,7 @@ const services = [
     title: "AI, ML & Data Services",
     description:
       "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
-    image: "/images/Ai.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540554/Ai_fun1aq.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -133,7 +133,7 @@ const services = [
     title: " IT Consulting",
     description:
       "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
-    image: "/images/It-consulting.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540550/It-consulting_duhchv.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
@@ -148,7 +148,7 @@ const services = [
     title: "Research & Innovation (R&D)",
     description:
       "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
-    image: "/images/Research.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540561/Research_dfybwi.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
