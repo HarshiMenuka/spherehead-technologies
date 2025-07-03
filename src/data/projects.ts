@@ -5,7 +5,7 @@ export const projectsData = [
     portHeroImage: '/images/macheriehero.svg',
     title: 'Jewelry E-commerce Platform',
     subTitle: 'Custom Design, Development & Digital Strategy',
-    smallImages: ['/images/macherie1.svg', '/images/macherie2.svg', '/images/macherie3.svg'],
+    smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532262/macherie1_dlv4om.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532259/macherie2_hwr11e.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532281/macherie3_tcwvkf.svg'],
     description: `Ma Cherie Jewels is a high-end jewelry brand that sought a digital platform to match the elegance and exclusivity of its physical offerings. Our team was tasked with bringing their vision to life through a seamless, modern e-commerce experience tailored for discerning customers. The challenge was to create a site that was not only visually stunning but also highly functional, scalable, and easy to manage.
                   We worked closely with the client from the ground up—starting with UX research and brand alignment, followed by full-stack development, CMS integration, and ongoing performance optimization. The result is a luxurious, intuitive online store that tells the brand’s story while delivering a frictionless customer journey.`,
     texts: [
@@ -40,7 +40,7 @@ export const projectsData = [
     subTitle: 'Luxury E-Commerce, Bespoke Jewelry Tools & Elegant User Experience',
     description: `Serendi & Marquise is a refined and immersive online platform that celebrates the art of luxury jewelry. Designed to captivate high-end shoppers and design-savvy customers alike, the site offers an elegant blend of curated collections and personalized craftsmanship. Whether browsing timeless classics or designing bespoke creations, users experience a digital journey that mirrors the exclusivity and charm of an in-store boutique.
                   Every detail of the interface has been crafted with care—from its rich visual presentation and intuitive navigation to seamless mobile responsiveness—ensuring a premium user experience that complements the brand's opulent identity.`,
-    smallImages: ['/images/serendi1.svg', '/images/serendi2.svg', '/images/serendi3.svg'],
+    smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532367/serendi1_tc4rhk.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532379/serendi2_efd4c1.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532378/serendi3_tlppio.svg'],
     texts: [
   {
     "title": "Custom Jewelry Design Feature",
@@ -73,7 +73,7 @@ export const projectsData = [
     subTitle: 'Curated Marketplace, Smart Filters & Collector-Focused Features',
     description: `Hour Markers is an elegantly crafted online marketplace tailored for luxury watch collectors and enthusiasts. Designed with precision and sophistication, this platform caters to both buyers and sellers of high-end timepieces, including brand-new and pre-owned watches from globally renowned brands. The website emphasizes discoverability, reliability, and user experience, ensuring that users can explore, compare, and engage with products seamlessly.
                   Through a blend of sleek UI, intelligent features, and responsive design, Hour Markers bridges the gap between collectors and their perfect watch. Whether browsing for a rare vintage piece or the latest release, users enjoy a refined interface that puts functionality and aesthetics at the forefront.`,
-    smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751531862/hour1_rzylm4.svg', '/images/hour2.svg', '/images/hour3.svg'],
+    smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751531862/hour1_rzylm4.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532029/hour2_nnucgd.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532019/hour3_fatyu7.svg'],
     texts: [
   {
     "title": "Advanced Filtering System",
