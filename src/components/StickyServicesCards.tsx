@@ -104,7 +104,7 @@ const services = [
     title: "Quality Assurance & Testing",
     description:
       "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures. ",
-    image: "/images/QA.png",
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534993/QA_gqmege.png",
     color: "bg-purple-500",
     icon: "✨",
     keyfeatures: [
