@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 1,
-    largeImage: '/images/portimage1.png',
+    largeImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533779/portimage1_fxarp3.png',
     portHeroImage: '/images/macheriehero.svg',
     title: 'Jewelry E-commerce Platform',
     subTitle: 'Custom Design, Development & Digital Strategy',
@@ -34,7 +34,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    largeImage: '/images/portimage2.png',
+    largeImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533780/portimage2_xupe4g.png',
     portHeroImage: '/images/serendihero.svg',
     title: 'Jewelry E-commerce Platform',
     subTitle: 'Luxury E-Commerce, Bespoke Jewelry Tools & Elegant User Experience',
