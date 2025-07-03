@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     largeImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533779/portimage1_fxarp3.png',
-    portHeroImage: '/images/macheriehero.svg',
+    portHeroImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534205/macheriehero_axyqwg.svg',
     title: 'Jewelry E-commerce Platform',
     subTitle: 'Custom Design, Development & Digital Strategy',
     smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532262/macherie1_dlv4om.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532259/macherie2_hwr11e.svg', 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751532281/macherie3_tcwvkf.svg'],
@@ -35,7 +35,7 @@ export const projectsData = [
   {
     id: 2,
     largeImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751533780/portimage2_xupe4g.png',
-    portHeroImage: '/images/serendihero.svg',
+    portHeroImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534205/serendihero_ldnkla.svg',
     title: 'Jewelry E-commerce Platform',
     subTitle: 'Luxury E-Commerce, Bespoke Jewelry Tools & Elegant User Experience',
     description: `Serendi & Marquise is a refined and immersive online platform that celebrates the art of luxury jewelry. Designed to captivate high-end shoppers and design-savvy customers alike, the site offers an elegant blend of curated collections and personalized craftsmanship. Whether browsing timeless classics or designing bespoke creations, users experience a digital journey that mirrors the exclusivity and charm of an in-store boutique.
