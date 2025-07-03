@@ -35,7 +35,7 @@ function ContactSection() {
         <div className="contact-container">
           <div className="contact-image-col">
             <Image
-              src="/images/wtc.jpg"
+              src="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751530584/wtc_towoi5.jpg"
               alt="Contact"
               className="contact-image"
               width={480}
