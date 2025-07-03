@@ -54,48 +54,48 @@ const data = [
     icon: <IconDeviceMobile className="w-8 h-8" />,
     title: "Software Development",
     description: "From responsive websites and e-commerce platforms to mobile apps and custom portals we offer curated development services delivering solutions across multiple platforms.",
-    image: "/images/HomeServices/software engineer.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534989/software_engineer_lc8mry.jpg"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "UI/UX Design",
     description: "From wireframes to final visuals our UI/UX Design services focus on creating clean, intuitive, and engaging user experiences.",
-    image: "/images/HomeServices/UI UX Design.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534987/UI_UX_Design_koqlth.jpg"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Quality Assurance & Testing",
     description: "Experts work closely with the development teams to drive efficient risk-based testing, targeting innovation challenges. We specialize in testing methods implemented on cutting-edge technologies and advanced architectures.",
-    image: "/images/HomeServices/Quality Assurance & Testing in IT.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534988/Quality_Assurance_Testing_in_IT_wmmkjv.jpg"
   },
   {
     icon: <IconCode className="w-8 h-8" />,
     title: "Software Maintenance & Support",
     description: "Improving application’s reliability and relevance by fixing bugs, helping users, enhancing features, adapting to changes, improving performance, updating documentation, and proactively monitoring for issues.",
-    image: "/images/HomeServices/Software Maintenance & Support.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534986/Software_Maintenance_Support_b65tkg.jpg"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "AI, ML & Data Services",
     description: "Creating and using of technologies that allow machines to learn from data, make predictions or decisions, and manage and analyze data to extract insights",
-    image: "/images/HomeServices/AI, ML & Data Services.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534983/AI_ML_Data_Services_qgfedj.jpg"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "IT Consulting",
     description: "IT consulting and advisory services offering strategic guidance, tailored insights, and recommendations to optimize infrastructure, streamline operations, and boost business growth.",
-    image: "/images/HomeServices/IT Consulting.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534996/IT_Consulting_jdlcdg.jpg"
   },
   {
     icon: <IconWorld className="w-8 h-8" />,
     title: "Research & Innovation (R&D)",
     description: "Developing prototypes, exploring cutting-edge technologies while creating in-house tools to drive progressive, futuristic product innovation.",
-    image: "/images/HomeServices/Research & Innovation (R&D).jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534985/Research_Innovation_R_D_mymkuq.jpg"
   },
   {
     icon: <IconServer className="w-8 h-8" />,
     title: "Graphic Designing",
     description: "Designing cornerstone of transforming information into clear visuals, building brand identity, influencing audiences, and combining creativity with functionality.",
-    image: "/images/HomeServices/Graphic Designing.jpg"
+    image: "https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751534988/Graphic_Designing_gwovqi.jpg"
   }
 ];
