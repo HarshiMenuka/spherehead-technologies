@@ -4,6 +4,7 @@ import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { inter, poppins } from './fonts'
 import ClientInit from '@/components/ClientInit'
+import AppShell from '@/components/AppShell'
 
 export const metadata: Metadata = {
   title: 'Spherehead Technologies',
@@ -36,9 +37,7 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         <ClientInit />
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   )
