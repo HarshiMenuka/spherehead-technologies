@@ -67,13 +67,13 @@ export const projectsData = [
   },
   {
     id: 3,
-    largeImage: '/images/portimage3.png',
+    largeImage: 'https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751531183/portimage3_beuhx8.png',
     portHeroImage: '/images/hourmarkershero.svg',
     title: 'Premium Watch Marketplace',
     subTitle: 'Curated Marketplace, Smart Filters & Collector-Focused Features',
     description: `Hour Markers is an elegantly crafted online marketplace tailored for luxury watch collectors and enthusiasts. Designed with precision and sophistication, this platform caters to both buyers and sellers of high-end timepieces, including brand-new and pre-owned watches from globally renowned brands. The website emphasizes discoverability, reliability, and user experience, ensuring that users can explore, compare, and engage with products seamlessly.
                   Through a blend of sleek UI, intelligent features, and responsive design, Hour Markers bridges the gap between collectors and their perfect watch. Whether browsing for a rare vintage piece or the latest release, users enjoy a refined interface that puts functionality and aesthetics at the forefront.`,
-    smallImages: ['/images/hour1.svg', '/images/hour2.svg', '/images/hour3.svg'],
+    smallImages: ['https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751531862/hour1_rzylm4.svg', '/images/hour2.svg', '/images/hour3.svg'],
     texts: [
   {
     "title": "Advanced Filtering System",
