@@ -58,7 +58,7 @@ export default function WhyServices() {
           {/* Image Section */}
           <div className="w-full rounded-xl overflow-hidden aspect-[4/5] relative">
             <Image
-              src="/images/serverimg.jpg" // Replace with your actual image path
+              src="https://res.cloudinary.com/dwpwd2cbo/image/upload/v1751540251/serverimg_hs0oce.jpg" // Replace with your actual image path
               alt="Why choose us"
               fill
               className="object-cover rounded-xl"
