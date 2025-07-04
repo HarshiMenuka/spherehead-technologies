@@ -4,12 +4,14 @@ interface LoadingProps {
   size?: 'small' | 'medium' | 'large';
   fullScreen?: boolean;
   minDisplayTime?: number;
+  onComplete?: () => void;
 }
 
 export default function Loading({ 
   size = 'medium', 
   fullScreen = true,
-  minDisplayTime = 5000 
+  minDisplayTime = 50000,
+  onComplete
 }: LoadingProps) {
   const [showLoader, setShowLoader] = useState(true);
 
@@ -40,6 +42,10 @@ export default function Loading({
         console.log(`Loader visible for ${elapsed}ms`);
         if (isMounted) {
           setShowLoader(false);
+          // Call the onComplete callback if provided
+          if (onComplete) {
+            onComplete();
+          }
         }
       })
       .catch(error => {
@@ -49,7 +55,7 @@ export default function Loading({
     return () => {
       isMounted = false;
     };
-  }, [minDisplayTime]);
+  }, [minDisplayTime, onComplete]);
 
   if (!showLoader) return null;
 
