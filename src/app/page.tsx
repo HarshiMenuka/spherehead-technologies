@@ -71,9 +71,9 @@ export default function Home() {
 
 
 
-      <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
+      {/* <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <HomeGallery />
-      </Suspense>
+      </Suspense> */}
 
       <Suspense fallback={<div className="lazy-loading-placeholder"></div>}>
         <CountiesCart />
