@@ -282,10 +282,10 @@ const Footer = () => {
               <a href="https://www.instagram.com/spherehead_tech/?utm_source=ig_web_button_share_sheet" className="social-icon" aria-label="Instagram">
                 <img src="images/Instagram.svg" alt="Instagram" />
               </a>
-              <a href="https://twitter.com" className="social-icon" aria-label="Twitter">
+              <a href="https://x.com/spherehead_tech?s=21" className="social-icon" aria-label="Twitter">
                 <img src="images/X.svg" alt="Twitter" />
               </a>
-              <a href="https://linkedin.com" className="social-icon" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/spherehead-technologies/ " className="social-icon" aria-label="LinkedIn">
                 <img src="images/LinkedIn.svg" alt="LinkedIn" />
               </a>
             </div>
