@@ -10,7 +10,7 @@ interface LoadingProps {
 export default function Loading({ 
   size = 'medium', 
   fullScreen = true,
-  minDisplayTime = 50000,
+  minDisplayTime = 5000,
   onComplete
 }: LoadingProps) {
   const [showLoader, setShowLoader] = useState(true);
