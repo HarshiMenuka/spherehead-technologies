@@ -276,10 +276,10 @@ const Footer = () => {
               Get the most reliable tech solutions, customized to your requirements built on trust without paying a hefty price tag
             </p>
             <div className="social-icons">
-              <a href="https://facebook.com" className="social-icon" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/1P61gQ3f2U/?mibextid=wwXIfr" className="social-icon" aria-label="Facebook">
                 <img src="images/Facebook.svg" alt="Facebook" />
               </a>
-              <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
+              <a href="https://www.instagram.com/spherehead_tech/?utm_source=ig_web_button_share_sheet" className="social-icon" aria-label="Instagram">
                 <img src="images/Instagram.svg" alt="Instagram" />
               </a>
               <a href="https://twitter.com" className="social-icon" aria-label="Twitter">
