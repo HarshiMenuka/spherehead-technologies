@@ -69,13 +69,18 @@ export default function Loading({
     ? 'fixed inset-0 z-50 flex items-center justify-center bg-black'
     : 'flex items-center justify-center py-12 bg-black';
 
-  return (
-    <div className={containerClasses}>
-      <img
-        src="/images/Spherehead.svg"
-        alt="Loading"
-        className={`${sizeClasses[size]} animate-pulse`} 
-      />
-    </div>
-  );
+return (
+  <div className={containerClasses}>
+    <video
+      src="https://res.cloudinary.com/dwpwd2cbo/video/upload/v1751614469/loader4_mrtfct.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover z-0"
+    />
+    
+  </div>
+);
+
 }
